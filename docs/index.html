@@ -3,26 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07080d" />
   <title>AI Toolkit by Role — skills, connectors & plugins for every job</title>
-  <meta name="description" content="Beginner-friendly, filterable directory of AI skills, connectors (MCP), and plugins — organized by your job and mapped across Claude, ChatGPT, Cursor, Codex, Gemini and more." />
+  <meta name="description" content="Beginner-friendly, filterable directory of AI skills, connectors (MCP), and plugins — organized by your job and mapped across Claude, ChatGPT, Cursor, Codex, Gemini and more. Pick several and copy every install step at once." />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%B0%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- animated aurora background (decorative) -->
+  <div class="aurora" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
   <header class="hero">
-    <div class="wrap">
-      <h1>🧰 AI Toolkit by Role</h1>
-      <p class="tag">New to AI and not sure what to install? This is the beginner-friendly, filterable directory of AI <b>skills</b>, <b>connectors</b>, and <b>plugins</b> — organized by <b>your job</b> and mapped across Claude, ChatGPT, Cursor, Codex, Gemini &amp; more.</p>
+    <div class="wrap hero-inner">
+      <span class="eyebrow">🧰 The vibe-coder's starter kit</span>
+      <h1>Every AI tool, <span class="grad">by your job.</span></h1>
+      <p class="tag">New to AI and not sure what to install? A beginner-friendly, filterable directory of AI <b>skills</b>, <b>connectors</b>, and <b>plugins</b> — organized by <b>your role</b>, mapped across Claude, ChatGPT, Cursor, Codex &amp; more, and ranked by real GitHub stars. <b>Pick several and copy every install step at once.</b></p>
       <div class="cta">
-        <a class="gh-link" href="https://github.com/Rahul-Khare997/ai-toolkit-by-role" target="_blank" rel="noopener">★ Star on GitHub</a>
+        <a class="btn btn-primary" href="#browse">Browse the toolkit ↓</a>
+        <a class="btn btn-ghost" href="https://github.com/Rahul-Khare997/ai-toolkit-by-role" target="_blank" rel="noopener">★ Star on GitHub</a>
       </div>
-      <div class="badge-row" id="badgeRow"></div>
+      <div class="stat-row" id="statRow"></div>
     </div>
   </header>
 
   <div class="wrap">
     <details class="explainer">
-      <summary>🤔 New here? What are skills, connectors &amp; plugins? (30-sec read)</summary>
+      <summary><span>🤔 New here? What are skills, connectors &amp; plugins?</span><span class="hint">30-sec read</span></summary>
       <div class="explainer-body">
         <div>
           <h3>The building blocks</h3>
@@ -36,16 +50,19 @@
     </details>
   </div>
 
-  <div class="controls">
+  <div class="controls" id="browse">
     <div class="wrap">
-      <input id="search" class="search" type="search" placeholder="🔎 Search tools — e.g. 'excel', 'github', 'privacy', 'figma'…" />
-      <div class="filter-group"><span class="glabel">Role</span><span class="chips" id="roleChips"></span></div>
-      <div class="filter-group"><span class="glabel">Works in</span><span class="chips" id="surfaceChips"></span></div>
-      <div class="filter-group"><span class="glabel">Type</span><span class="chips" id="typeChips"></span></div>
-      <div class="filter-group"><span class="glabel">Tool</span><span class="chips" id="toolChips"></span></div>
+      <input id="search" class="search" type="search" placeholder="Search tools — e.g. &ldquo;excel&rdquo;, &ldquo;github&rdquo;, &ldquo;privacy&rdquo;, &ldquo;figma&rdquo;…" />
+      <div class="filters">
+        <div class="filter-group"><span class="glabel">Role</span><span class="chips" id="roleChips"></span></div>
+        <div class="filter-group"><span class="glabel">Works in</span><span class="chips" id="surfaceChips"></span></div>
+        <div class="filter-group"><span class="glabel">Type</span><span class="chips" id="typeChips"></span></div>
+        <div class="filter-group"><span class="glabel">Tool</span><span class="chips" id="toolChips"></span></div>
+      </div>
       <div class="toolbar">
         <span class="count" id="count">—</span>
         <div class="toolbar-right">
+          <button class="linkbtn" id="selectAll">✓ Select all shown</button>
           <label class="sortlabel">Sort
             <select id="sort">
               <option value="stars">⭐ Most stars</option>
@@ -53,7 +70,7 @@
               <option value="name">A–Z</option>
             </select>
           </label>
-          <button class="clear" id="clear">Clear filters</button>
+          <button class="linkbtn" id="clear">Clear filters</button>
         </div>
       </div>
     </div>
@@ -74,10 +91,31 @@
 
   <footer>
     <div class="wrap">
-      <div class="disclaimer">⚠️ <b>Community-curated, not official docs.</b> The AI space moves fast — always confirm install steps and permissions at each tool's official docs link before installing, and give connectors the least access they need. Not affiliated with any vendor.</div>
-      <p style="margin-top:16px">MIT © 2026 Rahul Khare · <a href="https://github.com/Rahul-Khare997/ai-toolkit-by-role">Contribute a tool →</a></p>
+      <div class="disclaimer">⚠️ <b>Community-curated, not official docs.</b> The AI space moves fast — always confirm install steps and permissions at each tool's official link before installing, and give connectors the least access they need. Not affiliated with any vendor.</div>
+      <p class="foot-line">MIT © 2026 Rahul Khare · <a href="https://github.com/Rahul-Khare997/ai-toolkit-by-role">Contribute a tool →</a></p>
     </div>
   </footer>
+
+  <!-- floating install cart -->
+  <div class="tray" id="tray" hidden>
+    <div class="wrap tray-inner">
+      <div class="tray-head">
+        <strong id="trayCount">0 selected</strong>
+        <div class="tray-chips" id="trayChips"></div>
+      </div>
+      <div class="tray-actions">
+        <label class="tray-tool">Install for
+          <select id="trayTool"></select>
+        </label>
+        <button class="btn btn-primary sm" id="copyPrompt">📋 Copy AI prompt</button>
+        <button class="btn btn-ghost sm" id="copyCommands">⌨️ Copy commands</button>
+        <button class="linkbtn" id="trayClear">Clear</button>
+      </div>
+      <p class="tray-skip" id="traySkip"></p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
   <script src="app.js"></script>
 </body>
