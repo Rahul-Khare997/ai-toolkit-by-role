@@ -1,0 +1,11 @@
+[
+  { "id": "claude-desktop", "label": "Claude Desktop", "kind": "chat", "vendor": "Anthropic" },
+  { "id": "claude-code", "label": "Claude Code", "kind": "code", "vendor": "Anthropic" },
+  { "id": "chatgpt", "label": "ChatGPT", "kind": "chat", "vendor": "OpenAI" },
+  { "id": "codex", "label": "Codex", "kind": "code", "vendor": "OpenAI" },
+  { "id": "cursor", "label": "Cursor", "kind": "code", "vendor": "Anysphere" },
+  { "id": "gemini", "label": "Gemini", "kind": "chat", "vendor": "Google" },
+  { "id": "gemini-cli", "label": "Gemini CLI", "kind": "code", "vendor": "Google" },
+  { "id": "copilot", "label": "GitHub Copilot", "kind": "code", "vendor": "GitHub" },
+  { "id": "windsurf", "label": "Windsurf", "kind": "code", "vendor": "Codeium" }
+]

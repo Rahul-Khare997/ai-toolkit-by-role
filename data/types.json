@@ -1,0 +1,32 @@
+[
+  {
+    "id": "skill",
+    "label": "Skill",
+    "emoji": "🧠",
+    "description": "A packaged set of instructions that teaches your AI a specialized task — like writing a legal privacy notice, building a slide deck, or cleaning a spreadsheet. You 'install' it and then just ask for the task."
+  },
+  {
+    "id": "connector",
+    "label": "Connector (MCP)",
+    "emoji": "🔌",
+    "description": "A bridge that lets your AI reach an outside app or data source — GitHub, Gmail, a database, Slack. Most use a standard called MCP (Model Context Protocol). Think of it as giving your AI a new sense or a new hand."
+  },
+  {
+    "id": "plugin",
+    "label": "Plugin",
+    "emoji": "🧩",
+    "description": "A bundle you install into a tool that adds a set of features at once — often several skills, commands, and connectors packaged together."
+  },
+  {
+    "id": "rule",
+    "label": "Rule / Config",
+    "emoji": "📏",
+    "description": "A short instructions file that shapes how a coding agent behaves in your project — like a house-style guide the AI reads before it works (e.g. .cursorrules, AGENTS.md, CLAUDE.md)."
+  },
+  {
+    "id": "extension",
+    "label": "Extension",
+    "emoji": "🧷",
+    "description": "An add-on you install into an app or code editor (like a VS Code or Cursor extension) to add AI features to that app."
+  }
+]

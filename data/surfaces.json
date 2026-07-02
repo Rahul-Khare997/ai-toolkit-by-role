@@ -1,0 +1,20 @@
+[
+  {
+    "id": "chat",
+    "label": "Chat",
+    "emoji": "💬",
+    "description": "Works in AI chat apps like Claude Desktop, ChatGPT, or Gemini — the kind where you type a message and it replies."
+  },
+  {
+    "id": "code",
+    "label": "Code",
+    "emoji": "⌨️",
+    "description": "Works in AI coding agents like Claude Code, Codex, or Cursor — tools that can read and edit your files and run commands for you."
+  },
+  {
+    "id": "both",
+    "label": "Both",
+    "emoji": "🔀",
+    "description": "Works in both chat apps and coding agents."
+  }
+]

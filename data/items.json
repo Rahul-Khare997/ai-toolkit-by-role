@@ -1,0 +1,895 @@
+[
+  {
+    "id": "web-search",
+    "name": "Web Search (Brave / Exa)",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor", "codex"],
+    "roles": ["must-have", "marketing", "business-analyst"],
+    "what": "Lets your AI search the live internet and read current web pages.",
+    "why": "Out of the box, most AIs only know what they were trained on. This lets them look things up so answers are current and less likely to be made up.",
+    "install": {
+      "claude-desktop": "Add the Brave Search or Exa MCP server under Settings → Connectors.",
+      "claude-code": "Run: claude mcp add exa (or brave-search) and paste your API key.",
+      "cursor": "Add the server to .cursor/mcp.json."
+    },
+    "docs": "https://modelcontextprotocol.io/examples",
+    "official": false,
+    "difficulty": "beginner",
+    "tags": ["search", "research", "web"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "fetch-url",
+    "name": "Fetch (read a URL)",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor", "codex", "gemini-cli"],
+    "roles": ["must-have", "marketing"],
+    "what": "Give your AI a link and it fetches the page and reads it.",
+    "why": "Perfect for 'summarize this article' or 'pull the key points from this page' without copy-pasting.",
+    "install": {
+      "claude-code": "Run: claude mcp add fetch -- uvx mcp-server-fetch",
+      "claude-desktop": "Add the Fetch MCP server in your config file."
+    },
+    "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["web", "reading", "research"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "filesystem",
+    "name": "Filesystem",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor"],
+    "roles": ["must-have", "software-developer", "data-analytics"],
+    "what": "Lets your AI read and write files in folders you choose on your computer.",
+    "why": "So a chat app can open your documents and save results. (Coding agents like Claude Code and Cursor can already touch files, so this matters most for chat apps like Claude Desktop.)",
+    "install": {
+      "claude-desktop": "Add the Filesystem MCP server and list the folders it's allowed to touch.",
+      "claude-code": "Built in — Claude Code already reads/writes files in your project."
+    },
+    "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["files", "local"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "memory",
+    "name": "Memory",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor"],
+    "roles": ["must-have"],
+    "what": "Gives your AI a long-term memory that survives between conversations.",
+    "why": "So you don't re-explain your project, preferences, or facts every time. It remembers what matters.",
+    "install": {
+      "claude-desktop": "Add the Memory MCP server in your config.",
+      "claude-code": "Run: claude mcp add memory -- npx -y @modelcontextprotocol/server-memory"
+    },
+    "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["memory", "context"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "sequential-thinking",
+    "name": "Sequential Thinking",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor"],
+    "roles": ["must-have"],
+    "what": "Helps the AI break a hard problem into clear, ordered steps before answering.",
+    "why": "Noticeably better results on tricky, multi-step tasks — planning, debugging, reasoning.",
+    "install": {
+      "claude-code": "Run: claude mcp add sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking"
+    },
+    "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["reasoning", "planning"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor", "codex", "copilot"],
+    "roles": ["must-have", "software-developer", "project-management"],
+    "what": "Lets your AI read and manage your GitHub — code, issues, and pull requests.",
+    "why": "Say 'summarize these open issues' or 'open a PR with this fix' instead of clicking around GitHub yourself.",
+    "install": {
+      "claude-code": "Run: claude mcp add github and sign in, or use the official GitHub MCP server.",
+      "claude-desktop": "Add the GitHub connector under Settings → Connectors.",
+      "cursor": "Add the GitHub MCP server to .cursor/mcp.json."
+    },
+    "docs": "https://github.com/github/github-mcp-server",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["git", "code", "collaboration"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "context7",
+    "name": "Context7 (up-to-date docs)",
+    "type": "connector",
+    "surface": "code",
+    "tools": ["claude-code", "cursor", "codex", "windsurf"],
+    "roles": ["software-developer"],
+    "what": "Feeds your coding agent the latest official documentation for libraries and frameworks.",
+    "why": "Stops the AI from using outdated or made-up code — it pulls the real, current docs for the exact version you use.",
+    "install": {
+      "claude-code": "Run: claude mcp add context7 -- npx -y @upstash/context7-mcp",
+      "cursor": "Add Context7 to .cursor/mcp.json."
+    },
+    "docs": "https://github.com/upstash/context7",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["docs", "code", "accuracy"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "playwright",
+    "name": "Playwright (browser control)",
+    "type": "connector",
+    "surface": "code",
+    "tools": ["claude-code", "cursor", "codex"],
+    "roles": ["software-developer", "ui-ux-designer"],
+    "what": "Lets your AI open a real browser to click, type, and take screenshots.",
+    "why": "Great for testing your website, filling forms, or grabbing screenshots — the AI actually drives the browser.",
+    "install": {
+      "claude-code": "Run: claude mcp add playwright -- npx -y @playwright/mcp",
+      "cursor": "Add the Playwright MCP server to .cursor/mcp.json."
+    },
+    "docs": "https://github.com/microsoft/playwright-mcp",
+    "official": true,
+    "difficulty": "intermediate",
+    "tags": ["browser", "testing", "automation"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "postgres",
+    "name": "PostgreSQL / SQL Database",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor", "codex"],
+    "roles": ["software-developer", "data-analytics", "business-intelligence"],
+    "what": "Connects your AI to a SQL database so it can run queries and read results.",
+    "why": "Ask questions in plain English ('how many orders last month?') and let the AI write and run the SQL.",
+    "install": {
+      "claude-code": "Run: claude mcp add postgres and provide your read-only connection string.",
+      "claude-desktop": "Add the Postgres MCP server with your connection string in config."
+    },
+    "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+    "official": true,
+    "difficulty": "intermediate",
+    "tags": ["database", "sql", "data"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "sqlite",
+    "name": "SQLite",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor"],
+    "roles": ["software-developer", "data-analytics"],
+    "what": "Lets your AI read and query a local SQLite database file.",
+    "why": "A simple, no-server way to let the AI explore structured data on your machine.",
+    "install": {
+      "claude-code": "Run: claude mcp add sqlite -- uvx mcp-server-sqlite --db-path ./your.db"
+    },
+    "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["database", "local", "data"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "sentry",
+    "name": "Sentry (error tracking)",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor"],
+    "roles": ["software-developer"],
+    "what": "Pulls your app's real error reports into the AI.",
+    "why": "Ask 'what's breaking in production and why?' and get the AI to read the actual stack traces and suggest fixes.",
+    "install": {
+      "claude-code": "Run: claude mcp add sentry and authorize your Sentry account."
+    },
+    "docs": "https://github.com/getsentry/sentry-mcp",
+    "official": true,
+    "difficulty": "intermediate",
+    "tags": ["debugging", "monitoring", "code"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "type": "connector",
+    "surface": "code",
+    "tools": ["claude-code", "cursor"],
+    "roles": ["software-developer"],
+    "what": "Lets your AI manage Docker containers — build, run, and inspect them.",
+    "why": "Handy for local dev environments and running things in isolation without memorizing Docker commands.",
+    "install": {
+      "claude-code": "Add the Docker MCP server per its README."
+    },
+    "docs": "https://github.com/modelcontextprotocol/servers",
+    "official": false,
+    "difficulty": "intermediate",
+    "tags": ["devops", "containers", "code"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "semgrep",
+    "name": "Semgrep (security scan)",
+    "type": "connector",
+    "surface": "code",
+    "tools": ["claude-code", "cursor"],
+    "roles": ["software-developer"],
+    "what": "Scans your code for security bugs and lets the AI explain and fix them.",
+    "why": "Catches vulnerabilities as you build, in plain language, instead of after something goes wrong.",
+    "install": {
+      "claude-code": "Add the Semgrep MCP server and let it scan your repo."
+    },
+    "docs": "https://github.com/semgrep/mcp",
+    "official": true,
+    "difficulty": "intermediate",
+    "tags": ["security", "code", "quality"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "cursor-rules",
+    "name": "Project Rules (.cursorrules)",
+    "type": "rule",
+    "surface": "code",
+    "tools": ["cursor"],
+    "roles": ["software-developer"],
+    "what": "A file where you tell Cursor how to behave in your project — your coding style, do's and don'ts.",
+    "why": "The AI follows your conventions automatically instead of you correcting it every time.",
+    "install": {
+      "cursor": "Create a .cursor/rules folder (or a .cursorrules file) in your project and describe your preferences."
+    },
+    "docs": "https://docs.cursor.com/context/rules",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["config", "code", "style"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "agents-md",
+    "name": "Agent Instructions (CLAUDE.md / AGENTS.md)",
+    "type": "rule",
+    "surface": "code",
+    "tools": ["claude-code", "codex", "cursor", "gemini-cli"],
+    "roles": ["software-developer", "project-management"],
+    "what": "A plain-text file your coding agent reads first, describing your project and how to work in it.",
+    "why": "One place to set context and rules — the agent stops guessing and works the way your team does.",
+    "install": {
+      "claude-code": "Add a CLAUDE.md at your repo root (run /init to generate one).",
+      "codex": "Add an AGENTS.md file at your repo root."
+    },
+    "docs": "https://agents.md",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["config", "code", "context"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "xlsx-skill",
+    "name": "Excel / Spreadsheets Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["finance", "data-analytics", "business-analyst"],
+    "what": "Teaches the AI to read, build, and fix Excel/CSV spreadsheets properly — formulas, formatting, charts.",
+    "why": "Turn a messy CSV into a clean report, or generate a financial model, without wrestling with formulas yourself.",
+    "install": {
+      "claude-desktop": "Enable the xlsx Skill in Settings → Capabilities/Skills.",
+      "claude-code": "Install the xlsx skill from the skills marketplace."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["spreadsheet", "excel", "reports"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "docx-skill",
+    "name": "Word Documents Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["legal", "business-analyst", "project-management"],
+    "what": "Teaches the AI to create and edit real Word (.docx) documents — headings, tables, letterheads.",
+    "why": "Get a polished, formatted document (a report, a contract, a memo) instead of plain text you have to reformat.",
+    "install": {
+      "claude-desktop": "Enable the docx Skill in Settings.",
+      "claude-code": "Install the docx skill from the skills marketplace."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["documents", "word", "writing"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "pptx-skill",
+    "name": "Slide Decks (PowerPoint) Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["business-analyst", "marketing", "project-management"],
+    "what": "Teaches the AI to build real PowerPoint (.pptx) presentations.",
+    "why": "Describe your deck and get formatted slides back — a huge time-saver for pitches and updates.",
+    "install": {
+      "claude-desktop": "Enable the pptx Skill in Settings.",
+      "claude-code": "Install the pptx skill from the skills marketplace."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["slides", "presentations"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "pdf-skill",
+    "name": "PDF Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["finance", "legal", "business-analyst"],
+    "what": "Teaches the AI to read, fill, merge, split, and create PDF files.",
+    "why": "Pull tables out of a PDF statement, fill a form, or merge documents — no separate PDF tool needed.",
+    "install": {
+      "claude-desktop": "Enable the pdf Skill in Settings.",
+      "claude-code": "Install the pdf skill from the skills marketplace."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["pdf", "documents"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "code-execution",
+    "name": "Data Analysis / Code Execution",
+    "type": "skill",
+    "surface": "both",
+    "tools": ["claude-desktop", "chatgpt", "claude-code"],
+    "roles": ["data-analytics", "finance"],
+    "what": "Lets the AI run real Python in a safe sandbox to analyze data and make charts.",
+    "why": "For exact math and real charts on your data — the AI computes the answer instead of guessing it.",
+    "install": {
+      "claude-desktop": "Turn on the Analysis / code tool in Settings.",
+      "chatgpt": "Use the built-in Data Analysis (code interpreter) — just upload a file and ask."
+    },
+    "docs": "https://modelcontextprotocol.io",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["data", "python", "charts"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe (payments)",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor"],
+    "roles": ["finance", "software-developer"],
+    "what": "Connects your AI to Stripe to look up payments, customers, and revenue.",
+    "why": "Ask about your sales, refunds, or a specific customer in plain English — or have a coding agent wire up Stripe for you.",
+    "install": {
+      "claude-code": "Add the Stripe MCP server (Stripe Agent Toolkit) with a restricted API key.",
+      "claude-desktop": "Add the Stripe connector in config with a read-only key."
+    },
+    "docs": "https://github.com/stripe/agent-toolkit",
+    "official": true,
+    "difficulty": "intermediate",
+    "tags": ["payments", "finance", "revenue"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "financial-data",
+    "name": "Market / Financial Data",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["finance", "data-analytics"],
+    "what": "Gives your AI live stock prices, company financials, and market data.",
+    "why": "Ask for a company's numbers or a market snapshot and get real current figures, not stale ones.",
+    "install": {
+      "claude-desktop": "Add a financial-data MCP server (e.g. Alpha Vantage or Yahoo Finance) with an API key."
+    },
+    "docs": "https://modelcontextprotocol.io/examples",
+    "official": false,
+    "difficulty": "intermediate",
+    "tags": ["finance", "markets", "data"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "quickbooks",
+    "name": "QuickBooks / Accounting",
+    "type": "connector",
+    "surface": "chat",
+    "tools": ["claude-desktop"],
+    "roles": ["finance"],
+    "what": "Connects your AI to your accounting software to read invoices, expenses, and reports.",
+    "why": "Ask about cash flow, unpaid invoices, or expenses without digging through the accounting app.",
+    "install": {
+      "claude-desktop": "Add a QuickBooks MCP connector and authorize your account (read-only recommended)."
+    },
+    "docs": "https://modelcontextprotocol.io/examples",
+    "official": false,
+    "difficulty": "intermediate",
+    "tags": ["accounting", "finance"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "bigquery",
+    "name": "BigQuery",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["data-analytics", "business-intelligence"],
+    "what": "Connects the AI to Google BigQuery to query large datasets.",
+    "why": "Ask business questions across huge tables and let the AI write the SQL and read the results.",
+    "install": {
+      "claude-code": "Add a BigQuery MCP server with a service-account key (read-only)."
+    },
+    "docs": "https://modelcontextprotocol.io/examples",
+    "official": false,
+    "difficulty": "intermediate",
+    "tags": ["database", "warehouse", "data"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "snowflake",
+    "name": "Snowflake",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["data-analytics", "business-intelligence"],
+    "what": "Connects the AI to your Snowflake data warehouse.",
+    "why": "Self-serve analytics: ask questions and get answers straight from the warehouse, no analyst queue.",
+    "install": {
+      "claude-code": "Add a Snowflake MCP server with read-only credentials."
+    },
+    "docs": "https://modelcontextprotocol.io/examples",
+    "official": false,
+    "difficulty": "intermediate",
+    "tags": ["warehouse", "data", "sql"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "google-sheets",
+    "name": "Google Sheets",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["finance", "business-intelligence", "marketing"],
+    "what": "Lets your AI read and update your Google Sheets.",
+    "why": "Have the AI pull numbers from a sheet, update a tracker, or build a summary tab for you.",
+    "install": {
+      "claude-desktop": "Add a Google Sheets / Google Workspace MCP connector and sign in."
+    },
+    "docs": "https://modelcontextprotocol.io/examples",
+    "official": false,
+    "difficulty": "beginner",
+    "tags": ["spreadsheet", "google", "data"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "powerbi-tableau",
+    "name": "BI Tools (Power BI / Tableau)",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["business-intelligence"],
+    "what": "Connects the AI to your BI dashboards and their underlying data.",
+    "why": "Ask what a dashboard is really saying, or generate the query behind a chart, in plain English.",
+    "install": {
+      "claude-desktop": "Add the relevant BI MCP connector and authorize it (read-only)."
+    },
+    "docs": "https://modelcontextprotocol.io/examples",
+    "official": false,
+    "difficulty": "intermediate",
+    "tags": ["bi", "dashboards", "data"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor", "codex"],
+    "roles": ["ui-ux-designer", "graphic-designer", "software-developer"],
+    "what": "Connects your AI to Figma to read designs and turn them into code or specs.",
+    "why": "Hand the AI a Figma frame and get accurate component code or a clean spec — no more eyeballing pixels.",
+    "install": {
+      "cursor": "Enable Figma's Dev Mode MCP server, then add it to .cursor/mcp.json.",
+      "claude-code": "Add the Figma MCP server and connect your account."
+    },
+    "docs": "https://help.figma.com/hc/en-us/articles/32132100833559",
+    "official": true,
+    "difficulty": "intermediate",
+    "tags": ["design", "figma", "ui"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "shadcn",
+    "name": "shadcn/ui components",
+    "type": "connector",
+    "surface": "code",
+    "tools": ["claude-code", "cursor", "codex"],
+    "roles": ["ui-ux-designer", "software-developer"],
+    "what": "Lets your coding agent browse and add polished, ready-made UI components.",
+    "why": "Build good-looking interfaces fast using proven components instead of styling everything from scratch.",
+    "install": {
+      "cursor": "Add the shadcn MCP server to .cursor/mcp.json.",
+      "claude-code": "Run: claude mcp add shadcn -- npx -y shadcn@latest mcp"
+    },
+    "docs": "https://ui.shadcn.com",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["ui", "components", "frontend"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "v0",
+    "name": "v0 (UI from a prompt)",
+    "type": "extension",
+    "surface": "chat",
+    "tools": ["chatgpt"],
+    "roles": ["ui-ux-designer", "graphic-designer"],
+    "what": "Describe a screen and get a working UI mockup and code back.",
+    "why": "Go from idea to a real, editable interface in seconds — great for prototyping.",
+    "install": {
+      "chatgpt": "Use v0.app in your browser (by Vercel); no coding setup needed."
+    },
+    "docs": "https://v0.app",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["ui", "prototype", "design"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "image-generation",
+    "name": "Image Generation",
+    "type": "skill",
+    "surface": "chat",
+    "tools": ["chatgpt", "gemini", "claude-desktop"],
+    "roles": ["graphic-designer", "marketing"],
+    "what": "Create and edit images from a text description.",
+    "why": "Make logos, mockups, social graphics, or edits without opening a design tool.",
+    "install": {
+      "chatgpt": "Built in — just ask ChatGPT to create or edit an image.",
+      "gemini": "Built in — ask Gemini to generate an image."
+    },
+    "docs": "https://openai.com",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["image", "design", "creative"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "canva",
+    "name": "Canva",
+    "type": "connector",
+    "surface": "chat",
+    "tools": ["chatgpt", "claude-desktop"],
+    "roles": ["graphic-designer", "marketing"],
+    "what": "Connects your AI to Canva to create and edit designs.",
+    "why": "Generate on-brand graphics, social posts, and presentations through a chat instead of designing each by hand.",
+    "install": {
+      "claude-desktop": "Add the Canva connector under Settings → Connectors and sign in.",
+      "chatgpt": "Enable the Canva connector/app."
+    },
+    "docs": "https://www.canva.com/developers/",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["design", "graphics", "canva"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "youtube-transcript",
+    "name": "YouTube Transcripts",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["video-creator", "marketing"],
+    "what": "Pulls the transcript of a YouTube video so the AI can read it.",
+    "why": "Summarize a video, pull quotes, or repurpose it into a blog post or script without watching it all.",
+    "install": {
+      "claude-desktop": "Add a YouTube transcript MCP server in your config."
+    },
+    "docs": "https://modelcontextprotocol.io/examples",
+    "official": false,
+    "difficulty": "beginner",
+    "tags": ["video", "youtube", "content"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "video-generation",
+    "name": "AI Video Generation",
+    "type": "skill",
+    "surface": "chat",
+    "tools": ["gemini", "chatgpt"],
+    "roles": ["video-creator", "marketing"],
+    "what": "Create short video clips from a text prompt or an image.",
+    "why": "Produce b-roll, ads, or concept clips without a camera or an editor.",
+    "install": {
+      "gemini": "Use Google's video generation (Veo) where available in the app.",
+      "chatgpt": "Use OpenAI's video generation (Sora) where available."
+    },
+    "docs": "https://deepmind.google/technologies/veo/",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["video", "creative", "generation"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "atlassian",
+    "name": "Jira & Confluence (Atlassian)",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor"],
+    "roles": ["project-management", "business-analyst", "software-developer"],
+    "what": "Connects your AI to Jira issues and Confluence pages.",
+    "why": "Create tickets, summarize a sprint, or draft a spec page straight from a conversation.",
+    "install": {
+      "claude-desktop": "Add the Atlassian connector under Settings → Connectors and sign in.",
+      "claude-code": "Add the Atlassian MCP server and authorize it."
+    },
+    "docs": "https://www.atlassian.com/platform/remote-mcp-server",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["jira", "confluence", "pm"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor"],
+    "roles": ["project-management", "business-analyst", "marketing"],
+    "what": "Connects your AI to your Notion workspace to read and write pages.",
+    "why": "Turn a chat into a Notion doc, update a tracker, or pull notes into your work automatically.",
+    "install": {
+      "claude-desktop": "Add the Notion connector under Settings → Connectors and sign in.",
+      "claude-code": "Run: claude mcp add notion and authorize your workspace."
+    },
+    "docs": "https://developers.notion.com",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["notes", "docs", "pm"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code", "cursor"],
+    "roles": ["project-management", "software-developer"],
+    "what": "Connects your AI to Linear to manage issues and projects.",
+    "why": "Create and update issues, or get a status summary, without leaving the conversation.",
+    "install": {
+      "claude-desktop": "Add the Linear connector under Settings → Connectors.",
+      "claude-code": "Add the Linear MCP server and authorize it."
+    },
+    "docs": "https://linear.app/docs",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["issues", "pm", "planning"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["project-management", "marketing", "business-analyst"],
+    "what": "Connects your AI to Slack to read and send messages.",
+    "why": "Summarize a busy channel, draft an announcement, or find that decision buried in threads.",
+    "install": {
+      "claude-desktop": "Add the Slack connector under Settings → Connectors and authorize your workspace."
+    },
+    "docs": "https://modelcontextprotocol.io/examples",
+    "official": false,
+    "difficulty": "beginner",
+    "tags": ["chat", "team", "communication"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "google-analytics",
+    "name": "Google Analytics",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["marketing", "business-intelligence"],
+    "what": "Connects your AI to your website analytics.",
+    "why": "Ask 'where did traffic come from last week?' and get a real answer instead of clicking through reports.",
+    "install": {
+      "claude-desktop": "Add a Google Analytics MCP connector and authorize it (read-only)."
+    },
+    "docs": "https://modelcontextprotocol.io/examples",
+    "official": false,
+    "difficulty": "intermediate",
+    "tags": ["analytics", "marketing", "web"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "apify",
+    "name": "Apify (web scraping)",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["marketing", "data-analytics", "business-analyst"],
+    "what": "Lets your AI run ready-made web scrapers to pull data from sites.",
+    "why": "Collect data from social media, maps, e-commerce, or search — without writing a scraper yourself.",
+    "install": {
+      "claude-desktop": "Add the Apify MCP server with your Apify token.",
+      "claude-code": "Run: claude mcp add apify and provide your token."
+    },
+    "docs": "https://apify.com/apify/actors-mcp-server",
+    "official": true,
+    "difficulty": "intermediate",
+    "tags": ["scraping", "data", "research"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "seo-data",
+    "name": "SEO Data (DataForSEO / Ahrefs)",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["marketing"],
+    "what": "Gives your AI keyword, ranking, and backlink data.",
+    "why": "Do keyword research and competitor checks in a chat, then draft content around what you find.",
+    "install": {
+      "claude-desktop": "Add an SEO data MCP server (e.g. DataForSEO) with an API key."
+    },
+    "docs": "https://modelcontextprotocol.io/examples",
+    "official": false,
+    "difficulty": "intermediate",
+    "tags": ["seo", "marketing", "research"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "gdpr-skill",
+    "name": "GDPR Compliance Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["legal"],
+    "what": "Teaches the AI to answer GDPR questions and draft privacy documents with real article references.",
+    "why": "Get grounded, citable privacy guidance and first-draft policies instead of vague generic answers.",
+    "install": {
+      "claude-desktop": "Enable the GDPR compliance Skill.",
+      "claude-code": "Install the gdpr-compliance skill from a skills marketplace."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": false,
+    "difficulty": "beginner",
+    "tags": ["legal", "privacy", "compliance"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "dpdpa-skill",
+    "name": "India DPDPA Compliance Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["legal"],
+    "what": "Teaches the AI India's Digital Personal Data Protection Act — obligations, notices, and breach rules.",
+    "why": "Practical, India-specific privacy help and document drafts, grounded in the actual Act and Rules.",
+    "install": {
+      "claude-code": "Install the dpdpa skill from a skills marketplace.",
+      "claude-desktop": "Enable the DPDPA compliance Skill."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": false,
+    "difficulty": "beginner",
+    "tags": ["legal", "privacy", "india"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "contract-review",
+    "name": "Contract Review Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["legal"],
+    "what": "Teaches the AI to read a contract, flag risky clauses, and explain them plainly.",
+    "why": "A fast first pass on an agreement — what to watch for — before it reaches a lawyer.",
+    "install": {
+      "claude-desktop": "Enable a contract-review Skill (pair it with the PDF skill for scanned files)."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": false,
+    "difficulty": "beginner",
+    "tags": ["legal", "contracts", "review"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "hipaa-skill",
+    "name": "HIPAA Compliance Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["healthcare", "legal"],
+    "what": "Teaches the AI US health-privacy rules (HIPAA) and how to handle protected health information.",
+    "why": "Guidance and document drafts that respect health-data rules, instead of risky generic advice.",
+    "install": {
+      "claude-desktop": "Enable the HIPAA compliance Skill.",
+      "claude-code": "Install the hipaa-compliance skill from a skills marketplace."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": false,
+    "difficulty": "beginner",
+    "tags": ["healthcare", "privacy", "compliance"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "pubmed",
+    "name": "PubMed (medical research)",
+    "type": "connector",
+    "surface": "both",
+    "tools": ["claude-desktop", "claude-code"],
+    "roles": ["healthcare"],
+    "what": "Connects your AI to PubMed to search medical literature.",
+    "why": "Find and summarize real studies with citations instead of relying on the model's memory.",
+    "install": {
+      "claude-desktop": "Add a PubMed MCP server in your config."
+    },
+    "docs": "https://modelcontextprotocol.io/examples",
+    "official": false,
+    "difficulty": "intermediate",
+    "tags": ["healthcare", "research", "citations"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "claude-code-plugins",
+    "name": "Claude Code Plugins",
+    "type": "plugin",
+    "surface": "code",
+    "tools": ["claude-code"],
+    "roles": ["must-have", "software-developer"],
+    "what": "Installable bundles that add a set of skills, slash-commands, and connectors to Claude Code at once.",
+    "why": "Instead of wiring things up one by one, install a ready-made bundle (for code review, memory, and more) with a single command.",
+    "install": {
+      "claude-code": "Run: /plugin marketplace add <owner/repo>, then /plugin install <name>."
+    },
+    "docs": "https://docs.claude.com/en/docs/claude-code/plugins",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["plugin", "extend", "code"],
+    "last_verified": "2026-07"
+  },
+  {
+    "id": "custom-gpts",
+    "name": "Custom GPTs",
+    "type": "plugin",
+    "surface": "chat",
+    "tools": ["chatgpt"],
+    "roles": ["must-have", "marketing", "business-analyst"],
+    "what": "Custom versions of ChatGPT that bundle instructions, knowledge, and actions for a specific job.",
+    "why": "Set up a reusable assistant once (e.g. 'my brand-voice writer') and everyone can use it — no prompt engineering each time.",
+    "install": {
+      "chatgpt": "In ChatGPT, open the GPT store or 'Create a GPT' — no coding needed."
+    },
+    "docs": "https://help.openai.com/en/articles/8554397-creating-a-gpt",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": ["assistant", "no-code", "reusable"],
+    "last_verified": "2026-07"
+  }
+]
