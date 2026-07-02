@@ -29,7 +29,7 @@ TEMPLATES = ROOT / "templates"
 REQUIRED_FIELDS = {
     "id", "name", "type", "surface", "tools", "roles",
     "what", "why", "install", "docs", "official", "difficulty", "tags",
-    "last_verified",
+    "last_verified", "cost",
 }
 DIFFICULTIES = {"beginner", "intermediate", "advanced"}
 REPO_RE = re.compile(r"^[\w.-]+/[\w.-]+$")
@@ -54,12 +54,13 @@ def kfmt(n) -> str:
     return str(n)
 
 
-def validate(items, roles, tools, types, surfaces) -> list[str]:
+def validate(items, roles, tools, types, surfaces, costs) -> list[str]:
     errors: list[str] = []
     role_ids = {r["id"] for r in roles}
     tool_ids = {t["id"] for t in tools}
     type_ids = {t["id"] for t in types}
     surface_ids = {s["id"] for s in surfaces}
+    cost_ids = {c["id"] for c in costs}
     seen_ids: set[str] = set()
 
     for i, it in enumerate(items):
@@ -101,6 +102,8 @@ def validate(items, roles, tools, types, surfaces) -> list[str]:
             errors.append(f"[{label}] repo '{it['repo']}' is not owner/repo")
         if "built_in" in it and not isinstance(it["built_in"], bool):
             errors.append(f"[{label}] built_in must be true/false")
+        if it.get("cost") not in cost_ids:
+            errors.append(f"[{label}] bad/missing cost '{it.get('cost')}'")
     return errors
 
 
@@ -118,20 +121,23 @@ def validate_collections(collections) -> list[str]:
     return errors
 
 
-def compute_stats(items, roles, types, surfaces):
+def compute_stats(items, roles, types, surfaces, costs):
     by_type = {t["id"]: 0 for t in types}
     by_surface = {s["id"]: 0 for s in surfaces}
     by_role = {r["id"]: 0 for r in roles}
+    by_cost = {c["id"]: 0 for c in costs}
     for it in items:
         by_type[it["type"]] += 1
         by_surface[it["surface"]] += 1
+        by_cost[it.get("cost", "free")] = by_cost.get(it.get("cost", "free"), 0) + 1
         for r in it["roles"]:
             by_role[r] += 1
     return {
         "total": len(items),
-        "by_type": by_type, "by_surface": by_surface, "by_role": by_role,
+        "by_type": by_type, "by_surface": by_surface, "by_role": by_role, "by_cost": by_cost,
         "with_stars": sum(1 for it in items if it.get("stars")),
         "built_in": sum(1 for it in items if it.get("built_in")),
+        "apps": by_type.get("app", 0),
     }
 
 
@@ -141,14 +147,15 @@ def merge_stars(rows, stars):
             r["stars"] = stars.get(r["repo"])
 
 
-def render(items, roles, tools, types, surfaces, collections, stars, generated_at, stars_asof):
+def render(items, roles, tools, types, surfaces, costs, collections, stars, generated_at, stars_asof):
     merge_stars(items, stars)
     merge_stars(collections, stars)
 
     tool_by_id = {t["id"]: t for t in tools}
     type_by_id = {t["id"]: t for t in types}
     surface_by_id = {s["id"]: s for s in surfaces}
-    stats = compute_stats(items, roles, types, surfaces)
+    cost_by_id = {c["id"]: c for c in costs}
+    stats = compute_stats(items, roles, types, surfaces, costs)
 
     grouped = []
     for role in roles:
@@ -166,9 +173,10 @@ def render(items, roles, tools, types, surfaces, collections, stars, generated_a
     env.filters["kfmt"] = kfmt
     template = env.get_template("README.md.j2")
     readme = template.render(
-        grouped=grouped, roles=roles, tools=tools, types=types, surfaces=surfaces,
+        grouped=grouped, roles=roles, tools=tools, types=types, surfaces=surfaces, costs=costs,
         collections=coll_sorted, type_by_id=type_by_id, surface_by_id=surface_by_id,
-        tool_by_id=tool_by_id, stats=stats, generated_at=generated_at, stars_asof=stars_asof,
+        cost_by_id=cost_by_id, tool_by_id=tool_by_id, stats=stats,
+        generated_at=generated_at, stars_asof=stars_asof,
     )
     (ROOT / "README.md").write_text(readme, encoding="utf-8")
 
@@ -176,7 +184,8 @@ def render(items, roles, tools, types, surfaces, collections, stars, generated_a
     export = {
         "generated_at": generated_at, "stars_asof": stars_asof,
         "items": items, "roles": roles, "tools": tools,
-        "types": types, "surfaces": surfaces, "collections": coll_sorted, "stats": stats,
+        "types": types, "surfaces": surfaces, "costs": costs,
+        "collections": coll_sorted, "stats": stats,
     }
     (DOCS / "data.json").write_text(json.dumps(export, indent=2), encoding="utf-8")
     return stats
@@ -193,11 +202,12 @@ def main(argv=None) -> int:
     tools = load("tools.json")
     types = load("types.json")
     surfaces = load("surfaces.json")
+    costs = load("costs.json")
     collections = load("collections.json")
     stars = load_stars()
     stars_asof = stars.get("_generated_at", "not yet fetched")
 
-    errors = validate(items, roles, tools, types, surfaces) + validate_collections(collections)
+    errors = validate(items, roles, tools, types, surfaces, costs) + validate_collections(collections)
     if errors:
         print(f"❌ {len(errors)} validation error(s):", file=sys.stderr)
         for e in errors:
@@ -207,7 +217,7 @@ def main(argv=None) -> int:
     if args.check:
         return 0
 
-    stats = render(items, roles, tools, types, surfaces, collections, stars, args.date, stars_asof)
+    stats = render(items, roles, tools, types, surfaces, costs, collections, stars, args.date, stars_asof)
     print(
         f"📝 README + docs/data.json written | {stats['total']} items "
         f"({stats['with_stars']} with live stars, {stats['built_in']} built-in) "

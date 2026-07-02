@@ -5,12 +5,12 @@
   const LS_KEY = "aitk-cart";
   const state = {
     q: "", sort: "stars",
-    roles: new Set(), surfaces: new Set(), types: new Set(), tools: new Set(),
+    roles: new Set(), surfaces: new Set(), types: new Set(), tools: new Set(), costs: new Set(),
     cart: new Set(), cartTool: null,
   };
   const kfmt = (n) => (n == null ? "" : n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, "") + "k" : String(n));
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  let DATA = null, toolLabel = {}, typeById = {}, surfaceById = {}, io = null;
+  let DATA = null, toolLabel = {}, typeById = {}, surfaceById = {}, costById = {}, io = null;
 
   const $ = (id) => document.getElementById(id);
   const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
@@ -22,6 +22,7 @@
     toolLabel = Object.fromEntries(DATA.tools.map((t) => [t.id, t.label]));
     typeById = Object.fromEntries(DATA.types.map((t) => [t.id, t]));
     surfaceById = Object.fromEntries(DATA.surfaces.map((s) => [s.id, s]));
+    costById = Object.fromEntries((DATA.costs || []).map((c) => [c.id, c]));
     loadCart();
 
     io = new IntersectionObserver((entries) => {
@@ -98,6 +99,7 @@
     DATA.roles.forEach((r) => chip($("roleChips"), r.id, `${r.emoji} ${r.label}`, "roles"));
     DATA.surfaces.forEach((s) => chip($("surfaceChips"), s.id, `${s.emoji} ${s.label}`, "surfaces"));
     DATA.types.forEach((t) => chip($("typeChips"), t.id, `${t.emoji} ${t.label}`, "types"));
+    (DATA.costs || []).forEach((c) => chip($("costChips"), c.id, `${c.emoji} ${c.label}`, "costs"));
     DATA.tools.forEach((t) => chip($("toolChips"), t.id, t.label, "tools"));
   }
 
@@ -138,6 +140,7 @@
     if (state.roles.size && !item.roles.some((r) => state.roles.has(r))) return false;
     if (!surfaceMatch(item)) return false;
     if (state.types.size && !state.types.has(item.type)) return false;
+    if (state.costs.size && !state.costs.has(item.cost)) return false;
     if (state.tools.size && !item.tools.some((t) => state.tools.has(t))) return false;
     if (state.q) {
       const hay = (item.name + " " + item.what + " " + item.why + " " + item.tags.join(" ")).toLowerCase();
@@ -170,6 +173,7 @@
     tags.appendChild(el("span", `tag type-${item.type}`, `${ty.emoji} ${ty.label}`));
     tags.appendChild(el("span", `tag surface-${item.surface}`, `${su.emoji} ${su.label}`));
     tags.appendChild(el("span", "tag", item.difficulty));
+    const co = costById[item.cost]; if (co) tags.appendChild(el("span", `tag cost-${item.cost}`, `${co.emoji} ${co.label}`));
     if (item.built_in) tags.appendChild(el("span", "tag builtin", "🧰 built-in"));
     c.appendChild(tags);
 
@@ -295,7 +299,7 @@
   }
   function clearFilters() {
     state.q = "";
-    ["roles", "surfaces", "types", "tools"].forEach((g) => state[g].clear());
+    ["roles", "surfaces", "types", "tools", "costs"].forEach((g) => state[g].clear());
     $("search").value = "";
     document.querySelectorAll('.chip[aria-pressed="true"]').forEach((b) => b.setAttribute("aria-pressed", "false"));
     render();

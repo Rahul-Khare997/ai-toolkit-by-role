@@ -184,7 +184,13 @@ main { padding-top: var(--space-lg); }
 .tag.surface-chat { background: rgba(255, 93, 158, 0.12); color: #ff9ec4; }
 .tag.surface-code { background: rgba(75, 214, 255, 0.12); color: #9be2ff; }
 .tag.surface-both { background: rgba(46, 230, 197, 0.12); color: #8ff3df; }
+.tag.type-app { background: rgba(120, 230, 140, 0.16); color: #9be9a8; }
+.tag.surface-standalone { background: rgba(124, 92, 255, 0.14); color: #c3b4ff; }
 .tag.builtin { background: rgba(124, 92, 255, 0.16); color: #c3b4ff; }
+.tag.cost-free { background: rgba(120, 230, 140, 0.14); color: #9be9a8; }
+.tag.cost-freemium { background: rgba(75, 214, 255, 0.14); color: #9be2ff; }
+.tag.cost-paid { background: rgba(255, 180, 62, 0.16); color: #ffcf87; }
+.tag.cost-enterprise { background: rgba(124, 92, 255, 0.16); color: #c3b4ff; }
 .what { font-size: 0.93rem; color: var(--text); margin: 0; font-weight: 600; }
 .why { font-size: 0.86rem; color: var(--text-soft); margin: 0; }
 .card-foot { margin-top: auto; padding-top: 10px; border-top: 1px solid var(--line-soft); display: flex; flex-wrap: wrap; gap: 6px; }

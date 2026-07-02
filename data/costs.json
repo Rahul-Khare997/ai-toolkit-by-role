@@ -1,0 +1,26 @@
+[
+  {
+    "id": "free",
+    "label": "Free",
+    "emoji": "🟢",
+    "description": "Free to use (open-source or a genuinely free product). No card needed to get real value."
+  },
+  {
+    "id": "freemium",
+    "label": "Freemium",
+    "emoji": "🔵",
+    "description": "Free tier to start, with paid plans for heavier use or advanced features."
+  },
+  {
+    "id": "paid",
+    "label": "Paid",
+    "emoji": "🟠",
+    "description": "Needs a paid subscription (usually a modest monthly fee)."
+  },
+  {
+    "id": "enterprise",
+    "label": "Enterprise",
+    "emoji": "🟣",
+    "description": "Sold to teams/companies, often with sales-led or premium pricing. Powerful, but not a quick solo sign-up."
+  }
+]

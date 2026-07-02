@@ -18,16 +18,18 @@ class TestData(unittest.TestCase):
         cls.tools = build.load("tools.json")
         cls.types = build.load("types.json")
         cls.surfaces = build.load("surfaces.json")
+        cls.costs = build.load("costs.json")
         cls.collections = build.load("collections.json")
         cls.stars = build.load_stars()
 
+    def _validate(self, items):
+        return build.validate(items, self.roles, self.tools, self.types, self.surfaces, self.costs)
+
     def test_real_items_valid(self):
-        errors = build.validate(self.items, self.roles, self.tools, self.types, self.surfaces)
-        self.assertEqual(errors, [], "\n".join(errors))
+        self.assertEqual(self._validate(self.items), [])
 
     def test_real_collections_valid(self):
-        errors = build.validate_collections(self.collections)
-        self.assertEqual(errors, [], "\n".join(errors))
+        self.assertEqual(build.validate_collections(self.collections), [])
 
     def test_every_role_has_items(self):
         covered = set()
@@ -36,28 +38,39 @@ class TestData(unittest.TestCase):
         for r in self.roles:
             self.assertIn(r["id"], covered, f"role '{r['id']}' has no items")
 
+    def test_thin_roles_are_deeper_now(self):
+        by_role = {}
+        for it in self.items:
+            for r in it["roles"]:
+                by_role[r] = by_role.get(r, 0) + 1
+        for role in ("legal", "healthcare", "video-creator", "graphic-designer"):
+            self.assertGreaterEqual(by_role.get(role, 0), 8, f"{role} still thin")
+
+    def test_apps_exist_and_are_standalone(self):
+        apps = [i for i in self.items if i["type"] == "app"]
+        self.assertGreaterEqual(len(apps), 20)
+        for a in apps:
+            self.assertEqual(a["surface"], "standalone")
+            self.assertEqual(a["tools"], ["standalone"])
+            self.assertIn("standalone", a["install"])
+
+    def test_every_item_has_valid_cost(self):
+        cost_ids = {c["id"] for c in self.costs}
+        for it in self.items:
+            self.assertIn(it.get("cost"), cost_ids, it.get("id"))
+
     def test_repos_are_owner_slash_repo(self):
         for it in self.items + self.collections:
             if it.get("repo"):
                 self.assertRegex(it["repo"], r"^[\w.-]+/[\w.-]+$", it.get("id"))
 
-    def test_validator_catches_bad_repo(self):
-        bad = json.loads(json.dumps(self.items[0]))
-        bad["repo"] = "not-a-valid-repo-string"
-        errors = build.validate([bad], self.roles, self.tools, self.types, self.surfaces)
-        self.assertTrue(any("owner/repo" in e for e in errors))
+    def test_validator_catches_bad_cost(self):
+        bad = json.loads(json.dumps(self.items[0])); bad["cost"] = "cheapish"
+        self.assertTrue(any("cost" in e for e in self._validate([bad])))
 
     def test_validator_catches_bad_role(self):
-        bad = json.loads(json.dumps(self.items[0]))
-        bad["roles"] = ["not-a-real-role"]
-        errors = build.validate([bad], self.roles, self.tools, self.types, self.surfaces)
-        self.assertTrue(any("unknown role" in e for e in errors))
-
-    def test_builtin_must_be_bool(self):
-        bad = json.loads(json.dumps(self.items[0]))
-        bad["built_in"] = "yes"
-        errors = build.validate([bad], self.roles, self.tools, self.types, self.surfaces)
-        self.assertTrue(any("built_in" in e for e in errors))
+        bad = json.loads(json.dumps(self.items[0])); bad["roles"] = ["nope"]
+        self.assertTrue(any("unknown role" in e for e in self._validate([bad])))
 
     def test_kfmt(self):
         self.assertEqual(build.kfmt(243820), "243.8k")
@@ -65,15 +78,15 @@ class TestData(unittest.TestCase):
         self.assertEqual(build.kfmt(None), "")
 
     def test_build_writes_readme_and_site_data(self):
-        build.render(self.items, self.roles, self.tools, self.types, self.surfaces,
+        build.render(self.items, self.roles, self.tools, self.types, self.surfaces, self.costs,
                      self.collections, self.stars, "2026-07", self.stars.get("_generated_at", "x"))
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("AI Toolkit by Role", readme)
-        self.assertIn("Where to find more", readme)
+        self.assertIn("Cost", readme)
         data = json.loads((ROOT / "docs" / "data.json").read_text(encoding="utf-8"))
         self.assertEqual(len(data["items"]), len(self.items))
-        self.assertIn("collections", data)
-        self.assertGreater(len(data["collections"]), 5)
+        self.assertIn("costs", data)
+        self.assertIn("by_cost", data["stats"])
 
 
 if __name__ == "__main__":

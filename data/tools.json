@@ -7,5 +7,6 @@
   { "id": "gemini", "label": "Gemini", "kind": "chat", "vendor": "Google" },
   { "id": "gemini-cli", "label": "Gemini CLI", "kind": "code", "vendor": "Google" },
   { "id": "copilot", "label": "GitHub Copilot", "kind": "code", "vendor": "GitHub" },
-  { "id": "windsurf", "label": "Windsurf", "kind": "code", "vendor": "Codeium" }
+  { "id": "windsurf", "label": "Windsurf", "kind": "code", "vendor": "Codeium" },
+  { "id": "standalone", "label": "Its own app", "kind": "app", "vendor": "" }
 ]

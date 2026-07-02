@@ -28,5 +28,11 @@
     "label": "Extension",
     "emoji": "🧷",
     "description": "An add-on you install into an app or code editor (like a VS Code or Cursor extension) to add AI features to that app."
+  },
+  {
+    "id": "app",
+    "label": "App",
+    "emoji": "🚀",
+    "description": "A standalone AI product you use on its own — its own website or app (like an AI video maker or a data-analysis tool). You don't install it into another AI; you just sign up and use it."
   }
 ]

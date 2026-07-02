@@ -31,7 +31,8 @@
       "web"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "freemium"
   },
   {
     "id": "fetch-url",
@@ -65,7 +66,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "modelcontextprotocol/servers",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "filesystem",
@@ -97,7 +99,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "modelcontextprotocol/servers",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "memory",
@@ -127,7 +130,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "modelcontextprotocol/servers",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "sequential-thinking",
@@ -156,7 +160,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "modelcontextprotocol/servers",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "github",
@@ -192,7 +197,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "github/github-mcp-server",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "context7",
@@ -224,7 +230,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "upstash/context7",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "playwright",
@@ -256,7 +263,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "microsoft/playwright-mcp",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "postgres",
@@ -290,7 +298,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "modelcontextprotocol/servers",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "sqlite",
@@ -321,7 +330,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "modelcontextprotocol/servers",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "sentry",
@@ -351,7 +361,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "getsentry/sentry-mcp",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "docker",
@@ -379,7 +390,8 @@
       "code"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "semgrep",
@@ -408,7 +420,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "semgrep/mcp",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "cursor-rules",
@@ -435,7 +448,8 @@
       "style"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "agents-md",
@@ -467,7 +481,8 @@
       "context"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "xlsx-skill",
@@ -499,7 +514,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "anthropics/skills",
-    "built_in": true
+    "built_in": true,
+    "cost": "free"
   },
   {
     "id": "docx-skill",
@@ -531,7 +547,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "anthropics/skills",
-    "built_in": true
+    "built_in": true,
+    "cost": "free"
   },
   {
     "id": "pptx-skill",
@@ -562,7 +579,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "anthropics/skills",
-    "built_in": true
+    "built_in": true,
+    "cost": "free"
   },
   {
     "id": "pdf-skill",
@@ -593,7 +611,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "anthropics/skills",
-    "built_in": true
+    "built_in": true,
+    "cost": "free"
   },
   {
     "id": "code-execution",
@@ -624,7 +643,8 @@
       "charts"
     ],
     "last_verified": "2026-07",
-    "built_in": true
+    "built_in": true,
+    "cost": "free"
   },
   {
     "id": "stripe",
@@ -656,7 +676,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "stripe/agent-toolkit",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "financial-data",
@@ -685,7 +706,8 @@
       "data"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "quickbooks",
@@ -711,7 +733,8 @@
       "finance"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "bigquery",
@@ -740,7 +763,8 @@
       "data"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "snowflake",
@@ -769,7 +793,8 @@
       "sql"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "google-sheets",
@@ -799,7 +824,8 @@
       "data"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "powerbi-tableau",
@@ -827,7 +853,8 @@
       "data"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "figma",
@@ -860,7 +887,8 @@
       "ui"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "freemium"
   },
   {
     "id": "shadcn",
@@ -892,7 +920,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "shadcn-ui/ui",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "v0",
@@ -920,7 +949,8 @@
       "design"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "image-generation",
@@ -951,7 +981,8 @@
       "creative"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "freemium"
   },
   {
     "id": "canva",
@@ -981,7 +1012,8 @@
       "canva"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "freemium"
   },
   {
     "id": "youtube-transcript",
@@ -1010,7 +1042,8 @@
       "content"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "video-generation",
@@ -1040,7 +1073,8 @@
       "generation"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "paid"
   },
   {
     "id": "atlassian",
@@ -1072,7 +1106,8 @@
       "pm"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "notion",
@@ -1104,7 +1139,8 @@
       "pm"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "freemium"
   },
   {
     "id": "linear",
@@ -1135,7 +1171,8 @@
       "planning"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "freemium"
   },
   {
     "id": "slack",
@@ -1165,7 +1202,8 @@
       "communication"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "google-analytics",
@@ -1194,7 +1232,8 @@
       "web"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "apify",
@@ -1226,7 +1265,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "apify/actors-mcp-server",
-    "built_in": false
+    "built_in": false,
+    "cost": "freemium"
   },
   {
     "id": "seo-data",
@@ -1254,7 +1294,8 @@
       "research"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "freemium"
   },
   {
     "id": "gdpr-skill",
@@ -1283,7 +1324,8 @@
       "compliance"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "dpdpa-skill",
@@ -1312,7 +1354,8 @@
       "india"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "contract-review",
@@ -1340,7 +1383,8 @@
       "review"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "hipaa-skill",
@@ -1370,7 +1414,8 @@
       "compliance"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "pubmed",
@@ -1398,7 +1443,8 @@
       "citations"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "claude-code-plugins",
@@ -1426,7 +1472,8 @@
       "code"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "custom-gpts",
@@ -1455,7 +1502,8 @@
       "reusable"
     ],
     "last_verified": "2026-07",
-    "built_in": false
+    "built_in": false,
+    "cost": "freemium"
   },
   {
     "id": "superpowers",
@@ -1484,7 +1532,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "obra/superpowers",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "everything-claude-code",
@@ -1514,7 +1563,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "affaan-m/ECC",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "claude-mem",
@@ -1545,7 +1595,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "thedotmack/claude-mem",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "caveman-skill",
@@ -1573,7 +1624,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "JuliusBrussee/caveman",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "gstack",
@@ -1603,7 +1655,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "garrytan/gstack",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "graphify",
@@ -1634,7 +1687,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "safishamsi/graphify",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "claude-task-master",
@@ -1665,7 +1719,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "eyaltoledano/claude-task-master",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "subagents-collection",
@@ -1692,7 +1747,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "wshobson/agents",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "claude-code-templates",
@@ -1720,7 +1776,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "davila7/claude-code-templates",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "design-review-workflows",
@@ -1749,7 +1806,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "OneRedOak/claude-code-workflows",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "cc-switch",
@@ -1778,7 +1836,8 @@
     ],
     "last_verified": "2026-07",
     "repo": "farion1231/cc-switch",
-    "built_in": false
+    "built_in": false,
+    "cost": "free"
   },
   {
     "id": "hermes-agent",
@@ -1806,6 +1865,1760 @@
     ],
     "last_verified": "2026-07",
     "repo": "NousResearch/hermes-agent",
+    "built_in": false,
+    "cost": "free"
+  },
+  {
+    "id": "higgsfield",
+    "name": "Higgsfield",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "video-creator",
+      "marketing"
+    ],
+    "what": "Turn a photo or prompt into cinematic AI video with viral camera presets.",
+    "why": "Make scroll-stopping social clips, ads, and product videos with no camera or editor.",
+    "install": {
+      "standalone": "Use it at https://higgsfield.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://higgsfield.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "video",
+      "generation",
+      "social"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "runway",
+    "name": "Runway",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "video-creator",
+      "marketing"
+    ],
+    "what": "Pro-grade AI video generation and editing (Gen-4.5).",
+    "why": "The highest-quality AI video with strong motion control \u2014 the pro's pick.",
+    "install": {
+      "standalone": "Use it at https://runwayml.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://runwayml.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "paid",
+    "tags": [
+      "video",
+      "generation",
+      "pro"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "kling",
+    "name": "Kling AI",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "video-creator",
+      "marketing"
+    ],
+    "what": "AI video with long, consistent, cinematic shots and native audio.",
+    "why": "Keeps faces and products consistent across longer takes.",
+    "install": {
+      "standalone": "Use it at https://klingai.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://klingai.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "video",
+      "cinematic"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "pika",
+    "name": "Pika",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "video-creator",
+      "marketing"
+    ],
+    "what": "Fast AI video with lip-sync for talking characters.",
+    "why": "Best when a character actually needs to speak.",
+    "install": {
+      "standalone": "Use it at https://pika.art \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://pika.art",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "video",
+      "lipsync",
+      "social"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "luma-dream-machine",
+    "name": "Luma Dream Machine",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "video-creator",
+      "graphic-designer"
+    ],
+    "what": "Animate a still image into video with believable camera motion.",
+    "why": "Dreamy image-to-video for music videos, mood pieces, and brand content.",
+    "install": {
+      "standalone": "Use it at https://lumalabs.ai/dream-machine \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://lumalabs.ai/dream-machine",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "video",
+      "image-to-video"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "heygen",
+    "name": "HeyGen",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "video-creator",
+      "marketing"
+    ],
+    "what": "Create talking-avatar and spokesperson videos in many languages.",
+    "why": "Training and marketing videos without filming a real presenter.",
+    "install": {
+      "standalone": "Use it at https://www.heygen.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.heygen.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "video",
+      "avatar"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "descript",
+    "name": "Descript",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "video-creator",
+      "marketing"
+    ],
+    "what": "Edit video and podcasts by editing the transcript, with AI cleanup.",
+    "why": "Cut filler words and edit media as easily as a text document.",
+    "install": {
+      "standalone": "Use it at https://www.descript.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.descript.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "video",
+      "editing",
+      "podcast"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "video-creator",
+      "marketing"
+    ],
+    "what": "Lifelike AI voices and voice cloning for narration and dubbing.",
+    "why": "Add professional voiceover or dub content into other languages.",
+    "install": {
+      "standalone": "Use it at https://elevenlabs.io \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://elevenlabs.io",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "voice",
+      "audio",
+      "dubbing"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "suno",
+    "name": "Suno",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "video-creator",
+      "marketing"
+    ],
+    "what": "Generate full songs with vocals from a text prompt.",
+    "why": "Original background music or jingles in seconds.",
+    "install": {
+      "standalone": "Use it at https://suno.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://suno.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "music",
+      "audio"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "capcut",
+    "name": "CapCut",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "video-creator",
+      "marketing"
+    ],
+    "what": "Popular video editor with AI captions, effects, and background cutouts.",
+    "why": "Fast social-video editing with AI helpers, free to start.",
+    "install": {
+      "standalone": "Use it at https://www.capcut.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.capcut.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "video",
+      "editing",
+      "social"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "graphic-designer",
+      "marketing"
+    ],
+    "what": "Best-in-class AI image generation with a distinctive artistic look.",
+    "why": "The go-to for high-quality concept art and striking visuals.",
+    "install": {
+      "standalone": "Use it at https://www.midjourney.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.midjourney.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "paid",
+    "tags": [
+      "image",
+      "art"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "ideogram",
+    "name": "Ideogram",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "graphic-designer",
+      "marketing"
+    ],
+    "what": "AI images that render readable text well \u2014 posters, logos, typography.",
+    "why": "Best when your image needs actual words in it.",
+    "install": {
+      "standalone": "Use it at https://ideogram.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://ideogram.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "image",
+      "text",
+      "logo"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "adobe-firefly",
+    "name": "Adobe Firefly",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "graphic-designer",
+      "marketing"
+    ],
+    "what": "Adobe's commercially-safe AI image and design generator.",
+    "why": "Trained on licensed content \u2014 safer for commercial work.",
+    "install": {
+      "standalone": "Use it at https://www.adobe.com/products/firefly.html \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.adobe.com/products/firefly.html",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "image",
+      "design",
+      "commercial"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "leonardo-ai",
+    "name": "Leonardo AI",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "graphic-designer"
+    ],
+    "what": "AI image generation tuned for game art, assets, and concepts.",
+    "why": "Fine control and specialized models for production art.",
+    "install": {
+      "standalone": "Use it at https://leonardo.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://leonardo.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "image",
+      "gamedev",
+      "art"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "krea",
+    "name": "Krea",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "graphic-designer",
+      "ui-ux-designer"
+    ],
+    "what": "Real-time AI image generation and enhancement canvas.",
+    "why": "Sketch and steer images live \u2014 great for fast ideation.",
+    "install": {
+      "standalone": "Use it at https://www.krea.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.krea.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "image",
+      "realtime"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "recraft",
+    "name": "Recraft",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "graphic-designer"
+    ],
+    "what": "AI for vector art, icons, and on-brand design systems.",
+    "why": "Generate editable vectors and consistent brand assets.",
+    "install": {
+      "standalone": "Use it at https://www.recraft.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.recraft.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "image",
+      "vector",
+      "brand"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "freepik-ai",
+    "name": "Freepik AI",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "graphic-designer",
+      "marketing"
+    ],
+    "what": "A suite of low-cost AI image/video tools plus a huge asset library.",
+    "why": "Cheap generation bundled with stock assets.",
+    "install": {
+      "standalone": "Use it at https://www.freepik.com/ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.freepik.com/ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "image",
+      "assets",
+      "budget"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "magnific",
+    "name": "Magnific",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "graphic-designer"
+    ],
+    "what": "AI upscaler and enhancer that adds realistic detail.",
+    "why": "Turn small or soft images into crisp, detailed ones.",
+    "install": {
+      "standalone": "Use it at https://magnific.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://magnific.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "paid",
+    "tags": [
+      "image",
+      "upscale"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "photoroom",
+    "name": "Photoroom",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "graphic-designer",
+      "marketing"
+    ],
+    "what": "AI product photos \u2014 remove backgrounds and create studio shots.",
+    "why": "Ecommerce-ready product images without a photo studio.",
+    "install": {
+      "standalone": "Use it at https://www.photoroom.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.photoroom.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "image",
+      "ecommerce",
+      "product"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "gamma",
+    "name": "Gamma",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "marketing",
+      "business-analyst",
+      "ui-ux-designer"
+    ],
+    "what": "Generate polished slide decks, docs, and simple websites from a prompt.",
+    "why": "Beautiful presentations and one-pagers in minutes.",
+    "install": {
+      "standalone": "Use it at https://gamma.app \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://gamma.app",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "slides",
+      "decks",
+      "web"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "spellbook",
+    "name": "Spellbook",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "AI contract drafting and redlining right inside Microsoft Word.",
+    "why": "Review and mark up contracts far faster, where lawyers already work.",
+    "install": {
+      "standalone": "Use it at https://www.spellbook.legal \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.spellbook.legal",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "paid",
+    "tags": [
+      "contracts",
+      "redline",
+      "word"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "legalon",
+    "name": "LegalOn",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "Automated contract review with attorney-built playbooks.",
+    "why": "Flags risky clauses and suggests fixes against best-practice standards.",
+    "install": {
+      "standalone": "Use it at https://www.legalontech.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.legalontech.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "enterprise",
+    "tags": [
+      "contracts",
+      "review"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "lexis-ai",
+    "name": "Lexis+ AI",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "Legal research grounded in real case law with citations and validation.",
+    "why": "Verifiable research that avoids the fake citations general chatbots invent.",
+    "install": {
+      "standalone": "Use it at https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "enterprise",
+    "tags": [
+      "research",
+      "caselaw"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "cocounsel",
+    "name": "CoCounsel",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "Legal AI built on Westlaw and Practical Law.",
+    "why": "Trusted research, drafting, and review on authoritative sources.",
+    "install": {
+      "standalone": "Use it at https://legal.thomsonreuters.com/en/c/cocounsel \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://legal.thomsonreuters.com/en/c/cocounsel",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "enterprise",
+    "tags": [
+      "research",
+      "drafting"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "harvey",
+    "name": "Harvey",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "Enterprise legal AI for large firms and in-house teams.",
+    "why": "A domain-trained assistant for complex legal work at scale.",
+    "install": {
+      "standalone": "Use it at https://www.harvey.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.harvey.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "enterprise",
+    "tags": [
+      "enterprise",
+      "drafting"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "gc-ai",
+    "name": "GC AI",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "AI platform for in-house/corporate legal \u2014 research, contracts, daily chat.",
+    "why": "One tool for a corporate legal team's everyday work.",
+    "install": {
+      "standalone": "Use it at https://gc.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://gc.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "paid",
+    "tags": [
+      "inhouse",
+      "contracts"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "thelawgpt",
+    "name": "TheLawGPT",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "Accessible AI contract review for solo lawyers and small firms.",
+    "why": "Understand a contract a client just emailed you, quickly and cheaply.",
+    "install": {
+      "standalone": "Use it at https://www.thelawgpt.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.thelawgpt.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "contracts",
+      "solo"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "soc2-skill",
+    "name": "SOC 2 Compliance Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": [
+      "claude-desktop",
+      "claude-code"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "Guides SOC 2 readiness \u2014 Trust Services Criteria, controls, and evidence.",
+    "why": "Turns a scary audit into a grounded checklist and first-draft policies.",
+    "install": {
+      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": false,
+    "difficulty": "beginner",
+    "cost": "free",
+    "tags": [
+      "compliance",
+      "legal"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "iso27001-skill",
+    "name": "ISO 27001 Compliance Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": [
+      "claude-desktop",
+      "claude-code"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "Helps build an information-security management system to ISO 27001.",
+    "why": "Structured guidance for the world's main infosec certification.",
+    "install": {
+      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": false,
+    "difficulty": "beginner",
+    "cost": "free",
+    "tags": [
+      "compliance",
+      "legal"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "iso27701-skill",
+    "name": "ISO 27701 Privacy Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": [
+      "claude-desktop",
+      "claude-code"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "Extends ISO 27001 to privacy information management (PIMS).",
+    "why": "For teams adding privacy controls on top of security.",
+    "install": {
+      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": false,
+    "difficulty": "beginner",
+    "cost": "free",
+    "tags": [
+      "compliance",
+      "legal"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "iso42001-skill",
+    "name": "ISO 42001 AI Management Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": [
+      "claude-desktop",
+      "claude-code"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "Guidance for an AI management system under ISO 42001.",
+    "why": "Govern your AI responsibly against the new AI-management standard.",
+    "install": {
+      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": false,
+    "difficulty": "beginner",
+    "cost": "free",
+    "tags": [
+      "compliance",
+      "legal"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "nist-ai-rmf-skill",
+    "name": "NIST AI RMF Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": [
+      "claude-desktop",
+      "claude-code"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "Applies the NIST AI Risk Management Framework (Govern/Map/Measure/Manage).",
+    "why": "Assess and manage AI risk with a widely-adopted US framework.",
+    "install": {
+      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": false,
+    "difficulty": "beginner",
+    "cost": "free",
+    "tags": [
+      "compliance",
+      "legal"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "pci-dss-skill",
+    "name": "PCI DSS Compliance Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": [
+      "claude-desktop",
+      "claude-code"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "Guides payment-card security scoping and the 12 PCI DSS requirements.",
+    "why": "Know what applies to you before a card-data audit.",
+    "install": {
+      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": false,
+    "difficulty": "beginner",
+    "cost": "free",
+    "tags": [
+      "compliance",
+      "legal"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "eu-ai-act-skill",
+    "name": "EU AI Act Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": [
+      "claude-desktop",
+      "claude-code"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "Classifies AI systems and explains obligations under the EU AI Act.",
+    "why": "Figure out your risk tier and duties for the EU's AI law.",
+    "install": {
+      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": false,
+    "difficulty": "beginner",
+    "cost": "free",
+    "tags": [
+      "compliance",
+      "legal"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "wcag-skill",
+    "name": "WCAG Accessibility Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": [
+      "claude-desktop",
+      "claude-code"
+    ],
+    "roles": [
+      "legal",
+      "ui-ux-designer"
+    ],
+    "what": "Audits content against WCAG accessibility success criteria.",
+    "why": "Make sites and docs usable for everyone \u2014 and meet accessibility law.",
+    "install": {
+      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": false,
+    "difficulty": "beginner",
+    "cost": "free",
+    "tags": [
+      "accessibility",
+      "compliance",
+      "legal"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "section-508-skill",
+    "name": "Section 508 Skill",
+    "type": "skill",
+    "surface": "both",
+    "tools": [
+      "claude-desktop",
+      "claude-code"
+    ],
+    "roles": [
+      "legal"
+    ],
+    "what": "US federal ICT accessibility (Section 508) audits and remediation.",
+    "why": "Meet federal accessibility requirements for public-sector work.",
+    "install": {
+      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
+    },
+    "docs": "https://www.anthropic.com/news/skills",
+    "official": false,
+    "difficulty": "beginner",
+    "cost": "free",
+    "tags": [
+      "accessibility",
+      "compliance",
+      "legal"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "openevidence",
+    "name": "OpenEvidence",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "healthcare"
+    ],
+    "what": "Clinical evidence engine trained on peer-reviewed medical literature.",
+    "why": "Fast, sourced answers to clinical questions at the point of care.",
+    "install": {
+      "standalone": "Use it at https://www.openevidence.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.openevidence.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "free",
+    "tags": [
+      "clinical",
+      "evidence",
+      "research"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "abridge",
+    "name": "Abridge",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "healthcare"
+    ],
+    "what": "Ambient AI medical scribe that drafts notes from the patient visit.",
+    "why": "Cuts documentation time with strong EHR integration.",
+    "install": {
+      "standalone": "Use it at https://www.abridge.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.abridge.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "enterprise",
+    "tags": [
+      "scribe",
+      "notes"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "suki",
+    "name": "Suki",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "healthcare"
+    ],
+    "what": "AI voice assistant and scribe for clinical documentation.",
+    "why": "Dictate and generate notes hands-free.",
+    "install": {
+      "standalone": "Use it at https://www.suki.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.suki.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "paid",
+    "tags": [
+      "scribe",
+      "voice"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "freed",
+    "name": "Freed",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "healthcare"
+    ],
+    "what": "AI scribe for clinicians with an easy free-to-try tier.",
+    "why": "A low-risk way to try ambient note-taking.",
+    "install": {
+      "standalone": "Use it at https://www.getfreed.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.getfreed.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "scribe",
+      "notes"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "heidi-health",
+    "name": "Heidi Health",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "healthcare"
+    ],
+    "what": "Popular AI medical scribe with a generous free tier.",
+    "why": "A zero-risk entry point to AI documentation.",
+    "install": {
+      "standalone": "Use it at https://www.heidihealth.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.heidihealth.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "scribe",
+      "notes"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "doximity-gpt",
+    "name": "Doximity GPT",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "healthcare"
+    ],
+    "what": "HIPAA-conscious AI writing tool for physicians (free).",
+    "why": "Draft letters, summaries, and documents quickly.",
+    "install": {
+      "standalone": "Use it at https://www.doximity.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.doximity.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "free",
+    "tags": [
+      "writing",
+      "physician"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "uptodate",
+    "name": "UpToDate",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "healthcare"
+    ],
+    "what": "Trusted clinical decision support and medical reference.",
+    "why": "Authoritative, evidence-based clinical guidance.",
+    "install": {
+      "standalone": "Use it at https://www.uptodate.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.uptodate.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "paid",
+    "tags": [
+      "reference",
+      "clinical"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "consensus",
+    "name": "Consensus",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "healthcare",
+      "data-analytics"
+    ],
+    "what": "AI search over scientific papers with evidence-based answers.",
+    "why": "Find what research actually says, with citations.",
+    "install": {
+      "standalone": "Use it at https://consensus.app \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://consensus.app",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "research",
+      "papers"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "julius-ai",
+    "name": "Julius AI",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "data-analytics",
+      "finance",
+      "business-analyst"
+    ],
+    "what": "Chat with your spreadsheets and databases to get analysis and charts.",
+    "why": "Analyze data in plain English \u2014 no code, great for non-technical users.",
+    "install": {
+      "standalone": "Use it at https://julius.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://julius.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "data",
+      "analysis",
+      "nocode"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "hex",
+    "name": "Hex",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "data-analytics",
+      "business-intelligence"
+    ],
+    "what": "AI-assisted notebooks that connect to your warehouse and share results.",
+    "why": "Turns analysis into repeatable, shareable team workflows.",
+    "install": {
+      "standalone": "Use it at https://hex.tech \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://hex.tech",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "paid",
+    "tags": [
+      "notebooks",
+      "warehouse"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "deepnote",
+    "name": "Deepnote",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "data-analytics"
+    ],
+    "what": "Collaborative AI data-science notebook.",
+    "why": "Team notebooks with an AI copilot for analysis.",
+    "install": {
+      "standalone": "Use it at https://deepnote.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://deepnote.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "notebooks",
+      "collaboration"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "thoughtspot",
+    "name": "ThoughtSpot",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "business-intelligence"
+    ],
+    "what": "Natural-language BI \u2014 ask questions, get governed dashboards.",
+    "why": "Self-serve analytics for the whole company.",
+    "install": {
+      "standalone": "Use it at https://www.thoughtspot.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.thoughtspot.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "enterprise",
+    "tags": [
+      "bi",
+      "nlq"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "powerbi-copilot",
+    "name": "Power BI Copilot",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "business-intelligence"
+    ],
+    "what": "Copilot inside Power BI to build and explain reports.",
+    "why": "Generate and interpret dashboards with AI in Power BI.",
+    "install": {
+      "standalone": "Use it at https://www.microsoft.com/power-platform/products/power-bi \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.microsoft.com/power-platform/products/power-bi",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "paid",
+    "tags": [
+      "bi",
+      "microsoft"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "rows",
+    "name": "Rows",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "data-analytics",
+      "finance"
+    ],
+    "what": "An AI spreadsheet that pulls in live data and analyzes it.",
+    "why": "A modern spreadsheet with AI and built-in data connectors.",
+    "install": {
+      "standalone": "Use it at https://rows.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://rows.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "spreadsheet",
+      "data"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "retool",
+    "name": "Retool",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "business-analyst"
+    ],
+    "what": "Build internal tools and AI apps fast with a visual builder.",
+    "why": "Ship internal dashboards and workflows without a full dev team.",
+    "install": {
+      "standalone": "Use it at https://retool.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://retool.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "internal-tools",
+      "builder"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "zapier",
+    "name": "Zapier",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "business-analyst",
+      "marketing",
+      "project-management"
+    ],
+    "what": "Connect thousands of apps and add AI steps to automate workflows.",
+    "why": "Automate repetitive busywork across your tools, no code.",
+    "install": {
+      "standalone": "Use it at https://zapier.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://zapier.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "automation",
+      "workflow"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "make",
+    "name": "Make",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "business-analyst",
+      "marketing"
+    ],
+    "what": "Visual automation platform to connect apps and AI.",
+    "why": "Build multi-step automations with a drag-and-drop canvas.",
+    "install": {
+      "standalone": "Use it at https://www.make.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.make.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "automation",
+      "workflow"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "amplitude",
+    "name": "Amplitude",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "business-intelligence",
+      "business-analyst",
+      "marketing"
+    ],
+    "what": "Product analytics with an AI data assistant.",
+    "why": "Understand user behavior and ask questions of your product data.",
+    "install": {
+      "standalone": "Use it at https://amplitude.com \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://amplitude.com",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "analytics",
+      "product"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "marketing",
+      "business-analyst",
+      "data-analytics"
+    ],
+    "what": "An AI answer engine that searches the web and cites its sources.",
+    "why": "Fast, cited research to replace a dozen open browser tabs.",
+    "install": {
+      "standalone": "Use it at https://www.perplexity.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.perplexity.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "research",
+      "search"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "jasper",
+    "name": "Jasper",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "marketing"
+    ],
+    "what": "AI writing platform built for marketing teams and brand voice.",
+    "why": "On-brand content at scale for campaigns and channels.",
+    "install": {
+      "standalone": "Use it at https://www.jasper.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.jasper.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "paid",
+    "tags": [
+      "writing",
+      "content"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "copy-ai",
+    "name": "Copy.ai",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "marketing"
+    ],
+    "what": "AI copywriting and go-to-market workflows.",
+    "why": "Draft marketing copy and automate GTM tasks.",
+    "install": {
+      "standalone": "Use it at https://www.copy.ai \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://www.copy.ai",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "writing",
+      "content"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "lovable",
+    "name": "Lovable",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "ui-ux-designer",
+      "software-developer"
+    ],
+    "what": "Build full web apps from a prompt (AI app builder).",
+    "why": "Go from idea to a working app without setting up a dev environment.",
+    "install": {
+      "standalone": "Use it at https://lovable.dev \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://lovable.dev",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "app-builder",
+      "nocode"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "bolt",
+    "name": "Bolt",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "ui-ux-designer",
+      "software-developer"
+    ],
+    "what": "Prompt-to-app builder that runs entirely in the browser.",
+    "why": "Spin up and preview a working web app in seconds.",
+    "install": {
+      "standalone": "Use it at https://bolt.new \u2014 sign up in your browser; nothing to install into another AI."
+    },
+    "docs": "https://bolt.new",
+    "official": true,
+    "difficulty": "beginner",
+    "cost": "freemium",
+    "tags": [
+      "app-builder",
+      "nocode"
+    ],
+    "last_verified": "2026-07",
+    "built_in": false
+  },
+  {
+    "id": "metabase",
+    "name": "Metabase",
+    "type": "connector",
+    "surface": "both",
+    "tools": [
+      "claude-desktop",
+      "claude-code"
+    ],
+    "roles": [
+      "business-intelligence",
+      "data-analytics"
+    ],
+    "what": "Connect your AI to Metabase, the open-source BI tool, for dashboards and queries.",
+    "why": "Ask questions of your data and build charts through a friendly BI layer.",
+    "install": {
+      "claude-code": "Add the Metabase MCP server (see the repo README)."
+    },
+    "docs": "https://github.com/metabase/metabase",
+    "official": false,
+    "difficulty": "intermediate",
+    "cost": "free",
+    "tags": [
+      "bi",
+      "dashboards",
+      "open-source"
+    ],
+    "last_verified": "2026-07",
+    "repo": "metabase/metabase",
+    "built_in": false
+  },
+  {
+    "id": "airtable",
+    "name": "Airtable",
+    "type": "connector",
+    "surface": "both",
+    "tools": [
+      "claude-desktop",
+      "claude-code"
+    ],
+    "roles": [
+      "business-analyst",
+      "project-management"
+    ],
+    "what": "Let your AI read and update Airtable bases (records, tables, views).",
+    "why": "Turn a chat into database updates without leaving the conversation.",
+    "install": {
+      "claude-code": "Add the Airtable MCP server (see the repo README)."
+    },
+    "docs": "https://github.com/domdomegg/airtable-mcp-server",
+    "official": false,
+    "difficulty": "intermediate",
+    "cost": "freemium",
+    "tags": [
+      "database",
+      "no-code"
+    ],
+    "last_verified": "2026-07",
+    "repo": "domdomegg/airtable-mcp-server",
+    "built_in": false
+  },
+  {
+    "id": "dbt",
+    "name": "dbt",
+    "type": "connector",
+    "surface": "code",
+    "tools": [
+      "claude-desktop",
+      "claude-code"
+    ],
+    "roles": [
+      "data-analytics"
+    ],
+    "what": "Let your AI work with your dbt data models and transformations.",
+    "why": "Explore and reason about your analytics pipeline in plain English.",
+    "install": {
+      "claude-code": "Add the dbt MCP server (see the repo README)."
+    },
+    "docs": "https://github.com/dbt-labs/dbt-core",
+    "official": false,
+    "difficulty": "intermediate",
+    "cost": "free",
+    "tags": [
+      "data",
+      "transform",
+      "warehouse"
+    ],
+    "last_verified": "2026-07",
+    "repo": "dbt-labs/dbt-core",
     "built_in": false
   }
 ]

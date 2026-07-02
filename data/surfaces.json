@@ -16,5 +16,11 @@
     "label": "Both",
     "emoji": "🔀",
     "description": "Works in both chat apps and coding agents."
+  },
+  {
+    "id": "standalone",
+    "label": "Standalone",
+    "emoji": "🌐",
+    "description": "Used on its own — it has its own website or app, and doesn't run inside Claude, ChatGPT, or Cursor."
   }
 ]
