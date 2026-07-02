@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07",
+  "generated_at": "2026-07-02",
   "stars_asof": "2026-07-02",
   "items": [
     {
@@ -530,7 +530,7 @@
       "repo": "anthropics/skills",
       "built_in": true,
       "cost": "free",
-      "stars": 157533
+      "stars": 157534
     },
     {
       "id": "docx-skill",
@@ -564,7 +564,7 @@
       "repo": "anthropics/skills",
       "built_in": true,
       "cost": "free",
-      "stars": 157533
+      "stars": 157534
     },
     {
       "id": "pptx-skill",
@@ -597,7 +597,7 @@
       "repo": "anthropics/skills",
       "built_in": true,
       "cost": "free",
-      "stars": 157533
+      "stars": 157534
     },
     {
       "id": "pdf-skill",
@@ -630,7 +630,7 @@
       "repo": "anthropics/skills",
       "built_in": true,
       "cost": "free",
-      "stars": 157533
+      "stars": 157534
     },
     {
       "id": "code-execution",
@@ -941,7 +941,7 @@
       "repo": "shadcn-ui/ui",
       "built_in": false,
       "cost": "free",
-      "stars": 117832
+      "stars": 117833
     },
     {
       "id": "v0",
@@ -1650,7 +1650,7 @@
       "repo": "JuliusBrussee/caveman",
       "built_in": false,
       "cost": "free",
-      "stars": 79345
+      "stars": 79347
     },
     {
       "id": "gstack",
@@ -1715,7 +1715,7 @@
       "repo": "safishamsi/graphify",
       "built_in": false,
       "cost": "free",
-      "stars": 75588
+      "stars": 75593
     },
     {
       "id": "claude-task-master",
@@ -1869,7 +1869,7 @@
       "repo": "farion1231/cc-switch",
       "built_in": false,
       "cost": "free",
-      "stars": 112191
+      "stars": 112192
     },
     {
       "id": "hermes-agent",
@@ -3912,7 +3912,7 @@
       "url": "https://github.com/anthropics/skills",
       "what": "Anthropic's own public collection of Agent Skills \u2014 the source of the built-in document skills (Word, PDF, Excel, PowerPoint) and more.",
       "official": true,
-      "stars": 157533
+      "stars": 157534
     },
     {
       "id": "composio-awesome-claude-skills",
@@ -3922,7 +3922,7 @@
       "url": "https://github.com/ComposioHQ/awesome-claude-skills",
       "what": "A well-organized, frequently-referenced curated list of Claude skills and integrations by category.",
       "official": false,
-      "stars": 66581
+      "stars": 66582
     },
     {
       "id": "hesreallyhim-awesome-claude-code",
@@ -3952,7 +3952,7 @@
       "url": "https://github.com/alirezarezvani/claude-skills",
       "what": "A large open library \u2014 330+ skills, 30+ agents, 70+ commands \u2014 spanning engineering, marketing, finance, compliance, and more.",
       "official": false,
-      "stars": 19652
+      "stars": 19653
     },
     {
       "id": "travisvn-awesome-claude-skills",
