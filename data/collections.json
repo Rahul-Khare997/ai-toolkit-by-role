@@ -1,0 +1,120 @@
+[
+  {
+    "id": "anthropics-skills",
+    "name": "Anthropic Skills (official)",
+    "kind": "collection",
+    "repo": "anthropics/skills",
+    "url": "https://github.com/anthropics/skills",
+    "what": "Anthropic's own public collection of Agent Skills — the source of the built-in document skills (Word, PDF, Excel, PowerPoint) and more.",
+    "official": true
+  },
+  {
+    "id": "composio-awesome-claude-skills",
+    "name": "Awesome Claude Skills (Composio)",
+    "kind": "collection",
+    "repo": "ComposioHQ/awesome-claude-skills",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "what": "A well-organized, frequently-referenced curated list of Claude skills and integrations by category.",
+    "official": false
+  },
+  {
+    "id": "hesreallyhim-awesome-claude-code",
+    "name": "Awesome Claude Code",
+    "kind": "collection",
+    "repo": "hesreallyhim/awesome-claude-code",
+    "url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "what": "A big curated list of skills, hooks, slash-commands, and configs for Claude Code.",
+    "official": false
+  },
+  {
+    "id": "voltagent-awesome-agent-skills",
+    "name": "Awesome Agent Skills (VoltAgent)",
+    "kind": "collection",
+    "repo": "VoltAgent/awesome-agent-skills",
+    "url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "what": "1000+ agent skills from official teams and the community, portable across Claude Code, Codex, Gemini CLI, Cursor, and more.",
+    "official": false
+  },
+  {
+    "id": "alirezarezvani-claude-skills",
+    "name": "claude-skills (337 skills)",
+    "kind": "collection",
+    "repo": "alirezarezvani/claude-skills",
+    "url": "https://github.com/alirezarezvani/claude-skills",
+    "what": "A large open library — 330+ skills, 30+ agents, 70+ commands — spanning engineering, marketing, finance, compliance, and more.",
+    "official": false
+  },
+  {
+    "id": "travisvn-awesome-claude-skills",
+    "name": "Awesome Claude Skills (travisvn)",
+    "kind": "collection",
+    "repo": "travisvn/awesome-claude-skills",
+    "url": "https://github.com/travisvn/awesome-claude-skills",
+    "what": "Another curated list of Claude skills, resources, and tools for customizing Claude workflows.",
+    "official": false
+  },
+  {
+    "id": "skillsmp",
+    "name": "SkillsMP",
+    "kind": "marketplace",
+    "url": "https://skillsmp.com/",
+    "what": "A huge searchable index of SKILL.md files scraped from public GitHub (millions indexed). Great for finding a specific skill; audit before installing.",
+    "official": false
+  },
+  {
+    "id": "claudeskills-info",
+    "name": "ClaudeSkills.info",
+    "kind": "marketplace",
+    "url": "https://claudeskills.info/skills/",
+    "what": "A browsable library of free, open-source Claude Code skills and agent skills.",
+    "official": false
+  },
+  {
+    "id": "claudemarketplaces",
+    "name": "Claude Marketplaces",
+    "kind": "marketplace",
+    "url": "https://claudemarketplaces.com/",
+    "what": "A community-curated directory of Claude Code skills, plugins, and MCP servers, updated daily from GitHub.",
+    "official": false
+  },
+  {
+    "id": "mcpmarket-skills",
+    "name": "MCP Market — Skills",
+    "kind": "marketplace",
+    "url": "https://mcpmarket.com/tools/skills",
+    "what": "A directory of Agent Skills for Claude.ai, Claude Code, Codex, and ChatGPT, alongside MCP servers.",
+    "official": false
+  },
+  {
+    "id": "lobehub-skills",
+    "name": "LobeHub Skills",
+    "kind": "marketplace",
+    "url": "https://lobehub.com/skills",
+    "what": "A polished skills marketplace for Claude, Codex, and ChatGPT within the LobeHub ecosystem.",
+    "official": false
+  },
+  {
+    "id": "skillsllm",
+    "name": "SkillsLLM",
+    "kind": "marketplace",
+    "url": "https://skillsllm.com/",
+    "what": "A directory of AI skills and agents by category, linking through to their GitHub repos.",
+    "official": false
+  },
+  {
+    "id": "aiskill-market",
+    "name": "aiskill.market",
+    "kind": "marketplace",
+    "url": "https://aiskill.market/browse",
+    "what": "A browsable marketplace of skills, plugins, and commands with install counts (thousands of publishers).",
+    "official": false
+  },
+  {
+    "id": "skills-sh",
+    "name": "skills.sh",
+    "kind": "marketplace",
+    "url": "https://skills.sh/",
+    "what": "An npm-style installer for skills — one command adds a skill across Claude Code, Codex CLI, and Cursor.",
+    "official": false
+  }
+]

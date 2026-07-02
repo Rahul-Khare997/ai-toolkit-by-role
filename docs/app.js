@@ -4,11 +4,13 @@
 
   const state = {
     q: "",
+    sort: "stars",
     roles: new Set(),
     surfaces: new Set(),
     types: new Set(),
     tools: new Set(),
   };
+  const kfmt = (n) => (n == null ? "" : n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, "") + "k" : String(n));
   let DATA = null;
   let toolLabel = {}, typeById = {}, surfaceById = {};
 
@@ -34,14 +36,40 @@
     renderBadges();
     renderDefs();
     renderChips();
+    renderCollections();
     preselectFromURL();
 
     $("search").addEventListener("input", (e) => {
       state.q = e.target.value.trim().toLowerCase();
       render();
     });
+    $("sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
     $("clear").addEventListener("click", clearAll);
     render();
+  }
+
+  function renderCollections() {
+    const colls = (DATA.collections || []).filter((c) => c.kind === "collection");
+    const markets = (DATA.collections || []).filter((c) => c.kind === "marketplace");
+    const cg = $("collGrid");
+    colls.forEach((c) => {
+      const a = el("a", "coll-card");
+      a.href = c.url; a.target = "_blank"; a.rel = "noopener";
+      const h = el("div", "coll-top");
+      h.appendChild(el("span", "coll-name", c.name + (c.official ? " ✓" : "")));
+      if (c.stars) h.appendChild(el("span", "coll-stars", "⭐ " + kfmt(c.stars)));
+      a.appendChild(h);
+      a.appendChild(el("p", "coll-what", c.what));
+      cg.appendChild(a);
+    });
+    const ml = $("marketList");
+    markets.forEach((c) => {
+      const a = el("a", "market-item");
+      a.href = c.url; a.target = "_blank"; a.rel = "noopener";
+      a.appendChild(el("span", "market-name", c.name));
+      a.appendChild(el("span", "market-what", c.what));
+      ml.appendChild(a);
+    });
   }
 
   function renderBadges() {
@@ -129,7 +157,10 @@
     a.href = item.docs; a.target = "_blank"; a.rel = "noopener";
     h.appendChild(a);
     top.appendChild(h);
-    if (item.official) top.appendChild(el("span", "official", "✓ official"));
+    const meta = el("div", "card-meta");
+    if (item.stars) meta.appendChild(el("span", "stars", "⭐ " + kfmt(item.stars)));
+    if (item.official) meta.appendChild(el("span", "official", "✓"));
+    top.appendChild(meta);
     c.appendChild(top);
 
     const tags = el("div", "tags-row");
@@ -137,6 +168,7 @@
     tags.appendChild(el("span", `tag type-${item.type}`, `${ty.emoji} ${ty.label}`));
     tags.appendChild(el("span", `tag surface-${item.surface}`, `${su.emoji} ${su.label}`));
     tags.appendChild(el("span", "tag", item.difficulty));
+    if (item.built_in) tags.appendChild(el("span", "tag builtin", "🧰 built-in"));
     c.appendChild(tags);
 
     c.appendChild(el("p", "what", item.what));
@@ -157,9 +189,12 @@
       grid.innerHTML = '<p class="empty">No tools match those filters. Try clearing some.</p>';
       return;
     }
-    results
-      .sort((a, b) => (a.difficulty !== "beginner") - (b.difficulty !== "beginner") || a.name.localeCompare(b.name))
-      .forEach((it) => grid.appendChild(card(it)));
+    const cmp = {
+      stars: (a, b) => (b.stars || 0) - (a.stars || 0) || a.name.localeCompare(b.name),
+      beginner: (a, b) => (a.difficulty !== "beginner") - (b.difficulty !== "beginner") || (b.stars || 0) - (a.stars || 0),
+      name: (a, b) => a.name.localeCompare(b.name),
+    };
+    results.sort(cmp[state.sort] || cmp.stars).forEach((it) => grid.appendChild(card(it)));
   }
 
   function clearAll() {

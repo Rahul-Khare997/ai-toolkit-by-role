@@ -1,5 +1,6 @@
 {
   "generated_at": "2026-07",
+  "stars_asof": "2026-07-02",
   "items": [
     {
       "id": "web-search",
@@ -32,7 +33,8 @@
         "research",
         "web"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "fetch-url",
@@ -64,7 +66,10 @@
         "reading",
         "research"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "modelcontextprotocol/servers",
+      "built_in": false,
+      "stars": 87956
     },
     {
       "id": "filesystem",
@@ -94,7 +99,10 @@
         "files",
         "local"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "modelcontextprotocol/servers",
+      "built_in": false,
+      "stars": 87956
     },
     {
       "id": "memory",
@@ -122,7 +130,10 @@
         "memory",
         "context"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "modelcontextprotocol/servers",
+      "built_in": false,
+      "stars": 87956
     },
     {
       "id": "sequential-thinking",
@@ -149,7 +160,10 @@
         "reasoning",
         "planning"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "modelcontextprotocol/servers",
+      "built_in": false,
+      "stars": 87956
     },
     {
       "id": "github",
@@ -183,7 +197,10 @@
         "code",
         "collaboration"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "github/github-mcp-server",
+      "built_in": false,
+      "stars": 31125
     },
     {
       "id": "context7",
@@ -213,7 +230,10 @@
         "code",
         "accuracy"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "upstash/context7",
+      "built_in": false,
+      "stars": 58459
     },
     {
       "id": "playwright",
@@ -243,7 +263,10 @@
         "testing",
         "automation"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "microsoft/playwright-mcp",
+      "built_in": false,
+      "stars": 34591
     },
     {
       "id": "postgres",
@@ -275,7 +298,10 @@
         "sql",
         "data"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "modelcontextprotocol/servers",
+      "built_in": false,
+      "stars": 87956
     },
     {
       "id": "sqlite",
@@ -304,7 +330,10 @@
         "local",
         "data"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "modelcontextprotocol/servers",
+      "built_in": false,
+      "stars": 87956
     },
     {
       "id": "sentry",
@@ -332,7 +361,10 @@
         "monitoring",
         "code"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "getsentry/sentry-mcp",
+      "built_in": false,
+      "stars": 749
     },
     {
       "id": "docker",
@@ -359,7 +391,8 @@
         "containers",
         "code"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "semgrep",
@@ -386,7 +419,10 @@
         "code",
         "quality"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "semgrep/mcp",
+      "built_in": false,
+      "stars": 674
     },
     {
       "id": "cursor-rules",
@@ -412,7 +448,8 @@
         "code",
         "style"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "agents-md",
@@ -443,7 +480,8 @@
         "code",
         "context"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "xlsx-skill",
@@ -473,7 +511,10 @@
         "excel",
         "reports"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "anthropics/skills",
+      "built_in": true,
+      "stars": 157510
     },
     {
       "id": "docx-skill",
@@ -503,7 +544,10 @@
         "word",
         "writing"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "anthropics/skills",
+      "built_in": true,
+      "stars": 157510
     },
     {
       "id": "pptx-skill",
@@ -532,7 +576,10 @@
         "slides",
         "presentations"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "anthropics/skills",
+      "built_in": true,
+      "stars": 157510
     },
     {
       "id": "pdf-skill",
@@ -561,7 +608,10 @@
         "pdf",
         "documents"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "anthropics/skills",
+      "built_in": true,
+      "stars": 157510
     },
     {
       "id": "code-execution",
@@ -591,7 +641,8 @@
         "python",
         "charts"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": true
     },
     {
       "id": "stripe",
@@ -621,7 +672,10 @@
         "finance",
         "revenue"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "stripe/agent-toolkit",
+      "built_in": false,
+      "stars": 1644
     },
     {
       "id": "financial-data",
@@ -649,7 +703,8 @@
         "markets",
         "data"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "quickbooks",
@@ -674,7 +729,8 @@
         "accounting",
         "finance"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "bigquery",
@@ -702,7 +758,8 @@
         "warehouse",
         "data"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "snowflake",
@@ -730,7 +787,8 @@
         "data",
         "sql"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "google-sheets",
@@ -759,7 +817,8 @@
         "google",
         "data"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "powerbi-tableau",
@@ -786,7 +845,8 @@
         "dashboards",
         "data"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "figma",
@@ -818,7 +878,8 @@
         "figma",
         "ui"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "shadcn",
@@ -848,7 +909,10 @@
         "components",
         "frontend"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "shadcn-ui/ui",
+      "built_in": false,
+      "stars": 117829
     },
     {
       "id": "v0",
@@ -875,7 +939,8 @@
         "prototype",
         "design"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "image-generation",
@@ -905,7 +970,8 @@
         "design",
         "creative"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "canva",
@@ -934,7 +1000,8 @@
         "graphics",
         "canva"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "youtube-transcript",
@@ -962,7 +1029,8 @@
         "youtube",
         "content"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "video-generation",
@@ -991,7 +1059,8 @@
         "creative",
         "generation"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "atlassian",
@@ -1022,7 +1091,8 @@
         "confluence",
         "pm"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "notion",
@@ -1053,7 +1123,8 @@
         "docs",
         "pm"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "linear",
@@ -1083,7 +1154,8 @@
         "pm",
         "planning"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "slack",
@@ -1112,7 +1184,8 @@
         "team",
         "communication"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "google-analytics",
@@ -1140,7 +1213,8 @@
         "marketing",
         "web"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "apify",
@@ -1170,7 +1244,10 @@
         "data",
         "research"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "repo": "apify/actors-mcp-server",
+      "built_in": false,
+      "stars": 1514
     },
     {
       "id": "seo-data",
@@ -1197,7 +1274,8 @@
         "marketing",
         "research"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "gdpr-skill",
@@ -1225,7 +1303,8 @@
         "privacy",
         "compliance"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "dpdpa-skill",
@@ -1253,7 +1332,8 @@
         "privacy",
         "india"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "contract-review",
@@ -1280,7 +1360,8 @@
         "contracts",
         "review"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "hipaa-skill",
@@ -1309,7 +1390,8 @@
         "privacy",
         "compliance"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "pubmed",
@@ -1336,7 +1418,8 @@
         "research",
         "citations"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "claude-code-plugins",
@@ -1363,7 +1446,8 @@
         "extend",
         "code"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
     },
     {
       "id": "custom-gpts",
@@ -1391,7 +1475,371 @@
         "no-code",
         "reusable"
       ],
-      "last_verified": "2026-07"
+      "last_verified": "2026-07",
+      "built_in": false
+    },
+    {
+      "id": "superpowers",
+      "name": "Superpowers",
+      "type": "plugin",
+      "surface": "code",
+      "tools": [
+        "claude-code"
+      ],
+      "roles": [
+        "must-have",
+        "software-developer"
+      ],
+      "what": "A framework that gives Claude Code a big library of expert 'skills' plus a disciplined workflow (planning, testing, code review).",
+      "why": "One install turns Claude Code into a far more capable, methodical developer instead of a one-off helper.",
+      "install": {
+        "claude-code": "Run: /plugin marketplace add obra/superpowers, then /plugin install superpowers"
+      },
+      "docs": "https://github.com/obra/superpowers",
+      "official": false,
+      "difficulty": "intermediate",
+      "tags": [
+        "framework",
+        "workflow",
+        "skills"
+      ],
+      "last_verified": "2026-07",
+      "repo": "obra/superpowers",
+      "built_in": false,
+      "stars": 243839
+    },
+    {
+      "id": "everything-claude-code",
+      "name": "Everything Claude Code (ECC)",
+      "type": "plugin",
+      "surface": "code",
+      "tools": [
+        "claude-code",
+        "codex",
+        "cursor"
+      ],
+      "roles": [
+        "software-developer"
+      ],
+      "what": "A power-user setup for coding agents: bundled skills, memory, security checks, and research-first habits.",
+      "why": "A tuned configuration that makes agents faster and more reliable on real projects \u2014 for people past the basics.",
+      "install": {
+        "claude-code": "Follow the repo's install script to apply the ECC configuration."
+      },
+      "docs": "https://github.com/affaan-m/ECC",
+      "official": false,
+      "difficulty": "advanced",
+      "tags": [
+        "framework",
+        "performance",
+        "advanced"
+      ],
+      "last_verified": "2026-07",
+      "repo": "affaan-m/ECC",
+      "built_in": false,
+      "stars": 224822
+    },
+    {
+      "id": "claude-mem",
+      "name": "claude-mem (persistent memory)",
+      "type": "plugin",
+      "surface": "code",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex"
+      ],
+      "roles": [
+        "must-have",
+        "software-developer",
+        "project-management"
+      ],
+      "what": "Gives your coding agent a memory across sessions by capturing and compressing what it did.",
+      "why": "Stop re-explaining your project every session \u2014 the agent remembers past work and decisions.",
+      "install": {
+        "claude-code": "Run: npx claude-mem install (see the repo README)."
+      },
+      "docs": "https://github.com/thedotmack/claude-mem",
+      "official": false,
+      "difficulty": "beginner",
+      "tags": [
+        "memory",
+        "context"
+      ],
+      "last_verified": "2026-07",
+      "repo": "thedotmack/claude-mem",
+      "built_in": false,
+      "stars": 85444
+    },
+    {
+      "id": "caveman-skill",
+      "name": "Caveman (token saver)",
+      "type": "skill",
+      "surface": "code",
+      "tools": [
+        "claude-code"
+      ],
+      "roles": [
+        "software-developer"
+      ],
+      "what": "Makes the AI reply in an ultra-compressed 'caveman' style to save tokens (and money).",
+      "why": "Cuts token use by roughly 65% on long sessions with no loss of technical accuracy.",
+      "install": {
+        "claude-code": "Run: /plugin marketplace add JuliusBrussee/caveman, then install the caveman skill."
+      },
+      "docs": "https://github.com/JuliusBrussee/caveman",
+      "official": false,
+      "difficulty": "beginner",
+      "tags": [
+        "tokens",
+        "cost",
+        "efficiency"
+      ],
+      "last_verified": "2026-07",
+      "repo": "JuliusBrussee/caveman",
+      "built_in": false,
+      "stars": 79293
+    },
+    {
+      "id": "gstack",
+      "name": "gstack (startup-team setup)",
+      "type": "plugin",
+      "surface": "code",
+      "tools": [
+        "claude-code"
+      ],
+      "roles": [
+        "software-developer",
+        "project-management",
+        "ui-ux-designer"
+      ],
+      "what": "A bundle of 23 opinionated tools that act like a startup team \u2014 CEO, designer, eng manager, and QA roles.",
+      "why": "A ready-made 'team in a box' for building products with Claude Code, based on a well-known founder's setup.",
+      "install": {
+        "claude-code": "Follow the gstack repo instructions to install the tool bundle."
+      },
+      "docs": "https://github.com/garrytan/gstack",
+      "official": false,
+      "difficulty": "intermediate",
+      "tags": [
+        "framework",
+        "startup",
+        "workflow"
+      ],
+      "last_verified": "2026-07",
+      "repo": "garrytan/gstack",
+      "built_in": false,
+      "stars": 118808
+    },
+    {
+      "id": "graphify",
+      "name": "Graphify (code/docs knowledge graph)",
+      "type": "skill",
+      "surface": "code",
+      "tools": [
+        "claude-code",
+        "codex",
+        "cursor"
+      ],
+      "roles": [
+        "data-analytics",
+        "software-developer"
+      ],
+      "what": "Turns a folder of code, SQL schemas, or docs into a queryable knowledge graph the AI can explore.",
+      "why": "Ask questions across a whole codebase or dataset at once, instead of file by file.",
+      "install": {
+        "claude-code": "Install the graphify skill from its repo, then point it at a folder."
+      },
+      "docs": "https://github.com/safishamsi/graphify",
+      "official": false,
+      "difficulty": "intermediate",
+      "tags": [
+        "knowledge-graph",
+        "data",
+        "code"
+      ],
+      "last_verified": "2026-07",
+      "repo": "safishamsi/graphify",
+      "built_in": false,
+      "stars": 75554
+    },
+    {
+      "id": "claude-task-master",
+      "name": "Task Master",
+      "type": "plugin",
+      "surface": "code",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex"
+      ],
+      "roles": [
+        "project-management",
+        "software-developer"
+      ],
+      "what": "An AI task-management system that breaks a project into tasks your agent works through one by one.",
+      "why": "Keeps big builds organized and on-track so the agent ships step by step instead of wandering.",
+      "install": {
+        "claude-code": "Run: npm i -g task-master-ai (see repo), then initialize it in your project."
+      },
+      "docs": "https://github.com/eyaltoledano/claude-task-master",
+      "official": false,
+      "difficulty": "beginner",
+      "tags": [
+        "tasks",
+        "planning",
+        "pm"
+      ],
+      "last_verified": "2026-07",
+      "repo": "eyaltoledano/claude-task-master",
+      "built_in": false,
+      "stars": 27748
+    },
+    {
+      "id": "subagents-collection",
+      "name": "Sub-agents collection",
+      "type": "plugin",
+      "surface": "code",
+      "tools": [
+        "claude-code"
+      ],
+      "roles": [
+        "software-developer"
+      ],
+      "what": "A marketplace of specialized sub-agents (code reviewer, debugger, architect) for Claude Code.",
+      "why": "Drop in expert helpers for specific jobs instead of relying on one generalist agent.",
+      "install": {
+        "claude-code": "Run: /plugin marketplace add wshobson/agents, then install the agents you want."
+      },
+      "docs": "https://github.com/wshobson/agents",
+      "official": false,
+      "difficulty": "intermediate",
+      "tags": [
+        "agents",
+        "subagents"
+      ],
+      "last_verified": "2026-07",
+      "repo": "wshobson/agents",
+      "built_in": false,
+      "stars": 37424
+    },
+    {
+      "id": "claude-code-templates",
+      "name": "Claude Code Templates",
+      "type": "plugin",
+      "surface": "code",
+      "tools": [
+        "claude-code"
+      ],
+      "roles": [
+        "software-developer"
+      ],
+      "what": "A CLI that sets up and monitors Claude Code with ready-made configs and dashboards.",
+      "why": "Skip manual setup \u2014 get a solid Claude Code configuration and health view in one command.",
+      "install": {
+        "claude-code": "Run: npx claude-code-templates@latest"
+      },
+      "docs": "https://github.com/davila7/claude-code-templates",
+      "official": false,
+      "difficulty": "beginner",
+      "tags": [
+        "setup",
+        "config",
+        "cli"
+      ],
+      "last_verified": "2026-07",
+      "repo": "davila7/claude-code-templates",
+      "built_in": false,
+      "stars": 28409
+    },
+    {
+      "id": "design-review-workflows",
+      "name": "Design-Review Workflows",
+      "type": "rule",
+      "surface": "code",
+      "tools": [
+        "claude-code"
+      ],
+      "roles": [
+        "ui-ux-designer",
+        "software-developer"
+      ],
+      "what": "Battle-tested Claude Code workflows and configs, including strong automated design-review passes.",
+      "why": "Copy proven setups (like a rigorous UI review) instead of inventing your own from scratch.",
+      "install": {
+        "claude-code": "Copy the workflow/config files from the repo into your project."
+      },
+      "docs": "https://github.com/OneRedOak/claude-code-workflows",
+      "official": false,
+      "difficulty": "beginner",
+      "tags": [
+        "workflows",
+        "design-review",
+        "ui"
+      ],
+      "last_verified": "2026-07",
+      "repo": "OneRedOak/claude-code-workflows",
+      "built_in": false,
+      "stars": 3848
+    },
+    {
+      "id": "cc-switch",
+      "name": "cc-switch (agent manager)",
+      "type": "extension",
+      "surface": "code",
+      "tools": [
+        "claude-code",
+        "codex"
+      ],
+      "roles": [
+        "software-developer"
+      ],
+      "what": "A desktop app to manage and switch between Claude Code, Codex, and OpenCode setups in one place.",
+      "why": "Handy if you use more than one coding agent and want a single control panel.",
+      "install": {
+        "claude-code": "Download the cc-switch desktop app from the repo releases."
+      },
+      "docs": "https://github.com/farion1231/cc-switch",
+      "official": false,
+      "difficulty": "beginner",
+      "tags": [
+        "desktop",
+        "utility",
+        "multi-tool"
+      ],
+      "last_verified": "2026-07",
+      "repo": "farion1231/cc-switch",
+      "built_in": false,
+      "stars": 112157
+    },
+    {
+      "id": "hermes-agent",
+      "name": "Hermes Agent",
+      "type": "plugin",
+      "surface": "code",
+      "tools": [
+        "claude-code"
+      ],
+      "roles": [
+        "software-developer"
+      ],
+      "what": "An open agent framework designed to adapt and improve as you work with it.",
+      "why": "A widely-starred community framework for building agents that get better over time.",
+      "install": {
+        "claude-code": "Follow the hermes-agent repo setup instructions."
+      },
+      "docs": "https://github.com/NousResearch/hermes-agent",
+      "official": false,
+      "difficulty": "advanced",
+      "tags": [
+        "agent",
+        "framework",
+        "open-source"
+      ],
+      "last_verified": "2026-07",
+      "repo": "NousResearch/hermes-agent",
+      "built_in": false,
+      "stars": 207594
     }
   ],
   "roles": [
@@ -1595,34 +2043,162 @@
       "description": "Works in both chat apps and coding agents."
     }
   ],
+  "collections": [
+    {
+      "id": "anthropics-skills",
+      "name": "Anthropic Skills (official)",
+      "kind": "collection",
+      "repo": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "what": "Anthropic's own public collection of Agent Skills \u2014 the source of the built-in document skills (Word, PDF, Excel, PowerPoint) and more.",
+      "official": true,
+      "stars": 157510
+    },
+    {
+      "id": "composio-awesome-claude-skills",
+      "name": "Awesome Claude Skills (Composio)",
+      "kind": "collection",
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "what": "A well-organized, frequently-referenced curated list of Claude skills and integrations by category.",
+      "official": false,
+      "stars": 66576
+    },
+    {
+      "id": "hesreallyhim-awesome-claude-code",
+      "name": "Awesome Claude Code",
+      "kind": "collection",
+      "repo": "hesreallyhim/awesome-claude-code",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "what": "A big curated list of skills, hooks, slash-commands, and configs for Claude Code.",
+      "official": false,
+      "stars": 47762
+    },
+    {
+      "id": "voltagent-awesome-agent-skills",
+      "name": "Awesome Agent Skills (VoltAgent)",
+      "kind": "collection",
+      "repo": "VoltAgent/awesome-agent-skills",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "what": "1000+ agent skills from official teams and the community, portable across Claude Code, Codex, Gemini CLI, Cursor, and more.",
+      "official": false,
+      "stars": 27081
+    },
+    {
+      "id": "alirezarezvani-claude-skills",
+      "name": "claude-skills (337 skills)",
+      "kind": "collection",
+      "repo": "alirezarezvani/claude-skills",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "what": "A large open library \u2014 330+ skills, 30+ agents, 70+ commands \u2014 spanning engineering, marketing, finance, compliance, and more.",
+      "official": false,
+      "stars": 19646
+    },
+    {
+      "id": "travisvn-awesome-claude-skills",
+      "name": "Awesome Claude Skills (travisvn)",
+      "kind": "collection",
+      "repo": "travisvn/awesome-claude-skills",
+      "url": "https://github.com/travisvn/awesome-claude-skills",
+      "what": "Another curated list of Claude skills, resources, and tools for customizing Claude workflows.",
+      "official": false,
+      "stars": 13868
+    },
+    {
+      "id": "aiskill-market",
+      "name": "aiskill.market",
+      "kind": "marketplace",
+      "url": "https://aiskill.market/browse",
+      "what": "A browsable marketplace of skills, plugins, and commands with install counts (thousands of publishers).",
+      "official": false
+    },
+    {
+      "id": "claudemarketplaces",
+      "name": "Claude Marketplaces",
+      "kind": "marketplace",
+      "url": "https://claudemarketplaces.com/",
+      "what": "A community-curated directory of Claude Code skills, plugins, and MCP servers, updated daily from GitHub.",
+      "official": false
+    },
+    {
+      "id": "claudeskills-info",
+      "name": "ClaudeSkills.info",
+      "kind": "marketplace",
+      "url": "https://claudeskills.info/skills/",
+      "what": "A browsable library of free, open-source Claude Code skills and agent skills.",
+      "official": false
+    },
+    {
+      "id": "lobehub-skills",
+      "name": "LobeHub Skills",
+      "kind": "marketplace",
+      "url": "https://lobehub.com/skills",
+      "what": "A polished skills marketplace for Claude, Codex, and ChatGPT within the LobeHub ecosystem.",
+      "official": false
+    },
+    {
+      "id": "mcpmarket-skills",
+      "name": "MCP Market \u2014 Skills",
+      "kind": "marketplace",
+      "url": "https://mcpmarket.com/tools/skills",
+      "what": "A directory of Agent Skills for Claude.ai, Claude Code, Codex, and ChatGPT, alongside MCP servers.",
+      "official": false
+    },
+    {
+      "id": "skills-sh",
+      "name": "skills.sh",
+      "kind": "marketplace",
+      "url": "https://skills.sh/",
+      "what": "An npm-style installer for skills \u2014 one command adds a skill across Claude Code, Codex CLI, and Cursor.",
+      "official": false
+    },
+    {
+      "id": "skillsllm",
+      "name": "SkillsLLM",
+      "kind": "marketplace",
+      "url": "https://skillsllm.com/",
+      "what": "A directory of AI skills and agents by category, linking through to their GitHub repos.",
+      "official": false
+    },
+    {
+      "id": "skillsmp",
+      "name": "SkillsMP",
+      "kind": "marketplace",
+      "url": "https://skillsmp.com/",
+      "what": "A huge searchable index of SKILL.md files scraped from public GitHub (millions indexed). Great for finding a specific skill; audit before installing.",
+      "official": false
+    }
+  ],
   "stats": {
-    "total": 48,
+    "total": 60,
     "by_type": {
-      "skill": 11,
+      "skill": 13,
       "connector": 32,
-      "plugin": 2,
-      "rule": 2,
-      "extension": 1
+      "plugin": 10,
+      "rule": 3,
+      "extension": 2
     },
     "by_surface": {
       "chat": 6,
-      "code": 8,
+      "code": 20,
       "both": 34
     },
     "by_role": {
-      "must-have": 8,
-      "software-developer": 17,
+      "must-have": 10,
+      "software-developer": 29,
       "finance": 7,
-      "data-analytics": 9,
-      "ui-ux-designer": 4,
+      "data-analytics": 10,
+      "ui-ux-designer": 6,
       "legal": 6,
       "healthcare": 2,
       "business-intelligence": 6,
       "business-analyst": 10,
       "graphic-designer": 4,
       "video-creator": 2,
-      "project-management": 8,
+      "project-management": 11,
       "marketing": 14
-    }
+    },
+    "with_stars": 30,
+    "built_in": 5
   }
 }

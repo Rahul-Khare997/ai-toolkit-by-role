@@ -45,7 +45,16 @@
       <div class="filter-group"><span class="glabel">Tool</span><span class="chips" id="toolChips"></span></div>
       <div class="toolbar">
         <span class="count" id="count">—</span>
-        <button class="clear" id="clear">Clear all filters</button>
+        <div class="toolbar-right">
+          <label class="sortlabel">Sort
+            <select id="sort">
+              <option value="stars">⭐ Most stars</option>
+              <option value="beginner">Beginner first</option>
+              <option value="name">A–Z</option>
+            </select>
+          </label>
+          <button class="clear" id="clear">Clear filters</button>
+        </div>
       </div>
     </div>
   </div>
@@ -53,6 +62,15 @@
   <main class="wrap">
     <div class="grid" id="grid"></div>
   </main>
+
+  <section class="wrap collections" id="collectionsSection">
+    <h2>🧭 Where to find more skills</h2>
+    <p class="csub">Once you outgrow this starter list, these are the best places to discover more — with live GitHub star counts.</p>
+    <h3 class="chead">⭐ Curated collections (open-source)</h3>
+    <div class="coll-grid" id="collGrid"></div>
+    <h3 class="chead">🌐 Marketplaces &amp; directories</h3>
+    <div class="market-list" id="marketList"></div>
+  </section>
 
   <footer>
     <div class="wrap">

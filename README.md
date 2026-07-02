@@ -6,14 +6,17 @@
 
 # 🧰 AI Toolkit by Role
 
-**New to AI and not sure what to install? Start here.** A plain-English, filterable directory of the AI **skills**, **connectors**, and **plugins** worth setting up — organized by *your job* and mapped across Claude, ChatGPT, Cursor, Codex, Gemini, and more.
+**New to AI and not sure what to install? Start here.** A plain-English, filterable directory of the AI **skills**, **connectors**, and **plugins** worth setting up — organized by *your job*, mapped across Claude, ChatGPT, Cursor, Codex, Gemini and more, and ranked by real **GitHub stars**.
 
 ### 👉 [**Open the filterable website**](https://rahul-khare997.github.io/ai-toolkit-by-role/) — search and filter by role, tool, type, and where it works.
 
-![items](https://img.shields.io/badge/tools%20listed-48-blue)
+![items](https://img.shields.io/badge/tools%20listed-60-blue)
 ![roles](https://img.shields.io/badge/roles-13-brightgreen)
+![with stars](https://img.shields.io/badge/live%20star%20counts-30-yellow)
 ![beginner friendly](https://img.shields.io/badge/beginner-friendly-orange)
 ![PRs welcome](https://img.shields.io/badge/PRs-welcome-purple)
+
+> ⭐ Star counts are pulled live from GitHub and refreshed weekly (as of 2026-07-02). 🧰 = built into Claude already, so you may not need to install it.
 
 ---
 
@@ -35,7 +38,7 @@ Some of these work in **chat apps**, some only in **coding agents**, and some in
 - **⌨️ Code** — Works in AI coding agents like Claude Code, Codex, or Cursor — tools that can read and edit your files and run commands for you.
 - **🔀 Both** — Works in both chat apps and coding agents.
 
-> This matters! A connector that works in Claude Desktop (a chat app) might need different setup — or not exist yet — in Cursor (a coding tool). Every item below is tagged with where it works.
+> This matters! Many of the most popular skills (Superpowers, claude-mem, caveman…) are **⌨️ code-only** — they work in Claude Code or Cursor but **not** in a chat app like ChatGPT. Every item below is tagged with where it works.
 
 ---
 
@@ -44,9 +47,10 @@ Some of these work in **chat apps**, some only in **coding agents**, and some in
 1. **Find your role** below (or use the [website](https://rahul-khare997.github.io/ai-toolkit-by-role/) to filter).
 2. Start with **⭐ Must-have for everyone**, then your specific role.
 3. Check the **Works in** column so you set it up in the right kind of tool.
-4. Follow the **Docs** link for exact, up-to-date install steps.
+4. Skip anything marked **🧰 built-in** — Claude already ships it.
+5. Follow the **name link** for exact, up-to-date install steps.
 
-> ⚠️ **Please read:** this is a community-curated starting point, not official docs. The AI space changes fast — always confirm install steps and permissions at the official **Docs** link before installing. Give connectors the *least* access they need (read-only when possible). Last checked: 2026-07.
+> ⚠️ **Please read:** community-curated, not official docs. The AI space changes fast — always confirm install steps and permissions at the linked source before installing, and give connectors the *least* access they need (read-only when possible). Content last checked: 2026-07.
 
 ---
 
@@ -57,218 +61,266 @@ Some of these work in **chat apps**, some only in **coding agents**, and some in
 
 Start here. These work for almost any job and are the best first things to set up.
 
-| Tool | Type | Works in | Available in | What it does & why |
-|:-----|:-----|:--------:|:-------------|:-------------------|
-| **[Claude Code Plugins](https://docs.claude.com/en/docs/claude-code/plugins)** ✓ | 🧩 Plugin | ⌨️ Code | Claude Code | **Installable bundles that add a set of skills, slash-commands, and connectors to Claude Code at once.** Instead of wiring things up one by one, install a ready-made bundle (for code review, memory, and more) with a single command. |
-| **[Custom GPTs](https://help.openai.com/en/articles/8554397-creating-a-gpt)** ✓ | 🧩 Plugin | 💬 Chat | ChatGPT | **Custom versions of ChatGPT that bundle instructions, knowledge, and actions for a specific job.** Set up a reusable assistant once (e.g. 'my brand-voice writer') and everyone can use it — no prompt engineering each time. |
-| **[Fetch (read a URL)](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex, Gemini CLI | **Give your AI a link and it fetches the page and reads it.** Perfect for 'summarize this article' or 'pull the key points from this page' without copy-pasting. |
-| **[Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Lets your AI read and write files in folders you choose on your computer.** So a chat app can open your documents and save results. (Coding agents like Claude Code and Cursor can already touch files, so this matters most for chat apps like Claude Desktop.) |
-| **[GitHub](https://github.com/github/github-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex, GitHub Copilot | **Lets your AI read and manage your GitHub — code, issues, and pull requests.** Say 'summarize these open issues' or 'open a PR with this fix' instead of clicking around GitHub yourself. |
-| **[Memory](https://github.com/modelcontextprotocol/servers/tree/main/src/memory)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Gives your AI a long-term memory that survives between conversations.** So you don't re-explain your project, preferences, or facts every time. It remembers what matters. |
-| **[Sequential Thinking](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Helps the AI break a hard problem into clear, ordered steps before answering.** Noticeably better results on tricky, multi-step tasks — planning, debugging, reasoning. |
-| **[Web Search (Brave / Exa)](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex | **Lets your AI search the live internet and read current web pages.** Out of the box, most AIs only know what they were trained on. This lets them look things up so answers are current and less likely to be made up. |
+| Tool | Type | Works in | Stars | Available in | What it does & why |
+|:-----|:-----|:--------:|:-----:|:-------------|:-------------------|
+| **[Superpowers](https://github.com/obra/superpowers)** | 🧩 Plugin | ⌨️ Code | ⭐ 243.8k | Claude Code | **A framework that gives Claude Code a big library of expert 'skills' plus a disciplined workflow (planning, testing, code review).** One install turns Claude Code into a far more capable, methodical developer instead of a one-off helper. |
+| **[Fetch (read a URL)](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 88k | Claude Desktop, Claude Code, Cursor, Codex, Gemini CLI | **Give your AI a link and it fetches the page and reads it.** Perfect for 'summarize this article' or 'pull the key points from this page' without copy-pasting. |
+| **[Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 88k | Claude Desktop, Claude Code, Cursor | **Lets your AI read and write files in folders you choose on your computer.** So a chat app can open your documents and save results. (Coding agents like Claude Code and Cursor can already touch files, so this matters most for chat apps like Claude Desktop.) |
+| **[Memory](https://github.com/modelcontextprotocol/servers/tree/main/src/memory)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 88k | Claude Desktop, Claude Code, Cursor | **Gives your AI a long-term memory that survives between conversations.** So you don't re-explain your project, preferences, or facts every time. It remembers what matters. |
+| **[Sequential Thinking](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 88k | Claude Desktop, Claude Code, Cursor | **Helps the AI break a hard problem into clear, ordered steps before answering.** Noticeably better results on tricky, multi-step tasks — planning, debugging, reasoning. |
+| **[claude-mem (persistent memory)](https://github.com/thedotmack/claude-mem)** | 🧩 Plugin | ⌨️ Code | ⭐ 85.4k | Claude Code, Cursor, Codex | **Gives your coding agent a memory across sessions by capturing and compressing what it did.** Stop re-explaining your project every session — the agent remembers past work and decisions. |
+| **[GitHub](https://github.com/github/github-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 31.1k | Claude Desktop, Claude Code, Cursor, Codex, GitHub Copilot | **Lets your AI read and manage your GitHub — code, issues, and pull requests.** Say 'summarize these open issues' or 'open a PR with this fix' instead of clicking around GitHub yourself. |
+| **[Claude Code Plugins](https://docs.claude.com/en/docs/claude-code/plugins)** ✓ | 🧩 Plugin | ⌨️ Code | — | Claude Code | **Installable bundles that add a set of skills, slash-commands, and connectors to Claude Code at once.** Instead of wiring things up one by one, install a ready-made bundle (for code review, memory, and more) with a single command. |
+| **[Custom GPTs](https://help.openai.com/en/articles/8554397-creating-a-gpt)** ✓ | 🧩 Plugin | 💬 Chat | — | ChatGPT | **Custom versions of ChatGPT that bundle instructions, knowledge, and actions for a specific job.** Set up a reusable assistant once (e.g. 'my brand-voice writer') and everyone can use it — no prompt engineering each time. |
+| **[Web Search (Brave / Exa)](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor, Codex | **Lets your AI search the live internet and read current web pages.** Out of the box, most AIs only know what they were trained on. This lets them look things up so answers are current and less likely to be made up. |
 
 <a id="software-developer"></a>
 ### 💻 Software Developer
 
 Write, review, test, and ship code faster with the right connectors and rules.
 
-| Tool | Type | Works in | Available in | What it does & why |
-|:-----|:-----|:--------:|:-------------|:-------------------|
-| **[Agent Instructions (CLAUDE.md / AGENTS.md)](https://agents.md)** ✓ | 📏 Rule / Config | ⌨️ Code | Claude Code, Codex, Cursor, Gemini CLI | **A plain-text file your coding agent reads first, describing your project and how to work in it.** One place to set context and rules — the agent stops guessing and works the way your team does. |
-| **[Claude Code Plugins](https://docs.claude.com/en/docs/claude-code/plugins)** ✓ | 🧩 Plugin | ⌨️ Code | Claude Code | **Installable bundles that add a set of skills, slash-commands, and connectors to Claude Code at once.** Instead of wiring things up one by one, install a ready-made bundle (for code review, memory, and more) with a single command. |
-| **[Context7 (up-to-date docs)](https://github.com/upstash/context7)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | Claude Code, Cursor, Codex, Windsurf | **Feeds your coding agent the latest official documentation for libraries and frameworks.** Stops the AI from using outdated or made-up code — it pulls the real, current docs for the exact version you use. |
-| **[Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Lets your AI read and write files in folders you choose on your computer.** So a chat app can open your documents and save results. (Coding agents like Claude Code and Cursor can already touch files, so this matters most for chat apps like Claude Desktop.) |
-| **[GitHub](https://github.com/github/github-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex, GitHub Copilot | **Lets your AI read and manage your GitHub — code, issues, and pull requests.** Say 'summarize these open issues' or 'open a PR with this fix' instead of clicking around GitHub yourself. |
-| **[Jira & Confluence (Atlassian)](https://www.atlassian.com/platform/remote-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Connects your AI to Jira issues and Confluence pages.** Create tickets, summarize a sprint, or draft a spec page straight from a conversation. |
-| **[Linear](https://linear.app/docs)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Connects your AI to Linear to manage issues and projects.** Create and update issues, or get a status summary, without leaving the conversation. |
-| **[Project Rules (.cursorrules)](https://docs.cursor.com/context/rules)** ✓ | 📏 Rule / Config | ⌨️ Code | Cursor | **A file where you tell Cursor how to behave in your project — your coding style, do's and don'ts.** The AI follows your conventions automatically instead of you correcting it every time. |
-| **[shadcn/ui components](https://ui.shadcn.com)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | Claude Code, Cursor, Codex | **Lets your coding agent browse and add polished, ready-made UI components.** Build good-looking interfaces fast using proven components instead of styling everything from scratch. |
-| **[SQLite](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Lets your AI read and query a local SQLite database file.** A simple, no-server way to let the AI explore structured data on your machine. |
-| **[Docker](https://github.com/modelcontextprotocol/servers)** | 🔌 Connector (MCP) | ⌨️ Code | Claude Code, Cursor | **Lets your AI manage Docker containers — build, run, and inspect them.** Handy for local dev environments and running things in isolation without memorizing Docker commands. |
-| **[Figma](https://help.figma.com/hc/en-us/articles/32132100833559)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to Figma to read designs and turn them into code or specs.** Hand the AI a Figma frame and get accurate component code or a clean spec — no more eyeballing pixels. |
-| **[Playwright (browser control)](https://github.com/microsoft/playwright-mcp)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | Claude Code, Cursor, Codex | **Lets your AI open a real browser to click, type, and take screenshots.** Great for testing your website, filling forms, or grabbing screenshots — the AI actually drives the browser. |
-| **[PostgreSQL / SQL Database](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to a SQL database so it can run queries and read results.** Ask questions in plain English ('how many orders last month?') and let the AI write and run the SQL. |
-| **[Semgrep (security scan)](https://github.com/semgrep/mcp)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | Claude Code, Cursor | **Scans your code for security bugs and lets the AI explain and fix them.** Catches vulnerabilities as you build, in plain language, instead of after something goes wrong. |
-| **[Sentry (error tracking)](https://github.com/getsentry/sentry-mcp)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Pulls your app's real error reports into the AI.** Ask 'what's breaking in production and why?' and get the AI to read the actual stack traces and suggest fixes. |
-| **[Stripe (payments)](https://github.com/stripe/agent-toolkit)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Connects your AI to Stripe to look up payments, customers, and revenue.** Ask about your sales, refunds, or a specific customer in plain English — or have a coding agent wire up Stripe for you. |
+| Tool | Type | Works in | Stars | Available in | What it does & why |
+|:-----|:-----|:--------:|:-----:|:-------------|:-------------------|
+| **[Superpowers](https://github.com/obra/superpowers)** | 🧩 Plugin | ⌨️ Code | ⭐ 243.8k | Claude Code | **A framework that gives Claude Code a big library of expert 'skills' plus a disciplined workflow (planning, testing, code review).** One install turns Claude Code into a far more capable, methodical developer instead of a one-off helper. |
+| **[Everything Claude Code (ECC)](https://github.com/affaan-m/ECC)** | 🧩 Plugin | ⌨️ Code | ⭐ 224.8k | Claude Code, Codex, Cursor | **A power-user setup for coding agents: bundled skills, memory, security checks, and research-first habits.** A tuned configuration that makes agents faster and more reliable on real projects — for people past the basics. |
+| **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** | 🧩 Plugin | ⌨️ Code | ⭐ 207.6k | Claude Code | **An open agent framework designed to adapt and improve as you work with it.** A widely-starred community framework for building agents that get better over time. |
+| **[gstack (startup-team setup)](https://github.com/garrytan/gstack)** | 🧩 Plugin | ⌨️ Code | ⭐ 118.8k | Claude Code | **A bundle of 23 opinionated tools that act like a startup team — CEO, designer, eng manager, and QA roles.** A ready-made 'team in a box' for building products with Claude Code, based on a well-known founder's setup. |
+| **[shadcn/ui components](https://ui.shadcn.com)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | ⭐ 117.8k | Claude Code, Cursor, Codex | **Lets your coding agent browse and add polished, ready-made UI components.** Build good-looking interfaces fast using proven components instead of styling everything from scratch. |
+| **[cc-switch (agent manager)](https://github.com/farion1231/cc-switch)** | 🧷 Extension | ⌨️ Code | ⭐ 112.2k | Claude Code, Codex | **A desktop app to manage and switch between Claude Code, Codex, and OpenCode setups in one place.** Handy if you use more than one coding agent and want a single control panel. |
+| **[Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 88k | Claude Desktop, Claude Code, Cursor | **Lets your AI read and write files in folders you choose on your computer.** So a chat app can open your documents and save results. (Coding agents like Claude Code and Cursor can already touch files, so this matters most for chat apps like Claude Desktop.) |
+| **[SQLite](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 88k | Claude Desktop, Claude Code, Cursor | **Lets your AI read and query a local SQLite database file.** A simple, no-server way to let the AI explore structured data on your machine. |
+| **[PostgreSQL / SQL Database](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 88k | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to a SQL database so it can run queries and read results.** Ask questions in plain English ('how many orders last month?') and let the AI write and run the SQL. |
+| **[claude-mem (persistent memory)](https://github.com/thedotmack/claude-mem)** | 🧩 Plugin | ⌨️ Code | ⭐ 85.4k | Claude Code, Cursor, Codex | **Gives your coding agent a memory across sessions by capturing and compressing what it did.** Stop re-explaining your project every session — the agent remembers past work and decisions. |
+| **[Caveman (token saver)](https://github.com/JuliusBrussee/caveman)** | 🧠 Skill | ⌨️ Code | ⭐ 79.3k | Claude Code | **Makes the AI reply in an ultra-compressed 'caveman' style to save tokens (and money).** Cuts token use by roughly 65% on long sessions with no loss of technical accuracy. |
+| **[Graphify (code/docs knowledge graph)](https://github.com/safishamsi/graphify)** | 🧠 Skill | ⌨️ Code | ⭐ 75.6k | Claude Code, Codex, Cursor | **Turns a folder of code, SQL schemas, or docs into a queryable knowledge graph the AI can explore.** Ask questions across a whole codebase or dataset at once, instead of file by file. |
+| **[Context7 (up-to-date docs)](https://github.com/upstash/context7)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | ⭐ 58.5k | Claude Code, Cursor, Codex, Windsurf | **Feeds your coding agent the latest official documentation for libraries and frameworks.** Stops the AI from using outdated or made-up code — it pulls the real, current docs for the exact version you use. |
+| **[Sub-agents collection](https://github.com/wshobson/agents)** | 🧩 Plugin | ⌨️ Code | ⭐ 37.4k | Claude Code | **A marketplace of specialized sub-agents (code reviewer, debugger, architect) for Claude Code.** Drop in expert helpers for specific jobs instead of relying on one generalist agent. |
+| **[Playwright (browser control)](https://github.com/microsoft/playwright-mcp)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | ⭐ 34.6k | Claude Code, Cursor, Codex | **Lets your AI open a real browser to click, type, and take screenshots.** Great for testing your website, filling forms, or grabbing screenshots — the AI actually drives the browser. |
+| **[GitHub](https://github.com/github/github-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 31.1k | Claude Desktop, Claude Code, Cursor, Codex, GitHub Copilot | **Lets your AI read and manage your GitHub — code, issues, and pull requests.** Say 'summarize these open issues' or 'open a PR with this fix' instead of clicking around GitHub yourself. |
+| **[Claude Code Templates](https://github.com/davila7/claude-code-templates)** | 🧩 Plugin | ⌨️ Code | ⭐ 28.4k | Claude Code | **A CLI that sets up and monitors Claude Code with ready-made configs and dashboards.** Skip manual setup — get a solid Claude Code configuration and health view in one command. |
+| **[Task Master](https://github.com/eyaltoledano/claude-task-master)** | 🧩 Plugin | ⌨️ Code | ⭐ 27.7k | Claude Code, Cursor, Codex | **An AI task-management system that breaks a project into tasks your agent works through one by one.** Keeps big builds organized and on-track so the agent ships step by step instead of wandering. |
+| **[Design-Review Workflows](https://github.com/OneRedOak/claude-code-workflows)** | 📏 Rule / Config | ⌨️ Code | ⭐ 3.8k | Claude Code | **Battle-tested Claude Code workflows and configs, including strong automated design-review passes.** Copy proven setups (like a rigorous UI review) instead of inventing your own from scratch. |
+| **[Stripe (payments)](https://github.com/stripe/agent-toolkit)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 1.6k | Claude Desktop, Claude Code, Cursor | **Connects your AI to Stripe to look up payments, customers, and revenue.** Ask about your sales, refunds, or a specific customer in plain English — or have a coding agent wire up Stripe for you. |
+| **[Sentry (error tracking)](https://github.com/getsentry/sentry-mcp)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 749 | Claude Desktop, Claude Code, Cursor | **Pulls your app's real error reports into the AI.** Ask 'what's breaking in production and why?' and get the AI to read the actual stack traces and suggest fixes. |
+| **[Semgrep (security scan)](https://github.com/semgrep/mcp)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | ⭐ 674 | Claude Code, Cursor | **Scans your code for security bugs and lets the AI explain and fix them.** Catches vulnerabilities as you build, in plain language, instead of after something goes wrong. |
+| **[Agent Instructions (CLAUDE.md / AGENTS.md)](https://agents.md)** ✓ | 📏 Rule / Config | ⌨️ Code | — | Claude Code, Codex, Cursor, Gemini CLI | **A plain-text file your coding agent reads first, describing your project and how to work in it.** One place to set context and rules — the agent stops guessing and works the way your team does. |
+| **[Claude Code Plugins](https://docs.claude.com/en/docs/claude-code/plugins)** ✓ | 🧩 Plugin | ⌨️ Code | — | Claude Code | **Installable bundles that add a set of skills, slash-commands, and connectors to Claude Code at once.** Instead of wiring things up one by one, install a ready-made bundle (for code review, memory, and more) with a single command. |
+| **[Jira & Confluence (Atlassian)](https://www.atlassian.com/platform/remote-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor | **Connects your AI to Jira issues and Confluence pages.** Create tickets, summarize a sprint, or draft a spec page straight from a conversation. |
+| **[Linear](https://linear.app/docs)** ✓ | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor | **Connects your AI to Linear to manage issues and projects.** Create and update issues, or get a status summary, without leaving the conversation. |
+| **[Project Rules (.cursorrules)](https://docs.cursor.com/context/rules)** ✓ | 📏 Rule / Config | ⌨️ Code | — | Cursor | **A file where you tell Cursor how to behave in your project — your coding style, do's and don'ts.** The AI follows your conventions automatically instead of you correcting it every time. |
+| **[Docker](https://github.com/modelcontextprotocol/servers)** | 🔌 Connector (MCP) | ⌨️ Code | — | Claude Code, Cursor | **Lets your AI manage Docker containers — build, run, and inspect them.** Handy for local dev environments and running things in isolation without memorizing Docker commands. |
+| **[Figma](https://help.figma.com/hc/en-us/articles/32132100833559)** ✓ | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to Figma to read designs and turn them into code or specs.** Hand the AI a Figma frame and get accurate component code or a clean spec — no more eyeballing pixels. |
 
 <a id="finance"></a>
 ### 💰 Finance & Accounting
 
 Spreadsheets, reports, statements, and financial data — with far less manual work.
 
-| Tool | Type | Works in | Available in | What it does & why |
-|:-----|:-----|:--------:|:-------------|:-------------------|
-| **[Data Analysis / Code Execution](https://modelcontextprotocol.io)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, ChatGPT, Claude Code | **Lets the AI run real Python in a safe sandbox to analyze data and make charts.** For exact math and real charts on your data — the AI computes the answer instead of guessing it. |
-| **[Excel / Spreadsheets Skill](https://www.anthropic.com/news/skills)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to read, build, and fix Excel/CSV spreadsheets properly — formulas, formatting, charts.** Turn a messy CSV into a clean report, or generate a financial model, without wrestling with formulas yourself. |
-| **[Google Sheets](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Lets your AI read and update your Google Sheets.** Have the AI pull numbers from a sheet, update a tracker, or build a summary tab for you. |
-| **[PDF Skill](https://www.anthropic.com/news/skills)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to read, fill, merge, split, and create PDF files.** Pull tables out of a PDF statement, fill a form, or merge documents — no separate PDF tool needed. |
-| **[Market / Financial Data](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Gives your AI live stock prices, company financials, and market data.** Ask for a company's numbers or a market snapshot and get real current figures, not stale ones. |
-| **[QuickBooks / Accounting](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 💬 Chat | Claude Desktop | **Connects your AI to your accounting software to read invoices, expenses, and reports.** Ask about cash flow, unpaid invoices, or expenses without digging through the accounting app. |
-| **[Stripe (payments)](https://github.com/stripe/agent-toolkit)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Connects your AI to Stripe to look up payments, customers, and revenue.** Ask about your sales, refunds, or a specific customer in plain English — or have a coding agent wire up Stripe for you. |
+| Tool | Type | Works in | Stars | Available in | What it does & why |
+|:-----|:-----|:--------:|:-----:|:-------------|:-------------------|
+| **[Excel / Spreadsheets Skill](https://www.anthropic.com/news/skills)** ✓ 🧰 | 🧠 Skill | 🔀 Both | ⭐ 157.5k | Claude Desktop, Claude Code | **Teaches the AI to read, build, and fix Excel/CSV spreadsheets properly — formulas, formatting, charts.** Turn a messy CSV into a clean report, or generate a financial model, without wrestling with formulas yourself. |
+| **[PDF Skill](https://www.anthropic.com/news/skills)** ✓ 🧰 | 🧠 Skill | 🔀 Both | ⭐ 157.5k | Claude Desktop, Claude Code | **Teaches the AI to read, fill, merge, split, and create PDF files.** Pull tables out of a PDF statement, fill a form, or merge documents — no separate PDF tool needed. |
+| **[Stripe (payments)](https://github.com/stripe/agent-toolkit)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 1.6k | Claude Desktop, Claude Code, Cursor | **Connects your AI to Stripe to look up payments, customers, and revenue.** Ask about your sales, refunds, or a specific customer in plain English — or have a coding agent wire up Stripe for you. |
+| **[Data Analysis / Code Execution](https://modelcontextprotocol.io)** ✓ 🧰 | 🧠 Skill | 🔀 Both | — | Claude Desktop, ChatGPT, Claude Code | **Lets the AI run real Python in a safe sandbox to analyze data and make charts.** For exact math and real charts on your data — the AI computes the answer instead of guessing it. |
+| **[Google Sheets](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Lets your AI read and update your Google Sheets.** Have the AI pull numbers from a sheet, update a tracker, or build a summary tab for you. |
+| **[Market / Financial Data](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Gives your AI live stock prices, company financials, and market data.** Ask for a company's numbers or a market snapshot and get real current figures, not stale ones. |
+| **[QuickBooks / Accounting](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 💬 Chat | — | Claude Desktop | **Connects your AI to your accounting software to read invoices, expenses, and reports.** Ask about cash flow, unpaid invoices, or expenses without digging through the accounting app. |
 
 <a id="data-analytics"></a>
 ### 📊 Data Analytics
 
 Query databases, crunch CSVs, and turn raw data into answers and charts.
 
-| Tool | Type | Works in | Available in | What it does & why |
-|:-----|:-----|:--------:|:-------------|:-------------------|
-| **[Data Analysis / Code Execution](https://modelcontextprotocol.io)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, ChatGPT, Claude Code | **Lets the AI run real Python in a safe sandbox to analyze data and make charts.** For exact math and real charts on your data — the AI computes the answer instead of guessing it. |
-| **[Excel / Spreadsheets Skill](https://www.anthropic.com/news/skills)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to read, build, and fix Excel/CSV spreadsheets properly — formulas, formatting, charts.** Turn a messy CSV into a clean report, or generate a financial model, without wrestling with formulas yourself. |
-| **[Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Lets your AI read and write files in folders you choose on your computer.** So a chat app can open your documents and save results. (Coding agents like Claude Code and Cursor can already touch files, so this matters most for chat apps like Claude Desktop.) |
-| **[SQLite](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Lets your AI read and query a local SQLite database file.** A simple, no-server way to let the AI explore structured data on your machine. |
-| **[Apify (web scraping)](https://apify.com/apify/actors-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Lets your AI run ready-made web scrapers to pull data from sites.** Collect data from social media, maps, e-commerce, or search — without writing a scraper yourself. |
-| **[BigQuery](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Connects the AI to Google BigQuery to query large datasets.** Ask business questions across huge tables and let the AI write the SQL and read the results. |
-| **[Market / Financial Data](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Gives your AI live stock prices, company financials, and market data.** Ask for a company's numbers or a market snapshot and get real current figures, not stale ones. |
-| **[PostgreSQL / SQL Database](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to a SQL database so it can run queries and read results.** Ask questions in plain English ('how many orders last month?') and let the AI write and run the SQL. |
-| **[Snowflake](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Connects the AI to your Snowflake data warehouse.** Self-serve analytics: ask questions and get answers straight from the warehouse, no analyst queue. |
+| Tool | Type | Works in | Stars | Available in | What it does & why |
+|:-----|:-----|:--------:|:-----:|:-------------|:-------------------|
+| **[Excel / Spreadsheets Skill](https://www.anthropic.com/news/skills)** ✓ 🧰 | 🧠 Skill | 🔀 Both | ⭐ 157.5k | Claude Desktop, Claude Code | **Teaches the AI to read, build, and fix Excel/CSV spreadsheets properly — formulas, formatting, charts.** Turn a messy CSV into a clean report, or generate a financial model, without wrestling with formulas yourself. |
+| **[Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 88k | Claude Desktop, Claude Code, Cursor | **Lets your AI read and write files in folders you choose on your computer.** So a chat app can open your documents and save results. (Coding agents like Claude Code and Cursor can already touch files, so this matters most for chat apps like Claude Desktop.) |
+| **[SQLite](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 88k | Claude Desktop, Claude Code, Cursor | **Lets your AI read and query a local SQLite database file.** A simple, no-server way to let the AI explore structured data on your machine. |
+| **[PostgreSQL / SQL Database](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 88k | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to a SQL database so it can run queries and read results.** Ask questions in plain English ('how many orders last month?') and let the AI write and run the SQL. |
+| **[Graphify (code/docs knowledge graph)](https://github.com/safishamsi/graphify)** | 🧠 Skill | ⌨️ Code | ⭐ 75.6k | Claude Code, Codex, Cursor | **Turns a folder of code, SQL schemas, or docs into a queryable knowledge graph the AI can explore.** Ask questions across a whole codebase or dataset at once, instead of file by file. |
+| **[Apify (web scraping)](https://apify.com/apify/actors-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 1.5k | Claude Desktop, Claude Code | **Lets your AI run ready-made web scrapers to pull data from sites.** Collect data from social media, maps, e-commerce, or search — without writing a scraper yourself. |
+| **[Data Analysis / Code Execution](https://modelcontextprotocol.io)** ✓ 🧰 | 🧠 Skill | 🔀 Both | — | Claude Desktop, ChatGPT, Claude Code | **Lets the AI run real Python in a safe sandbox to analyze data and make charts.** For exact math and real charts on your data — the AI computes the answer instead of guessing it. |
+| **[BigQuery](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Connects the AI to Google BigQuery to query large datasets.** Ask business questions across huge tables and let the AI write the SQL and read the results. |
+| **[Market / Financial Data](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Gives your AI live stock prices, company financials, and market data.** Ask for a company's numbers or a market snapshot and get real current figures, not stale ones. |
+| **[Snowflake](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Connects the AI to your Snowflake data warehouse.** Self-serve analytics: ask questions and get answers straight from the warehouse, no analyst queue. |
 
 <a id="ui-ux-designer"></a>
 ### 🎨 UI / UX Designer
 
 Turn ideas into mockups and components, and pull designs into code.
 
-| Tool | Type | Works in | Available in | What it does & why |
-|:-----|:-----|:--------:|:-------------|:-------------------|
-| **[shadcn/ui components](https://ui.shadcn.com)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | Claude Code, Cursor, Codex | **Lets your coding agent browse and add polished, ready-made UI components.** Build good-looking interfaces fast using proven components instead of styling everything from scratch. |
-| **[v0 (UI from a prompt)](https://v0.app)** ✓ | 🧷 Extension | 💬 Chat | ChatGPT | **Describe a screen and get a working UI mockup and code back.** Go from idea to a real, editable interface in seconds — great for prototyping. |
-| **[Figma](https://help.figma.com/hc/en-us/articles/32132100833559)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to Figma to read designs and turn them into code or specs.** Hand the AI a Figma frame and get accurate component code or a clean spec — no more eyeballing pixels. |
-| **[Playwright (browser control)](https://github.com/microsoft/playwright-mcp)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | Claude Code, Cursor, Codex | **Lets your AI open a real browser to click, type, and take screenshots.** Great for testing your website, filling forms, or grabbing screenshots — the AI actually drives the browser. |
+| Tool | Type | Works in | Stars | Available in | What it does & why |
+|:-----|:-----|:--------:|:-----:|:-------------|:-------------------|
+| **[gstack (startup-team setup)](https://github.com/garrytan/gstack)** | 🧩 Plugin | ⌨️ Code | ⭐ 118.8k | Claude Code | **A bundle of 23 opinionated tools that act like a startup team — CEO, designer, eng manager, and QA roles.** A ready-made 'team in a box' for building products with Claude Code, based on a well-known founder's setup. |
+| **[shadcn/ui components](https://ui.shadcn.com)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | ⭐ 117.8k | Claude Code, Cursor, Codex | **Lets your coding agent browse and add polished, ready-made UI components.** Build good-looking interfaces fast using proven components instead of styling everything from scratch. |
+| **[Playwright (browser control)](https://github.com/microsoft/playwright-mcp)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | ⭐ 34.6k | Claude Code, Cursor, Codex | **Lets your AI open a real browser to click, type, and take screenshots.** Great for testing your website, filling forms, or grabbing screenshots — the AI actually drives the browser. |
+| **[Design-Review Workflows](https://github.com/OneRedOak/claude-code-workflows)** | 📏 Rule / Config | ⌨️ Code | ⭐ 3.8k | Claude Code | **Battle-tested Claude Code workflows and configs, including strong automated design-review passes.** Copy proven setups (like a rigorous UI review) instead of inventing your own from scratch. |
+| **[v0 (UI from a prompt)](https://v0.app)** ✓ | 🧷 Extension | 💬 Chat | — | ChatGPT | **Describe a screen and get a working UI mockup and code back.** Go from idea to a real, editable interface in seconds — great for prototyping. |
+| **[Figma](https://help.figma.com/hc/en-us/articles/32132100833559)** ✓ | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to Figma to read designs and turn them into code or specs.** Hand the AI a Figma frame and get accurate component code or a clean spec — no more eyeballing pixels. |
 
 <a id="legal"></a>
 ### ⚖️ Legal & Compliance
 
 Draft policies, review contracts, and check work against real regulations.
 
-| Tool | Type | Works in | Available in | What it does & why |
-|:-----|:-----|:--------:|:-------------|:-------------------|
-| **[Contract Review Skill](https://www.anthropic.com/news/skills)** | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to read a contract, flag risky clauses, and explain them plainly.** A fast first pass on an agreement — what to watch for — before it reaches a lawyer. |
-| **[GDPR Compliance Skill](https://www.anthropic.com/news/skills)** | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to answer GDPR questions and draft privacy documents with real article references.** Get grounded, citable privacy guidance and first-draft policies instead of vague generic answers. |
-| **[HIPAA Compliance Skill](https://www.anthropic.com/news/skills)** | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI US health-privacy rules (HIPAA) and how to handle protected health information.** Guidance and document drafts that respect health-data rules, instead of risky generic advice. |
-| **[India DPDPA Compliance Skill](https://www.anthropic.com/news/skills)** | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI India's Digital Personal Data Protection Act — obligations, notices, and breach rules.** Practical, India-specific privacy help and document drafts, grounded in the actual Act and Rules. |
-| **[PDF Skill](https://www.anthropic.com/news/skills)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to read, fill, merge, split, and create PDF files.** Pull tables out of a PDF statement, fill a form, or merge documents — no separate PDF tool needed. |
-| **[Word Documents Skill](https://www.anthropic.com/news/skills)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to create and edit real Word (.docx) documents — headings, tables, letterheads.** Get a polished, formatted document (a report, a contract, a memo) instead of plain text you have to reformat. |
+| Tool | Type | Works in | Stars | Available in | What it does & why |
+|:-----|:-----|:--------:|:-----:|:-------------|:-------------------|
+| **[PDF Skill](https://www.anthropic.com/news/skills)** ✓ 🧰 | 🧠 Skill | 🔀 Both | ⭐ 157.5k | Claude Desktop, Claude Code | **Teaches the AI to read, fill, merge, split, and create PDF files.** Pull tables out of a PDF statement, fill a form, or merge documents — no separate PDF tool needed. |
+| **[Word Documents Skill](https://www.anthropic.com/news/skills)** ✓ 🧰 | 🧠 Skill | 🔀 Both | ⭐ 157.5k | Claude Desktop, Claude Code | **Teaches the AI to create and edit real Word (.docx) documents — headings, tables, letterheads.** Get a polished, formatted document (a report, a contract, a memo) instead of plain text you have to reformat. |
+| **[Contract Review Skill](https://www.anthropic.com/news/skills)** | 🧠 Skill | 🔀 Both | — | Claude Desktop, Claude Code | **Teaches the AI to read a contract, flag risky clauses, and explain them plainly.** A fast first pass on an agreement — what to watch for — before it reaches a lawyer. |
+| **[GDPR Compliance Skill](https://www.anthropic.com/news/skills)** | 🧠 Skill | 🔀 Both | — | Claude Desktop, Claude Code | **Teaches the AI to answer GDPR questions and draft privacy documents with real article references.** Get grounded, citable privacy guidance and first-draft policies instead of vague generic answers. |
+| **[HIPAA Compliance Skill](https://www.anthropic.com/news/skills)** | 🧠 Skill | 🔀 Both | — | Claude Desktop, Claude Code | **Teaches the AI US health-privacy rules (HIPAA) and how to handle protected health information.** Guidance and document drafts that respect health-data rules, instead of risky generic advice. |
+| **[India DPDPA Compliance Skill](https://www.anthropic.com/news/skills)** | 🧠 Skill | 🔀 Both | — | Claude Desktop, Claude Code | **Teaches the AI India's Digital Personal Data Protection Act — obligations, notices, and breach rules.** Practical, India-specific privacy help and document drafts, grounded in the actual Act and Rules. |
 
 <a id="healthcare"></a>
 ### 🏥 Healthcare
 
 Research, documentation, and privacy-aware help for clinical and health work.
 
-| Tool | Type | Works in | Available in | What it does & why |
-|:-----|:-----|:--------:|:-------------|:-------------------|
-| **[HIPAA Compliance Skill](https://www.anthropic.com/news/skills)** | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI US health-privacy rules (HIPAA) and how to handle protected health information.** Guidance and document drafts that respect health-data rules, instead of risky generic advice. |
-| **[PubMed (medical research)](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Connects your AI to PubMed to search medical literature.** Find and summarize real studies with citations instead of relying on the model's memory. |
+| Tool | Type | Works in | Stars | Available in | What it does & why |
+|:-----|:-----|:--------:|:-----:|:-------------|:-------------------|
+| **[HIPAA Compliance Skill](https://www.anthropic.com/news/skills)** | 🧠 Skill | 🔀 Both | — | Claude Desktop, Claude Code | **Teaches the AI US health-privacy rules (HIPAA) and how to handle protected health information.** Guidance and document drafts that respect health-data rules, instead of risky generic advice. |
+| **[PubMed (medical research)](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Connects your AI to PubMed to search medical literature.** Find and summarize real studies with citations instead of relying on the model's memory. |
 
 <a id="business-intelligence"></a>
 ### 📈 Business Intelligence
 
 Connect to your BI stack and warehouse to answer business questions.
 
-| Tool | Type | Works in | Available in | What it does & why |
-|:-----|:-----|:--------:|:-------------|:-------------------|
-| **[Google Sheets](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Lets your AI read and update your Google Sheets.** Have the AI pull numbers from a sheet, update a tracker, or build a summary tab for you. |
-| **[BI Tools (Power BI / Tableau)](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Connects the AI to your BI dashboards and their underlying data.** Ask what a dashboard is really saying, or generate the query behind a chart, in plain English. |
-| **[BigQuery](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Connects the AI to Google BigQuery to query large datasets.** Ask business questions across huge tables and let the AI write the SQL and read the results. |
-| **[Google Analytics](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Connects your AI to your website analytics.** Ask 'where did traffic come from last week?' and get a real answer instead of clicking through reports. |
-| **[PostgreSQL / SQL Database](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to a SQL database so it can run queries and read results.** Ask questions in plain English ('how many orders last month?') and let the AI write and run the SQL. |
-| **[Snowflake](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Connects the AI to your Snowflake data warehouse.** Self-serve analytics: ask questions and get answers straight from the warehouse, no analyst queue. |
+| Tool | Type | Works in | Stars | Available in | What it does & why |
+|:-----|:-----|:--------:|:-----:|:-------------|:-------------------|
+| **[PostgreSQL / SQL Database](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 88k | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to a SQL database so it can run queries and read results.** Ask questions in plain English ('how many orders last month?') and let the AI write and run the SQL. |
+| **[Google Sheets](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Lets your AI read and update your Google Sheets.** Have the AI pull numbers from a sheet, update a tracker, or build a summary tab for you. |
+| **[BI Tools (Power BI / Tableau)](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Connects the AI to your BI dashboards and their underlying data.** Ask what a dashboard is really saying, or generate the query behind a chart, in plain English. |
+| **[BigQuery](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Connects the AI to Google BigQuery to query large datasets.** Ask business questions across huge tables and let the AI write the SQL and read the results. |
+| **[Google Analytics](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Connects your AI to your website analytics.** Ask 'where did traffic come from last week?' and get a real answer instead of clicking through reports. |
+| **[Snowflake](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Connects the AI to your Snowflake data warehouse.** Self-serve analytics: ask questions and get answers straight from the warehouse, no analyst queue. |
 
 <a id="business-analyst"></a>
 ### 📋 Business Analyst
 
 Requirements, tickets, docs, and stakeholder-ready summaries.
 
-| Tool | Type | Works in | Available in | What it does & why |
-|:-----|:-----|:--------:|:-------------|:-------------------|
-| **[Custom GPTs](https://help.openai.com/en/articles/8554397-creating-a-gpt)** ✓ | 🧩 Plugin | 💬 Chat | ChatGPT | **Custom versions of ChatGPT that bundle instructions, knowledge, and actions for a specific job.** Set up a reusable assistant once (e.g. 'my brand-voice writer') and everyone can use it — no prompt engineering each time. |
-| **[Excel / Spreadsheets Skill](https://www.anthropic.com/news/skills)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to read, build, and fix Excel/CSV spreadsheets properly — formulas, formatting, charts.** Turn a messy CSV into a clean report, or generate a financial model, without wrestling with formulas yourself. |
-| **[Jira & Confluence (Atlassian)](https://www.atlassian.com/platform/remote-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Connects your AI to Jira issues and Confluence pages.** Create tickets, summarize a sprint, or draft a spec page straight from a conversation. |
-| **[Notion](https://developers.notion.com)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Connects your AI to your Notion workspace to read and write pages.** Turn a chat into a Notion doc, update a tracker, or pull notes into your work automatically. |
-| **[PDF Skill](https://www.anthropic.com/news/skills)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to read, fill, merge, split, and create PDF files.** Pull tables out of a PDF statement, fill a form, or merge documents — no separate PDF tool needed. |
-| **[Slack](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Connects your AI to Slack to read and send messages.** Summarize a busy channel, draft an announcement, or find that decision buried in threads. |
-| **[Slide Decks (PowerPoint) Skill](https://www.anthropic.com/news/skills)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to build real PowerPoint (.pptx) presentations.** Describe your deck and get formatted slides back — a huge time-saver for pitches and updates. |
-| **[Web Search (Brave / Exa)](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex | **Lets your AI search the live internet and read current web pages.** Out of the box, most AIs only know what they were trained on. This lets them look things up so answers are current and less likely to be made up. |
-| **[Word Documents Skill](https://www.anthropic.com/news/skills)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to create and edit real Word (.docx) documents — headings, tables, letterheads.** Get a polished, formatted document (a report, a contract, a memo) instead of plain text you have to reformat. |
-| **[Apify (web scraping)](https://apify.com/apify/actors-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Lets your AI run ready-made web scrapers to pull data from sites.** Collect data from social media, maps, e-commerce, or search — without writing a scraper yourself. |
+| Tool | Type | Works in | Stars | Available in | What it does & why |
+|:-----|:-----|:--------:|:-----:|:-------------|:-------------------|
+| **[Excel / Spreadsheets Skill](https://www.anthropic.com/news/skills)** ✓ 🧰 | 🧠 Skill | 🔀 Both | ⭐ 157.5k | Claude Desktop, Claude Code | **Teaches the AI to read, build, and fix Excel/CSV spreadsheets properly — formulas, formatting, charts.** Turn a messy CSV into a clean report, or generate a financial model, without wrestling with formulas yourself. |
+| **[PDF Skill](https://www.anthropic.com/news/skills)** ✓ 🧰 | 🧠 Skill | 🔀 Both | ⭐ 157.5k | Claude Desktop, Claude Code | **Teaches the AI to read, fill, merge, split, and create PDF files.** Pull tables out of a PDF statement, fill a form, or merge documents — no separate PDF tool needed. |
+| **[Slide Decks (PowerPoint) Skill](https://www.anthropic.com/news/skills)** ✓ 🧰 | 🧠 Skill | 🔀 Both | ⭐ 157.5k | Claude Desktop, Claude Code | **Teaches the AI to build real PowerPoint (.pptx) presentations.** Describe your deck and get formatted slides back — a huge time-saver for pitches and updates. |
+| **[Word Documents Skill](https://www.anthropic.com/news/skills)** ✓ 🧰 | 🧠 Skill | 🔀 Both | ⭐ 157.5k | Claude Desktop, Claude Code | **Teaches the AI to create and edit real Word (.docx) documents — headings, tables, letterheads.** Get a polished, formatted document (a report, a contract, a memo) instead of plain text you have to reformat. |
+| **[Apify (web scraping)](https://apify.com/apify/actors-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 1.5k | Claude Desktop, Claude Code | **Lets your AI run ready-made web scrapers to pull data from sites.** Collect data from social media, maps, e-commerce, or search — without writing a scraper yourself. |
+| **[Custom GPTs](https://help.openai.com/en/articles/8554397-creating-a-gpt)** ✓ | 🧩 Plugin | 💬 Chat | — | ChatGPT | **Custom versions of ChatGPT that bundle instructions, knowledge, and actions for a specific job.** Set up a reusable assistant once (e.g. 'my brand-voice writer') and everyone can use it — no prompt engineering each time. |
+| **[Jira & Confluence (Atlassian)](https://www.atlassian.com/platform/remote-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor | **Connects your AI to Jira issues and Confluence pages.** Create tickets, summarize a sprint, or draft a spec page straight from a conversation. |
+| **[Notion](https://developers.notion.com)** ✓ | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor | **Connects your AI to your Notion workspace to read and write pages.** Turn a chat into a Notion doc, update a tracker, or pull notes into your work automatically. |
+| **[Slack](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Connects your AI to Slack to read and send messages.** Summarize a busy channel, draft an announcement, or find that decision buried in threads. |
+| **[Web Search (Brave / Exa)](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor, Codex | **Lets your AI search the live internet and read current web pages.** Out of the box, most AIs only know what they were trained on. This lets them look things up so answers are current and less likely to be made up. |
 
 <a id="graphic-designer"></a>
 ### 🖼️ Graphic Designer
 
 Generate and edit images, and speed up creative production.
 
-| Tool | Type | Works in | Available in | What it does & why |
-|:-----|:-----|:--------:|:-------------|:-------------------|
-| **[Canva](https://www.canva.com/developers/)** ✓ | 🔌 Connector (MCP) | 💬 Chat | ChatGPT, Claude Desktop | **Connects your AI to Canva to create and edit designs.** Generate on-brand graphics, social posts, and presentations through a chat instead of designing each by hand. |
-| **[Image Generation](https://openai.com)** ✓ | 🧠 Skill | 💬 Chat | ChatGPT, Gemini, Claude Desktop | **Create and edit images from a text description.** Make logos, mockups, social graphics, or edits without opening a design tool. |
-| **[v0 (UI from a prompt)](https://v0.app)** ✓ | 🧷 Extension | 💬 Chat | ChatGPT | **Describe a screen and get a working UI mockup and code back.** Go from idea to a real, editable interface in seconds — great for prototyping. |
-| **[Figma](https://help.figma.com/hc/en-us/articles/32132100833559)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to Figma to read designs and turn them into code or specs.** Hand the AI a Figma frame and get accurate component code or a clean spec — no more eyeballing pixels. |
+| Tool | Type | Works in | Stars | Available in | What it does & why |
+|:-----|:-----|:--------:|:-----:|:-------------|:-------------------|
+| **[Canva](https://www.canva.com/developers/)** ✓ | 🔌 Connector (MCP) | 💬 Chat | — | ChatGPT, Claude Desktop | **Connects your AI to Canva to create and edit designs.** Generate on-brand graphics, social posts, and presentations through a chat instead of designing each by hand. |
+| **[Image Generation](https://openai.com)** ✓ | 🧠 Skill | 💬 Chat | — | ChatGPT, Gemini, Claude Desktop | **Create and edit images from a text description.** Make logos, mockups, social graphics, or edits without opening a design tool. |
+| **[v0 (UI from a prompt)](https://v0.app)** ✓ | 🧷 Extension | 💬 Chat | — | ChatGPT | **Describe a screen and get a working UI mockup and code back.** Go from idea to a real, editable interface in seconds — great for prototyping. |
+| **[Figma](https://help.figma.com/hc/en-us/articles/32132100833559)** ✓ | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to Figma to read designs and turn them into code or specs.** Hand the AI a Figma frame and get accurate component code or a clean spec — no more eyeballing pixels. |
 
 <a id="video-creator"></a>
 ### 🎬 Video Creator
 
 Scripts, transcripts, editing help, and AI video generation.
 
-| Tool | Type | Works in | Available in | What it does & why |
-|:-----|:-----|:--------:|:-------------|:-------------------|
-| **[AI Video Generation](https://deepmind.google/technologies/veo/)** ✓ | 🧠 Skill | 💬 Chat | Gemini, ChatGPT | **Create short video clips from a text prompt or an image.** Produce b-roll, ads, or concept clips without a camera or an editor. |
-| **[YouTube Transcripts](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Pulls the transcript of a YouTube video so the AI can read it.** Summarize a video, pull quotes, or repurpose it into a blog post or script without watching it all. |
+| Tool | Type | Works in | Stars | Available in | What it does & why |
+|:-----|:-----|:--------:|:-----:|:-------------|:-------------------|
+| **[AI Video Generation](https://deepmind.google/technologies/veo/)** ✓ | 🧠 Skill | 💬 Chat | — | Gemini, ChatGPT | **Create short video clips from a text prompt or an image.** Produce b-roll, ads, or concept clips without a camera or an editor. |
+| **[YouTube Transcripts](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Pulls the transcript of a YouTube video so the AI can read it.** Summarize a video, pull quotes, or repurpose it into a blog post or script without watching it all. |
 
 <a id="project-management"></a>
 ### 🗂️ Project Management
 
 Keep tasks, docs, and teams in sync across your tools.
 
-| Tool | Type | Works in | Available in | What it does & why |
-|:-----|:-----|:--------:|:-------------|:-------------------|
-| **[Agent Instructions (CLAUDE.md / AGENTS.md)](https://agents.md)** ✓ | 📏 Rule / Config | ⌨️ Code | Claude Code, Codex, Cursor, Gemini CLI | **A plain-text file your coding agent reads first, describing your project and how to work in it.** One place to set context and rules — the agent stops guessing and works the way your team does. |
-| **[GitHub](https://github.com/github/github-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex, GitHub Copilot | **Lets your AI read and manage your GitHub — code, issues, and pull requests.** Say 'summarize these open issues' or 'open a PR with this fix' instead of clicking around GitHub yourself. |
-| **[Jira & Confluence (Atlassian)](https://www.atlassian.com/platform/remote-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Connects your AI to Jira issues and Confluence pages.** Create tickets, summarize a sprint, or draft a spec page straight from a conversation. |
-| **[Linear](https://linear.app/docs)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Connects your AI to Linear to manage issues and projects.** Create and update issues, or get a status summary, without leaving the conversation. |
-| **[Notion](https://developers.notion.com)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Connects your AI to your Notion workspace to read and write pages.** Turn a chat into a Notion doc, update a tracker, or pull notes into your work automatically. |
-| **[Slack](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Connects your AI to Slack to read and send messages.** Summarize a busy channel, draft an announcement, or find that decision buried in threads. |
-| **[Slide Decks (PowerPoint) Skill](https://www.anthropic.com/news/skills)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to build real PowerPoint (.pptx) presentations.** Describe your deck and get formatted slides back — a huge time-saver for pitches and updates. |
-| **[Word Documents Skill](https://www.anthropic.com/news/skills)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to create and edit real Word (.docx) documents — headings, tables, letterheads.** Get a polished, formatted document (a report, a contract, a memo) instead of plain text you have to reformat. |
+| Tool | Type | Works in | Stars | Available in | What it does & why |
+|:-----|:-----|:--------:|:-----:|:-------------|:-------------------|
+| **[Slide Decks (PowerPoint) Skill](https://www.anthropic.com/news/skills)** ✓ 🧰 | 🧠 Skill | 🔀 Both | ⭐ 157.5k | Claude Desktop, Claude Code | **Teaches the AI to build real PowerPoint (.pptx) presentations.** Describe your deck and get formatted slides back — a huge time-saver for pitches and updates. |
+| **[Word Documents Skill](https://www.anthropic.com/news/skills)** ✓ 🧰 | 🧠 Skill | 🔀 Both | ⭐ 157.5k | Claude Desktop, Claude Code | **Teaches the AI to create and edit real Word (.docx) documents — headings, tables, letterheads.** Get a polished, formatted document (a report, a contract, a memo) instead of plain text you have to reformat. |
+| **[gstack (startup-team setup)](https://github.com/garrytan/gstack)** | 🧩 Plugin | ⌨️ Code | ⭐ 118.8k | Claude Code | **A bundle of 23 opinionated tools that act like a startup team — CEO, designer, eng manager, and QA roles.** A ready-made 'team in a box' for building products with Claude Code, based on a well-known founder's setup. |
+| **[claude-mem (persistent memory)](https://github.com/thedotmack/claude-mem)** | 🧩 Plugin | ⌨️ Code | ⭐ 85.4k | Claude Code, Cursor, Codex | **Gives your coding agent a memory across sessions by capturing and compressing what it did.** Stop re-explaining your project every session — the agent remembers past work and decisions. |
+| **[GitHub](https://github.com/github/github-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 31.1k | Claude Desktop, Claude Code, Cursor, Codex, GitHub Copilot | **Lets your AI read and manage your GitHub — code, issues, and pull requests.** Say 'summarize these open issues' or 'open a PR with this fix' instead of clicking around GitHub yourself. |
+| **[Task Master](https://github.com/eyaltoledano/claude-task-master)** | 🧩 Plugin | ⌨️ Code | ⭐ 27.7k | Claude Code, Cursor, Codex | **An AI task-management system that breaks a project into tasks your agent works through one by one.** Keeps big builds organized and on-track so the agent ships step by step instead of wandering. |
+| **[Agent Instructions (CLAUDE.md / AGENTS.md)](https://agents.md)** ✓ | 📏 Rule / Config | ⌨️ Code | — | Claude Code, Codex, Cursor, Gemini CLI | **A plain-text file your coding agent reads first, describing your project and how to work in it.** One place to set context and rules — the agent stops guessing and works the way your team does. |
+| **[Jira & Confluence (Atlassian)](https://www.atlassian.com/platform/remote-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor | **Connects your AI to Jira issues and Confluence pages.** Create tickets, summarize a sprint, or draft a spec page straight from a conversation. |
+| **[Linear](https://linear.app/docs)** ✓ | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor | **Connects your AI to Linear to manage issues and projects.** Create and update issues, or get a status summary, without leaving the conversation. |
+| **[Notion](https://developers.notion.com)** ✓ | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor | **Connects your AI to your Notion workspace to read and write pages.** Turn a chat into a Notion doc, update a tracker, or pull notes into your work automatically. |
+| **[Slack](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Connects your AI to Slack to read and send messages.** Summarize a busy channel, draft an announcement, or find that decision buried in threads. |
 
 <a id="marketing"></a>
 ### 📣 Marketing
 
 Content, SEO, analytics, and research — end to end.
 
-| Tool | Type | Works in | Available in | What it does & why |
-|:-----|:-----|:--------:|:-------------|:-------------------|
-| **[AI Video Generation](https://deepmind.google/technologies/veo/)** ✓ | 🧠 Skill | 💬 Chat | Gemini, ChatGPT | **Create short video clips from a text prompt or an image.** Produce b-roll, ads, or concept clips without a camera or an editor. |
-| **[Canva](https://www.canva.com/developers/)** ✓ | 🔌 Connector (MCP) | 💬 Chat | ChatGPT, Claude Desktop | **Connects your AI to Canva to create and edit designs.** Generate on-brand graphics, social posts, and presentations through a chat instead of designing each by hand. |
-| **[Custom GPTs](https://help.openai.com/en/articles/8554397-creating-a-gpt)** ✓ | 🧩 Plugin | 💬 Chat | ChatGPT | **Custom versions of ChatGPT that bundle instructions, knowledge, and actions for a specific job.** Set up a reusable assistant once (e.g. 'my brand-voice writer') and everyone can use it — no prompt engineering each time. |
-| **[Fetch (read a URL)](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex, Gemini CLI | **Give your AI a link and it fetches the page and reads it.** Perfect for 'summarize this article' or 'pull the key points from this page' without copy-pasting. |
-| **[Google Sheets](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Lets your AI read and update your Google Sheets.** Have the AI pull numbers from a sheet, update a tracker, or build a summary tab for you. |
-| **[Image Generation](https://openai.com)** ✓ | 🧠 Skill | 💬 Chat | ChatGPT, Gemini, Claude Desktop | **Create and edit images from a text description.** Make logos, mockups, social graphics, or edits without opening a design tool. |
-| **[Notion](https://developers.notion.com)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor | **Connects your AI to your Notion workspace to read and write pages.** Turn a chat into a Notion doc, update a tracker, or pull notes into your work automatically. |
-| **[Slack](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Connects your AI to Slack to read and send messages.** Summarize a busy channel, draft an announcement, or find that decision buried in threads. |
-| **[Slide Decks (PowerPoint) Skill](https://www.anthropic.com/news/skills)** ✓ | 🧠 Skill | 🔀 Both | Claude Desktop, Claude Code | **Teaches the AI to build real PowerPoint (.pptx) presentations.** Describe your deck and get formatted slides back — a huge time-saver for pitches and updates. |
-| **[Web Search (Brave / Exa)](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code, Cursor, Codex | **Lets your AI search the live internet and read current web pages.** Out of the box, most AIs only know what they were trained on. This lets them look things up so answers are current and less likely to be made up. |
-| **[YouTube Transcripts](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Pulls the transcript of a YouTube video so the AI can read it.** Summarize a video, pull quotes, or repurpose it into a blog post or script without watching it all. |
-| **[Apify (web scraping)](https://apify.com/apify/actors-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Lets your AI run ready-made web scrapers to pull data from sites.** Collect data from social media, maps, e-commerce, or search — without writing a scraper yourself. |
-| **[Google Analytics](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Connects your AI to your website analytics.** Ask 'where did traffic come from last week?' and get a real answer instead of clicking through reports. |
-| **[SEO Data (DataForSEO / Ahrefs)](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | Claude Desktop, Claude Code | **Gives your AI keyword, ranking, and backlink data.** Do keyword research and competitor checks in a chat, then draft content around what you find. |
+| Tool | Type | Works in | Stars | Available in | What it does & why |
+|:-----|:-----|:--------:|:-----:|:-------------|:-------------------|
+| **[Slide Decks (PowerPoint) Skill](https://www.anthropic.com/news/skills)** ✓ 🧰 | 🧠 Skill | 🔀 Both | ⭐ 157.5k | Claude Desktop, Claude Code | **Teaches the AI to build real PowerPoint (.pptx) presentations.** Describe your deck and get formatted slides back — a huge time-saver for pitches and updates. |
+| **[Fetch (read a URL)](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 88k | Claude Desktop, Claude Code, Cursor, Codex, Gemini CLI | **Give your AI a link and it fetches the page and reads it.** Perfect for 'summarize this article' or 'pull the key points from this page' without copy-pasting. |
+| **[Apify (web scraping)](https://apify.com/apify/actors-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | ⭐ 1.5k | Claude Desktop, Claude Code | **Lets your AI run ready-made web scrapers to pull data from sites.** Collect data from social media, maps, e-commerce, or search — without writing a scraper yourself. |
+| **[AI Video Generation](https://deepmind.google/technologies/veo/)** ✓ | 🧠 Skill | 💬 Chat | — | Gemini, ChatGPT | **Create short video clips from a text prompt or an image.** Produce b-roll, ads, or concept clips without a camera or an editor. |
+| **[Canva](https://www.canva.com/developers/)** ✓ | 🔌 Connector (MCP) | 💬 Chat | — | ChatGPT, Claude Desktop | **Connects your AI to Canva to create and edit designs.** Generate on-brand graphics, social posts, and presentations through a chat instead of designing each by hand. |
+| **[Custom GPTs](https://help.openai.com/en/articles/8554397-creating-a-gpt)** ✓ | 🧩 Plugin | 💬 Chat | — | ChatGPT | **Custom versions of ChatGPT that bundle instructions, knowledge, and actions for a specific job.** Set up a reusable assistant once (e.g. 'my brand-voice writer') and everyone can use it — no prompt engineering each time. |
+| **[Google Sheets](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Lets your AI read and update your Google Sheets.** Have the AI pull numbers from a sheet, update a tracker, or build a summary tab for you. |
+| **[Image Generation](https://openai.com)** ✓ | 🧠 Skill | 💬 Chat | — | ChatGPT, Gemini, Claude Desktop | **Create and edit images from a text description.** Make logos, mockups, social graphics, or edits without opening a design tool. |
+| **[Notion](https://developers.notion.com)** ✓ | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor | **Connects your AI to your Notion workspace to read and write pages.** Turn a chat into a Notion doc, update a tracker, or pull notes into your work automatically. |
+| **[Slack](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Connects your AI to Slack to read and send messages.** Summarize a busy channel, draft an announcement, or find that decision buried in threads. |
+| **[Web Search (Brave / Exa)](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code, Cursor, Codex | **Lets your AI search the live internet and read current web pages.** Out of the box, most AIs only know what they were trained on. This lets them look things up so answers are current and less likely to be made up. |
+| **[YouTube Transcripts](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Pulls the transcript of a YouTube video so the AI can read it.** Summarize a video, pull quotes, or repurpose it into a blog post or script without watching it all. |
+| **[Google Analytics](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Connects your AI to your website analytics.** Ask 'where did traffic come from last week?' and get a real answer instead of clicking through reports. |
+| **[SEO Data (DataForSEO / Ahrefs)](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | — | Claude Desktop, Claude Code | **Gives your AI keyword, ranking, and backlink data.** Do keyword research and competitor checks in a chat, then draft content around what you find. |
+
+---
+
+## 🧭 Where to find more skills
+
+Once you outgrow this starter list, these are the best places to discover more.
+
+### ⭐ Curated collections (open-source, on GitHub)
+
+| Collection | Stars | What it is |
+|:-----------|:-----:|:-----------|
+| **[Anthropic Skills (official)](https://github.com/anthropics/skills)** ✓ | ⭐ 157.5k | Anthropic's own public collection of Agent Skills — the source of the built-in document skills (Word, PDF, Excel, PowerPoint) and more. |
+| **[Awesome Claude Skills (Composio)](https://github.com/ComposioHQ/awesome-claude-skills)** | ⭐ 66.6k | A well-organized, frequently-referenced curated list of Claude skills and integrations by category. |
+| **[Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code)** | ⭐ 47.8k | A big curated list of skills, hooks, slash-commands, and configs for Claude Code. |
+| **[Awesome Agent Skills (VoltAgent)](https://github.com/VoltAgent/awesome-agent-skills)** | ⭐ 27.1k | 1000+ agent skills from official teams and the community, portable across Claude Code, Codex, Gemini CLI, Cursor, and more. |
+| **[claude-skills (337 skills)](https://github.com/alirezarezvani/claude-skills)** | ⭐ 19.6k | A large open library — 330+ skills, 30+ agents, 70+ commands — spanning engineering, marketing, finance, compliance, and more. |
+| **[Awesome Claude Skills (travisvn)](https://github.com/travisvn/awesome-claude-skills)** | ⭐ 13.9k | Another curated list of Claude skills, resources, and tools for customizing Claude workflows. |
+
+### 🌐 Marketplaces & directories (websites)
+
+- **[aiskill.market](https://aiskill.market/browse)** — A browsable marketplace of skills, plugins, and commands with install counts (thousands of publishers).
+- **[Claude Marketplaces](https://claudemarketplaces.com/)** — A community-curated directory of Claude Code skills, plugins, and MCP servers, updated daily from GitHub.
+- **[ClaudeSkills.info](https://claudeskills.info/skills/)** — A browsable library of free, open-source Claude Code skills and agent skills.
+- **[LobeHub Skills](https://lobehub.com/skills)** — A polished skills marketplace for Claude, Codex, and ChatGPT within the LobeHub ecosystem.
+- **[MCP Market — Skills](https://mcpmarket.com/tools/skills)** — A directory of Agent Skills for Claude.ai, Claude Code, Codex, and ChatGPT, alongside MCP servers.
+- **[skills.sh](https://skills.sh/)** — An npm-style installer for skills — one command adds a skill across Claude Code, Codex CLI, and Cursor.
+- **[SkillsLLM](https://skillsllm.com/)** — A directory of AI skills and agents by category, linking through to their GitHub repos.
+- **[SkillsMP](https://skillsmp.com/)** — A huge searchable index of SKILL.md files scraped from public GitHub (millions indexed). Great for finding a specific skill; audit before installing.
 
 ---
 
 ## 🧩 The full stack at a glance
 
-- **48** tools listed · **11** skills · **32** connectors · **2** plugins · **2** rules · **1** extensions
-- Works in: 💬 chat **6** · ⌨️ code **8** · 🔀 both **34**
-- ✓ next to a name means it's an **official** tool from the vendor.
+- **60** tools listed · **13** skills · **32** connectors · **10** plugins · **3** rules · **2** extensions
+- Works in: 💬 chat **6** · ⌨️ code **20** · 🔀 both **34**
+- **30** carry live GitHub star counts · **5** are 🧰 built into Claude · ✓ = official from the vendor.
 
 ## ➕ Add or fix a tool
 
-Know a great one we're missing, or spot something out of date? Open a PR adding it to [`data/items.json`](data/items.json) — see [CONTRIBUTING.md](CONTRIBUTING.md). The README and website rebuild automatically.
+Know a great one we're missing, or spot something out of date? Open a PR adding it to [`data/items.json`](data/items.json) — see [CONTRIBUTING.md](CONTRIBUTING.md). Include a `repo` (owner/name) and the star count fills in automatically. The README and website rebuild themselves.
 
 ## License
 
-MIT © 2026 Rahul Khare. Not affiliated with any of the vendors listed. Logos and product names belong to their owners.
+MIT © 2026 Rahul Khare. Not affiliated with any of the vendors listed. Star counts are from the GitHub API; product names and logos belong to their owners.
 
 ---
 
-<sub>🤖 Generated 2026-07 from <code>data/*.json</code>. 48 tools. Beginner-friendly by design.</sub>
+<sub>🤖 Generated 2026-07 from <code>data/*.json</code>. 60 tools, stars as of 2026-07-02. Beginner-friendly by design.</sub>
