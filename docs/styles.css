@@ -141,7 +141,19 @@ details.explainer > summary::-webkit-details-marker { display: none; }
   border: 1px solid var(--line); background: var(--glass); color: var(--text); transition: border var(--fast), box-shadow var(--fast); }
 .search::placeholder { color: var(--text-faint); }
 .search:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(46, 230, 197, 0.18); }
-.filters { display: flex; flex-direction: column; gap: 9px; margin-top: var(--space-sm); }
+.filters { display: flex; flex-direction: column; gap: 9px; }
+
+/* collapsible, NON-sticky filter panel (keeps the sticky bar slim so the grid gets the screen) */
+.filter-panel { overflow: hidden; max-height: 780px; transition: max-height 0.32s var(--ease); border-bottom: 1px solid var(--line); background: rgba(7, 8, 13, 0.35); }
+.filter-panel.collapsed { max-height: 0; border-bottom-color: transparent; }
+.filter-panel-inner { padding: var(--space-md) 0; }
+.filter-toggle { font-family: var(--font-body); font-size: 0.83rem; font-weight: 600; color: var(--text); background: var(--glass); border: 1px solid var(--line); border-radius: var(--r-sm); padding: 6px 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; transition: border-color var(--fast), color var(--fast); }
+.filter-toggle:hover { border-color: var(--accent); }
+.filter-toggle[aria-expanded="true"] { border-color: var(--accent); color: var(--accent); }
+.filter-toggle::after { content: "▾"; font-size: 0.8em; transition: transform var(--fast); }
+.filter-toggle[aria-expanded="false"]::after { transform: rotate(-90deg); }
+.fcount { font-weight: 700; color: var(--accent); }
+.fcount:empty { display: none; }
 .filter-group { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
 .glabel { font-family: var(--font-display); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-faint); min-width: 62px; }
 .chips { display: inline-flex; flex-wrap: wrap; gap: 7px; }
@@ -269,4 +281,5 @@ footer { border-top: 1px solid var(--line); padding: var(--space-lg) 0 var(--spa
   .card { opacity: 1; transform: none; transition: none; }
   .btn, .chip, .coll-card, .card:hover { transition: none; transform: none; }
   .tray { transition: none; }
+  .filter-panel { transition: none; }
 }

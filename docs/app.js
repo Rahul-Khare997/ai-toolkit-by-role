@@ -40,6 +40,10 @@
     $("sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
     $("clear").addEventListener("click", clearFilters);
     $("selectAll").addEventListener("click", selectAllShown);
+    $("filterToggle").addEventListener("click", () => {
+      const collapsed = $("filterPanel").classList.toggle("collapsed");
+      $("filterToggle").setAttribute("aria-expanded", String(!collapsed));
+    });
     $("trayClear").addEventListener("click", () => { state.cart.clear(); saveCart(); render(); updateTray(); });
     $("trayTool").addEventListener("change", (e) => { state.cartTool = e.target.value; updateTray(); });
     $("copyPrompt").addEventListener("click", () => copy(buildPrompt(), `Copied AI prompt for ${state.cart.size} tool(s)`));
@@ -186,7 +190,13 @@
     return c;
   }
 
+  function updateActiveCount() {
+    const n = state.roles.size + state.surfaces.size + state.types.size + state.tools.size + state.costs.size;
+    $("activeCount").textContent = n ? ` (${n})` : "";
+  }
+
   function render() {
+    updateActiveCount();
     const grid = $("grid"); grid.innerHTML = "";
     const results = DATA.items.filter(matches);
     $("count").textContent = `${results.length} of ${DATA.items.length} tools`;

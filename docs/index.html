@@ -23,8 +23,8 @@
 
   <header class="hero">
     <div class="wrap hero-inner">
-      <span class="eyebrow">🧰 The vibe-coder's starter kit</span>
-      <h1>Every AI tool, <span class="grad">by your job.</span></h1>
+      <span class="eyebrow">🧰 The curated AI-tools directory</span>
+      <h1>Your AI stack, <span class="grad">mapped to your role.</span></h1>
       <p class="tag">New to AI and not sure what to install? A beginner-friendly, filterable directory of AI <b>skills</b>, <b>connectors</b>, and <b>plugins</b> — organized by <b>your role</b>, mapped across Claude, ChatGPT, Cursor, Codex &amp; more, and ranked by real GitHub stars. <b>Pick several and copy every install step at once.</b></p>
       <div class="cta">
         <a class="btn btn-primary" href="#browse">Browse the toolkit ↓</a>
@@ -53,16 +53,10 @@
   <div class="controls" id="browse">
     <div class="wrap">
       <input id="search" class="search" type="search" placeholder="Search tools — e.g. &ldquo;excel&rdquo;, &ldquo;github&rdquo;, &ldquo;privacy&rdquo;, &ldquo;figma&rdquo;…" />
-      <div class="filters">
-        <div class="filter-group"><span class="glabel">Role</span><span class="chips" id="roleChips"></span></div>
-        <div class="filter-group"><span class="glabel">Works in</span><span class="chips" id="surfaceChips"></span></div>
-        <div class="filter-group"><span class="glabel">Type</span><span class="chips" id="typeChips"></span></div>
-        <div class="filter-group"><span class="glabel">Cost</span><span class="chips" id="costChips"></span></div>
-        <div class="filter-group"><span class="glabel">Tool</span><span class="chips" id="toolChips"></span></div>
-      </div>
       <div class="toolbar">
         <span class="count" id="count">—</span>
         <div class="toolbar-right">
+          <button class="filter-toggle" id="filterToggle" aria-expanded="true" aria-controls="filterPanel">⚙ Filters<span class="fcount" id="activeCount"></span></button>
           <button class="linkbtn" id="selectAll">✓ Select all shown</button>
           <label class="sortlabel">Sort
             <select id="sort">
@@ -73,6 +67,18 @@
           </label>
           <button class="linkbtn" id="clear">Clear filters</button>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="filter-panel" id="filterPanel">
+    <div class="wrap filter-panel-inner">
+      <div class="filters">
+        <div class="filter-group"><span class="glabel">Role</span><span class="chips" id="roleChips"></span></div>
+        <div class="filter-group"><span class="glabel">Works in</span><span class="chips" id="surfaceChips"></span></div>
+        <div class="filter-group"><span class="glabel">Type</span><span class="chips" id="typeChips"></span></div>
+        <div class="filter-group"><span class="glabel">Cost</span><span class="chips" id="costChips"></span></div>
+        <div class="filter-group"><span class="glabel">Tool</span><span class="chips" id="toolChips"></span></div>
       </div>
     </div>
   </div>
