@@ -50,7 +50,7 @@ Some of these work in **chat apps**, some only in **coding agents**, and some in
 4. Skip anything marked **🧰 built-in** — Claude already ships it.
 5. Follow the **name link** for exact, up-to-date install steps.
 
-> ⚠️ **Please read:** community-curated, not official docs. The AI space changes fast — always confirm install steps and permissions at the linked source before installing, and give connectors the *least* access they need (read-only when possible). Content last checked: 2026-07.
+> ⚠️ **Please read:** community-curated, not official docs. The AI space changes fast — always confirm install steps and permissions at the linked source before installing, and give connectors the *least* access they need (read-only when possible). Content last checked: 2026-07-02.
 
 ---
 
@@ -323,4 +323,4 @@ MIT © 2026 Rahul Khare. Not affiliated with any of the vendors listed. Star cou
 
 ---
 
-<sub>🤖 Generated 2026-07 from <code>data/*.json</code>. 60 tools, stars as of 2026-07-02. Beginner-friendly by design.</sub>
+<sub>🤖 Generated 2026-07-02 from <code>data/*.json</code>. 60 tools, stars as of 2026-07-02. Beginner-friendly by design.</sub>
