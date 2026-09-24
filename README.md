@@ -10,7 +10,7 @@
 
 ### 👉 [**Open the filterable website**](https://rahul-khare997.github.io/ai-toolkit-by-role/) — search and filter by role, tool, type, and where it works.
 
-![items](https://img.shields.io/badge/tools%20listed-122-blue)
+![items](https://img.shields.io/badge/tools%20listed-123-blue)
 ![roles](https://img.shields.io/badge/roles-13-brightgreen)
 ![with stars](https://img.shields.io/badge/live%20star%20counts-33-yellow)
 ![beginner friendly](https://img.shields.io/badge/beginner-friendly-orange)
@@ -52,7 +52,7 @@ Some of these work in **chat apps**, some only in **coding agents**, and some in
 4. Skip anything marked **🧰 built-in** — Claude already ships it.
 5. Follow the **name link** for exact, up-to-date install steps.
 
-> ⚠️ **Please read:** community-curated, not official docs. The AI space changes fast — always confirm install steps and permissions at the linked source before installing, and give connectors the *least* access they need (read-only when possible). Content last checked: 2026-09-21.
+> ⚠️ **Please read:** community-curated, not official docs. The AI space changes fast — always confirm install steps and permissions at the linked source before installing, and give connectors the *least* access they need (read-only when possible). Content last checked: 2026-09-24.
 
 ---
 
@@ -112,6 +112,7 @@ Write, review, test, and ship code faster with the right connectors and rules.
 | **[Linear](https://linear.app/docs)** ✓ | 🔌 Connector (MCP) | 🔀 Both | 🔵 Freemium | — | Claude Desktop, Claude Code, Cursor | **Connects your AI to Linear to manage issues and projects.** Create and update issues, or get a status summary, without leaving the conversation. |
 | **[Lovable](https://lovable.dev)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Build full web apps from a prompt (AI app builder).** Go from idea to a working app without setting up a dev environment. |
 | **[Project Rules (.cursorrules)](https://docs.cursor.com/context/rules)** ✓ | 📏 Rule / Config | ⌨️ Code | 🟢 Free | — | Cursor | **A file where you tell Cursor how to behave in your project — your coding style, do's and don'ts.** The AI follows your conventions automatically instead of you correcting it every time. |
+| **[Agent QA](https://vostride.com/docs/agent-qa/quickstart)** ✓ | 🚀 App | 🌐 Standalone | 🟢 Free | — | Its own app | **Runs natural-language tests for web and mobile apps through a dashboard or command line.** Helps developers check user flows without writing each browser or device action as code. |
 | **[Docker](https://github.com/modelcontextprotocol/servers)** | 🔌 Connector (MCP) | ⌨️ Code | 🟢 Free | — | Claude Code, Cursor | **Lets your AI manage Docker containers — build, run, and inspect them.** Handy for local dev environments and running things in isolation without memorizing Docker commands. |
 | **[Figma](https://help.figma.com/hc/en-us/articles/32132100833559)** ✓ | 🔌 Connector (MCP) | 🔀 Both | 🔵 Freemium | — | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to Figma to read designs and turn them into code or specs.** Hand the AI a Figma frame and get accurate component code or a clean spec — no more eyeballing pixels. |
 
@@ -408,9 +409,9 @@ Once you outgrow this starter list, these are the best places to discover more.
 
 ## 🧩 The full stack at a glance
 
-- **122** tools listed · **50** apps · **22** skills · **35** connectors · **10** plugins · **3** rules · **2** extensions
-- Works in: 💬 chat **6** · ⌨️ code **21** · 🔀 both **45** · 🌐 standalone **50**
-- Cost: 🟢 free **63** · 🔵 freemium **42** · 🟠 paid **11** · 🟣 enterprise **6**
+- **123** tools listed · **51** apps · **22** skills · **35** connectors · **10** plugins · **3** rules · **2** extensions
+- Works in: 💬 chat **6** · ⌨️ code **21** · 🔀 both **45** · 🌐 standalone **51**
+- Cost: 🟢 free **64** · 🔵 freemium **42** · 🟠 paid **11** · 🟣 enterprise **6**
 - **33** carry live GitHub star counts · **5** are 🧰 built into Claude · ✓ = official from the vendor.
 
 ## ➕ Add or fix a tool
@@ -423,4 +424,4 @@ MIT © 2026 Rahul Khare. Not affiliated with any of the vendors listed. Star cou
 
 ---
 
-<sub>🤖 Generated 2026-09-21 from <code>data/*.json</code>. 122 tools, stars as of 2026-09-21. Beginner-friendly by design.</sub>
+<sub>🤖 Generated 2026-09-24 from <code>data/*.json</code>. 123 tools, stars as of 2026-09-21. Beginner-friendly by design.</sub>

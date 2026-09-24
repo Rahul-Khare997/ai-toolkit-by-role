@@ -3620,5 +3620,35 @@
     "last_verified": "2026-07",
     "repo": "dbt-labs/dbt-core",
     "built_in": false
+  },
+  {
+    "id": "agent-qa",
+    "name": "Agent QA",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "software-developer"
+    ],
+    "what": "Runs natural-language tests for web and mobile apps through a dashboard or command line.",
+    "why": "Helps developers check user flows without writing each browser or device action as code.",
+    "install": {
+      "standalone": "Install the agent-qa npm package, run its setup command, and open the dashboard. Source-available under FSL-1.1-ALv2; free for permitted use, with possible separate model, browser, or device provider charges."
+    },
+    "docs": "https://vostride.com/docs/agent-qa/quickstart",
+    "official": true,
+    "difficulty": "intermediate",
+    "tags": [
+      "testing",
+      "web",
+      "mobile",
+      "automation"
+    ],
+    "last_verified": "2026-09",
+    "repo": "vostride/agent-qa",
+    "built_in": false,
+    "cost": "free"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21",
+  "generated_at": "2026-09-24",
   "stars_asof": "2026-09-21",
   "items": [
     {
@@ -3656,6 +3656,37 @@
       "repo": "dbt-labs/dbt-core",
       "built_in": false,
       "stars": 13893
+    },
+    {
+      "id": "agent-qa",
+      "name": "Agent QA",
+      "type": "app",
+      "surface": "standalone",
+      "tools": [
+        "standalone"
+      ],
+      "roles": [
+        "software-developer"
+      ],
+      "what": "Runs natural-language tests for web and mobile apps through a dashboard or command line.",
+      "why": "Helps developers check user flows without writing each browser or device action as code.",
+      "install": {
+        "standalone": "Install the agent-qa npm package, run its setup command, and open the dashboard. Source-available under FSL-1.1-ALv2; free for permitted use, with possible separate model, browser, or device provider charges."
+      },
+      "docs": "https://vostride.com/docs/agent-qa/quickstart",
+      "official": true,
+      "difficulty": "intermediate",
+      "tags": [
+        "testing",
+        "web",
+        "mobile",
+        "automation"
+      ],
+      "last_verified": "2026-09",
+      "repo": "vostride/agent-qa",
+      "built_in": false,
+      "cost": "free",
+      "stars": null
     }
   ],
   "roles": [
@@ -4030,24 +4061,24 @@
     }
   ],
   "stats": {
-    "total": 122,
+    "total": 123,
     "by_type": {
       "skill": 22,
       "connector": 35,
       "plugin": 10,
       "rule": 3,
       "extension": 2,
-      "app": 50
+      "app": 51
     },
     "by_surface": {
       "chat": 6,
       "code": 21,
       "both": 45,
-      "standalone": 50
+      "standalone": 51
     },
     "by_role": {
       "must-have": 10,
-      "software-developer": 31,
+      "software-developer": 32,
       "finance": 9,
       "data-analytics": 18,
       "ui-ux-designer": 11,
@@ -4061,13 +4092,13 @@
       "marketing": 35
     },
     "by_cost": {
-      "free": 63,
+      "free": 64,
       "freemium": 42,
       "paid": 11,
       "enterprise": 6
     },
     "with_stars": 33,
     "built_in": 5,
-    "apps": 50
+    "apps": 51
   }
 }
