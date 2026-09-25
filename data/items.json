@@ -3620,5 +3620,39 @@
     "last_verified": "2026-07",
     "repo": "dbt-labs/dbt-core",
     "built_in": false
+  },
+  {
+    "id": "yylo-skills",
+    "name": "YYLO Skills",
+    "type": "skill",
+    "surface": "code",
+    "tools": [
+      "claude-code",
+      "codex"
+    ],
+    "roles": [
+      "software-developer",
+      "project-management"
+    ],
+    "what": "A pack of eight agent skills for planning implementation-sized tasks, keeping a project wiki, and capturing evidence of what the agent did.",
+    "why": "Gives your coding agent disciplined, repeatable workflows instead of improvising: tasks, wiki notes, and records stay organized and auditable.",
+    "install": {
+      "claude-code": "Run: npx skills add yylo-dev/yylo-skills and pick skills when prompted (add --skill '*' --copy -y for all eight).",
+      "codex": "Run: npx skills add yylo-dev/yylo-skills -a codex and pick skills when prompted."
+    },
+    "docs": "https://github.com/yylo-dev/yylo-skills",
+    "official": false,
+    "difficulty": "intermediate",
+    "tags": [
+      "skills",
+      "workflow",
+      "tasks",
+      "wiki",
+      "evidence"
+    ],
+    "last_verified": "2026-09",
+    "repo": "yylo-dev/yylo-skills",
+    "built_in": false,
+    "cost": "free"
   }
 ]

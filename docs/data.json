@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21",
+  "generated_at": "2026-09-25",
   "stars_asof": "2026-09-21",
   "items": [
     {
@@ -3656,6 +3656,41 @@
       "repo": "dbt-labs/dbt-core",
       "built_in": false,
       "stars": 13893
+    },
+    {
+      "id": "yylo-skills",
+      "name": "YYLO Skills",
+      "type": "skill",
+      "surface": "code",
+      "tools": [
+        "claude-code",
+        "codex"
+      ],
+      "roles": [
+        "software-developer",
+        "project-management"
+      ],
+      "what": "A pack of eight agent skills for planning implementation-sized tasks, keeping a project wiki, and capturing evidence of what the agent did.",
+      "why": "Gives your coding agent disciplined, repeatable workflows instead of improvising: tasks, wiki notes, and records stay organized and auditable.",
+      "install": {
+        "claude-code": "Run: npx skills add yylo-dev/yylo-skills and pick skills when prompted (add --skill '*' --copy -y for all eight).",
+        "codex": "Run: npx skills add yylo-dev/yylo-skills -a codex and pick skills when prompted."
+      },
+      "docs": "https://github.com/yylo-dev/yylo-skills",
+      "official": false,
+      "difficulty": "intermediate",
+      "tags": [
+        "skills",
+        "workflow",
+        "tasks",
+        "wiki",
+        "evidence"
+      ],
+      "last_verified": "2026-09",
+      "repo": "yylo-dev/yylo-skills",
+      "built_in": false,
+      "cost": "free",
+      "stars": null
     }
   ],
   "roles": [
@@ -4030,9 +4065,9 @@
     }
   ],
   "stats": {
-    "total": 122,
+    "total": 123,
     "by_type": {
-      "skill": 22,
+      "skill": 23,
       "connector": 35,
       "plugin": 10,
       "rule": 3,
@@ -4041,13 +4076,13 @@
     },
     "by_surface": {
       "chat": 6,
-      "code": 21,
+      "code": 22,
       "both": 45,
       "standalone": 50
     },
     "by_role": {
       "must-have": 10,
-      "software-developer": 31,
+      "software-developer": 32,
       "finance": 9,
       "data-analytics": 18,
       "ui-ux-designer": 11,
@@ -4057,11 +4092,11 @@
       "business-analyst": 18,
       "graphic-designer": 14,
       "video-creator": 12,
-      "project-management": 13,
+      "project-management": 14,
       "marketing": 35
     },
     "by_cost": {
-      "free": 63,
+      "free": 64,
       "freemium": 42,
       "paid": 11,
       "enterprise": 6
