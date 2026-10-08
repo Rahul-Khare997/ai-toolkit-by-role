@@ -10,7 +10,7 @@
 
 ### 👉 [**Open the filterable website**](https://rahul-khare997.github.io/ai-toolkit-by-role/) — search and filter by role, tool, type, and where it works.
 
-![items](https://img.shields.io/badge/tools%20listed-122-blue)
+![items](https://img.shields.io/badge/tools%20listed-123-blue)
 ![roles](https://img.shields.io/badge/roles-13-brightgreen)
 ![with stars](https://img.shields.io/badge/live%20star%20counts-33-yellow)
 ![beginner friendly](https://img.shields.io/badge/beginner-friendly-orange)
@@ -114,6 +114,7 @@ Write, review, test, and ship code faster with the right connectors and rules.
 | **[Project Rules (.cursorrules)](https://docs.cursor.com/context/rules)** ✓ | 📏 Rule / Config | ⌨️ Code | 🟢 Free | — | Cursor | **A file where you tell Cursor how to behave in your project — your coding style, do's and don'ts.** The AI follows your conventions automatically instead of you correcting it every time. |
 | **[Docker](https://github.com/modelcontextprotocol/servers)** | 🔌 Connector (MCP) | ⌨️ Code | 🟢 Free | — | Claude Code, Cursor | **Lets your AI manage Docker containers — build, run, and inspect them.** Handy for local dev environments and running things in isolation without memorizing Docker commands. |
 | **[Figma](https://help.figma.com/hc/en-us/articles/32132100833559)** ✓ | 🔌 Connector (MCP) | 🔀 Both | 🔵 Freemium | — | Claude Desktop, Claude Code, Cursor, Codex | **Connects your AI to Figma to read designs and turn them into code or specs.** Hand the AI a Figma frame and get accurate component code or a clean spec — no more eyeballing pixels. |
+| **[Tale](https://docs.tale.dev/develop/use-tale-from-your-editor)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | 🟢 Free | — | Claude Code | **Lets your coding assistant retrieve source-linked passages from team documents and web pages in a self-hosted Tale workspace.** Reuse shared knowledge in code; Community software is free, while hosting and model costs are separate. |
 
 <a id="finance"></a>
 ### 💰 Finance & Accounting
@@ -269,6 +270,7 @@ Requirements, tickets, docs, and stakeholder-ready summaries.
 | **[Slack](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | 🟢 Free | — | Claude Desktop, Claude Code | **Connects your AI to Slack to read and send messages.** Summarize a busy channel, draft an announcement, or find that decision buried in threads. |
 | **[Web Search (Brave / Exa)](https://modelcontextprotocol.io/examples)** | 🔌 Connector (MCP) | 🔀 Both | 🔵 Freemium | — | Claude Desktop, Claude Code, Cursor, Codex | **Lets your AI search the live internet and read current web pages.** Out of the box, most AIs only know what they were trained on. This lets them look things up so answers are current and less likely to be made up. |
 | **[Zapier](https://zapier.com)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Connect thousands of apps and add AI steps to automate workflows.** Automate repetitive busywork across your tools, no code. |
+| **[Tale](https://docs.tale.dev/develop/use-tale-from-your-editor)** ✓ | 🔌 Connector (MCP) | ⌨️ Code | 🟢 Free | — | Claude Code | **Lets your coding assistant retrieve source-linked passages from team documents and web pages in a self-hosted Tale workspace.** Reuse shared knowledge in code; Community software is free, while hosting and model costs are separate. |
 
 <a id="graphic-designer"></a>
 ### 🖼️ Graphic Designer
@@ -408,9 +410,9 @@ Once you outgrow this starter list, these are the best places to discover more.
 
 ## 🧩 The full stack at a glance
 
-- **122** tools listed · **50** apps · **22** skills · **35** connectors · **10** plugins · **3** rules · **2** extensions
-- Works in: 💬 chat **6** · ⌨️ code **21** · 🔀 both **45** · 🌐 standalone **50**
-- Cost: 🟢 free **63** · 🔵 freemium **42** · 🟠 paid **11** · 🟣 enterprise **6**
+- **123** tools listed · **50** apps · **22** skills · **36** connectors · **10** plugins · **3** rules · **2** extensions
+- Works in: 💬 chat **6** · ⌨️ code **22** · 🔀 both **45** · 🌐 standalone **50**
+- Cost: 🟢 free **64** · 🔵 freemium **42** · 🟠 paid **11** · 🟣 enterprise **6**
 - **33** carry live GitHub star counts · **5** are 🧰 built into Claude · ✓ = official from the vendor.
 
 ## ➕ Add or fix a tool
@@ -423,4 +425,4 @@ MIT © 2026 Rahul Khare. Not affiliated with any of the vendors listed. Star cou
 
 ---
 
-<sub>🤖 Generated 2026-10-05 from <code>data/*.json</code>. 122 tools, stars as of 2026-10-05. Beginner-friendly by design.</sub>
+<sub>🤖 Generated 2026-07 from <code>data/*.json</code>. 123 tools, stars as of 2026-10-05. Beginner-friendly by design.</sub>

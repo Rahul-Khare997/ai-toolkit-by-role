@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05",
+  "generated_at": "2026-07",
   "stars_asof": "2026-10-05",
   "items": [
     {
@@ -3656,6 +3656,38 @@
       "repo": "dbt-labs/dbt-core",
       "built_in": false,
       "stars": 13970
+    },
+    {
+      "id": "tale",
+      "name": "Tale",
+      "type": "connector",
+      "surface": "code",
+      "tools": [
+        "claude-code"
+      ],
+      "roles": [
+        "software-developer",
+        "business-analyst"
+      ],
+      "what": "Lets your coding assistant retrieve source-linked passages from team documents and web pages in a self-hosted Tale workspace.",
+      "why": "Reuse shared knowledge in code; Community software is free, while hosting and model costs are separate.",
+      "install": {
+        "claude-code": "Deploy Tale first, then follow the official Claude Code HTTP setup for your own host, API key and organization slug. get_knowledge is read-only; the server also exposes automation tools that can change state, so review tool permissions. Community software is MIT-licensed; hosting and model usage cost extra."
+      },
+      "docs": "https://docs.tale.dev/develop/use-tale-from-your-editor",
+      "official": true,
+      "difficulty": "advanced",
+      "tags": [
+        "knowledge",
+        "self-hosted",
+        "documents",
+        "mcp"
+      ],
+      "last_verified": "2026-10",
+      "repo": "tale-project/tale",
+      "built_in": false,
+      "cost": "free",
+      "stars": null
     }
   ],
   "roles": [
@@ -4030,10 +4062,10 @@
     }
   ],
   "stats": {
-    "total": 122,
+    "total": 123,
     "by_type": {
       "skill": 22,
-      "connector": 35,
+      "connector": 36,
       "plugin": 10,
       "rule": 3,
       "extension": 2,
@@ -4041,27 +4073,27 @@
     },
     "by_surface": {
       "chat": 6,
-      "code": 21,
+      "code": 22,
       "both": 45,
       "standalone": 50
     },
     "by_role": {
       "must-have": 10,
-      "software-developer": 31,
+      "software-developer": 32,
       "finance": 9,
       "data-analytics": 18,
       "ui-ux-designer": 11,
       "legal": 22,
       "healthcare": 10,
       "business-intelligence": 11,
-      "business-analyst": 18,
+      "business-analyst": 19,
       "graphic-designer": 14,
       "video-creator": 12,
       "project-management": 13,
       "marketing": 35
     },
     "by_cost": {
-      "free": 63,
+      "free": 64,
       "freemium": 42,
       "paid": 11,
       "enterprise": 6
