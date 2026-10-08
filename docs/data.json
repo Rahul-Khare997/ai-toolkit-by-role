@@ -3656,6 +3656,39 @@
       "repo": "dbt-labs/dbt-core",
       "built_in": false,
       "stars": 13970
+    },
+    {
+      "id": "hyperconsciousness",
+      "name": "Hyperconsciousness",
+      "type": "connector",
+      "surface": "code",
+      "tools": [
+        "claude-code",
+        "codex"
+      ],
+      "roles": [
+        "software-developer"
+      ],
+      "what": "Lets your coding agent search selected notes in an encrypted knowledge store you run (developer alpha).",
+      "why": "Reuse saved project decisions across conversations while choosing which records the agent can read.",
+      "install": {
+        "claude-code": "Build hc from source using the docs, create an isolated store and a read-only scoped grant, then configure the MCP client with absolute paths: hc mcp --as <grant-id> --dir <store>. Omit --write. Hosted model providers can see returned plaintext.",
+        "codex": "Build hc from source using the docs, create an isolated store and a read-only scoped grant, then configure the MCP client with absolute paths: hc mcp --as <grant-id> --dir <store>. Omit --write. Hosted model providers can see returned plaintext."
+      },
+      "docs": "https://github.com/louis030195/hyperconsciousness#give-an-agent-limited-access",
+      "official": false,
+      "difficulty": "advanced",
+      "tags": [
+        "memory",
+        "knowledge",
+        "encrypted",
+        "local"
+      ],
+      "last_verified": "2026-10",
+      "repo": "louis030195/hyperconsciousness",
+      "built_in": false,
+      "cost": "free",
+      "stars": null
     }
   ],
   "roles": [
@@ -4030,10 +4063,10 @@
     }
   ],
   "stats": {
-    "total": 122,
+    "total": 123,
     "by_type": {
       "skill": 22,
-      "connector": 35,
+      "connector": 36,
       "plugin": 10,
       "rule": 3,
       "extension": 2,
@@ -4041,13 +4074,13 @@
     },
     "by_surface": {
       "chat": 6,
-      "code": 21,
+      "code": 22,
       "both": 45,
       "standalone": 50
     },
     "by_role": {
       "must-have": 10,
-      "software-developer": 31,
+      "software-developer": 32,
       "finance": 9,
       "data-analytics": 18,
       "ui-ux-designer": 11,
@@ -4061,7 +4094,7 @@
       "marketing": 35
     },
     "by_cost": {
-      "free": 63,
+      "free": 64,
       "freemium": 42,
       "paid": 11,
       "enterprise": 6

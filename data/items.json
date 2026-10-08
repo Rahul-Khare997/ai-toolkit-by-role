@@ -3620,5 +3620,37 @@
     "last_verified": "2026-07",
     "repo": "dbt-labs/dbt-core",
     "built_in": false
+  },
+  {
+    "id": "hyperconsciousness",
+    "name": "Hyperconsciousness",
+    "type": "connector",
+    "surface": "code",
+    "tools": [
+      "claude-code",
+      "codex"
+    ],
+    "roles": [
+      "software-developer"
+    ],
+    "what": "Lets your coding agent search selected notes in an encrypted knowledge store you run (developer alpha).",
+    "why": "Reuse saved project decisions across conversations while choosing which records the agent can read.",
+    "install": {
+      "claude-code": "Build hc from source using the docs, create an isolated store and a read-only scoped grant, then configure the MCP client with absolute paths: hc mcp --as <grant-id> --dir <store>. Omit --write. Hosted model providers can see returned plaintext.",
+      "codex": "Build hc from source using the docs, create an isolated store and a read-only scoped grant, then configure the MCP client with absolute paths: hc mcp --as <grant-id> --dir <store>. Omit --write. Hosted model providers can see returned plaintext."
+    },
+    "docs": "https://github.com/louis030195/hyperconsciousness#give-an-agent-limited-access",
+    "official": false,
+    "difficulty": "advanced",
+    "tags": [
+      "memory",
+      "knowledge",
+      "encrypted",
+      "local"
+    ],
+    "last_verified": "2026-10",
+    "repo": "louis030195/hyperconsciousness",
+    "built_in": false,
+    "cost": "free"
   }
 ]
