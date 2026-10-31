@@ -18,7 +18,7 @@
     "what": "Lets your AI search the live internet and read current web pages.",
     "why": "Out of the box, most AIs only know what they were trained on. This lets them look things up so answers are current and less likely to be made up.",
     "install": {
-      "claude-desktop": "Add the Brave Search or Exa MCP server under Settings \u2192 Connectors.",
+      "claude-desktop": "Add the Brave Search or Exa MCP server under Settings → Connectors.",
       "claude-code": "Run: claude mcp add exa (or brave-search) and paste your API key.",
       "cursor": "Add the server to .cursor/mcp.json."
     },
@@ -88,7 +88,7 @@
     "why": "So a chat app can open your documents and save results. (Coding agents like Claude Code and Cursor can already touch files, so this matters most for chat apps like Claude Desktop.)",
     "install": {
       "claude-desktop": "Add the Filesystem MCP server and list the folders it's allowed to touch.",
-      "claude-code": "Built in \u2014 Claude Code already reads/writes files in your project."
+      "claude-code": "Built in — Claude Code already reads/writes files in your project."
     },
     "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
     "official": true,
@@ -147,7 +147,7 @@
       "must-have"
     ],
     "what": "Helps the AI break a hard problem into clear, ordered steps before answering.",
-    "why": "Noticeably better results on tricky, multi-step tasks \u2014 planning, debugging, reasoning.",
+    "why": "Noticeably better results on tricky, multi-step tasks — planning, debugging, reasoning.",
     "install": {
       "claude-code": "Run: claude mcp add sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking"
     },
@@ -180,11 +180,11 @@
       "software-developer",
       "project-management"
     ],
-    "what": "Lets your AI read and manage your GitHub \u2014 code, issues, and pull requests.",
+    "what": "Lets your AI read and manage your GitHub — code, issues, and pull requests.",
     "why": "Say 'summarize these open issues' or 'open a PR with this fix' instead of clicking around GitHub yourself.",
     "install": {
       "claude-code": "Run: claude mcp add github and sign in, or use the official GitHub MCP server.",
-      "claude-desktop": "Add the GitHub connector under Settings \u2192 Connectors.",
+      "claude-desktop": "Add the GitHub connector under Settings → Connectors.",
       "cursor": "Add the GitHub MCP server to .cursor/mcp.json."
     },
     "docs": "https://github.com/github/github-mcp-server",
@@ -215,7 +215,7 @@
       "software-developer"
     ],
     "what": "Feeds your coding agent the latest official documentation for libraries and frameworks.",
-    "why": "Stops the AI from using outdated or made-up code \u2014 it pulls the real, current docs for the exact version you use.",
+    "why": "Stops the AI from using outdated or made-up code — it pulls the real, current docs for the exact version you use.",
     "install": {
       "claude-code": "Run: claude mcp add context7 -- npx -y @upstash/context7-mcp",
       "cursor": "Add Context7 to .cursor/mcp.json."
@@ -248,7 +248,7 @@
       "ui-ux-designer"
     ],
     "what": "Lets your AI open a real browser to click, type, and take screenshots.",
-    "why": "Great for testing your website, filling forms, or grabbing screenshots \u2014 the AI actually drives the browser.",
+    "why": "Great for testing your website, filling forms, or grabbing screenshots — the AI actually drives the browser.",
     "install": {
       "claude-code": "Run: claude mcp add playwright -- npx -y @playwright/mcp",
       "cursor": "Add the Playwright MCP server to .cursor/mcp.json."
@@ -376,7 +376,7 @@
     "roles": [
       "software-developer"
     ],
-    "what": "Lets your AI manage Docker containers \u2014 build, run, and inspect them.",
+    "what": "Lets your AI manage Docker containers — build, run, and inspect them.",
     "why": "Handy for local dev environments and running things in isolation without memorizing Docker commands.",
     "install": {
       "claude-code": "Add the Docker MCP server per its README."
@@ -434,7 +434,7 @@
     "roles": [
       "software-developer"
     ],
-    "what": "A file where you tell Cursor how to behave in your project \u2014 your coding style, do's and don'ts.",
+    "what": "A file where you tell Cursor how to behave in your project — your coding style, do's and don'ts.",
     "why": "The AI follows your conventions automatically instead of you correcting it every time.",
     "install": {
       "cursor": "Create a .cursor/rules folder (or a .cursorrules file) in your project and describe your preferences."
@@ -467,7 +467,7 @@
       "project-management"
     ],
     "what": "A plain-text file your coding agent reads first, describing your project and how to work in it.",
-    "why": "One place to set context and rules \u2014 the agent stops guessing and works the way your team does.",
+    "why": "One place to set context and rules — the agent stops guessing and works the way your team does.",
     "install": {
       "claude-code": "Add a CLAUDE.md at your repo root (run /init to generate one).",
       "codex": "Add an AGENTS.md file at your repo root."
@@ -498,10 +498,10 @@
       "data-analytics",
       "business-analyst"
     ],
-    "what": "Teaches the AI to read, build, and fix Excel/CSV spreadsheets properly \u2014 formulas, formatting, charts.",
+    "what": "Teaches the AI to read, build, and fix Excel/CSV spreadsheets properly — formulas, formatting, charts.",
     "why": "Turn a messy CSV into a clean report, or generate a financial model, without wrestling with formulas yourself.",
     "install": {
-      "claude-desktop": "Enable the xlsx Skill in Settings \u2192 Capabilities/Skills.",
+      "claude-desktop": "Enable the xlsx Skill in Settings → Capabilities/Skills.",
       "claude-code": "Install the xlsx skill from the skills marketplace."
     },
     "docs": "https://www.anthropic.com/news/skills",
@@ -531,7 +531,7 @@
       "business-analyst",
       "project-management"
     ],
-    "what": "Teaches the AI to create and edit real Word (.docx) documents \u2014 headings, tables, letterheads.",
+    "what": "Teaches the AI to create and edit real Word (.docx) documents — headings, tables, letterheads.",
     "why": "Get a polished, formatted document (a report, a contract, a memo) instead of plain text you have to reformat.",
     "install": {
       "claude-desktop": "Enable the docx Skill in Settings.",
@@ -565,7 +565,7 @@
       "project-management"
     ],
     "what": "Teaches the AI to build real PowerPoint (.pptx) presentations.",
-    "why": "Describe your deck and get formatted slides back \u2014 a huge time-saver for pitches and updates.",
+    "why": "Describe your deck and get formatted slides back — a huge time-saver for pitches and updates.",
     "install": {
       "claude-desktop": "Enable the pptx Skill in Settings.",
       "claude-code": "Install the pptx skill from the skills marketplace."
@@ -597,7 +597,7 @@
       "business-analyst"
     ],
     "what": "Teaches the AI to read, fill, merge, split, and create PDF files.",
-    "why": "Pull tables out of a PDF statement, fill a form, or merge documents \u2014 no separate PDF tool needed.",
+    "why": "Pull tables out of a PDF statement, fill a form, or merge documents — no separate PDF tool needed.",
     "install": {
       "claude-desktop": "Enable the pdf Skill in Settings.",
       "claude-code": "Install the pdf skill from the skills marketplace."
@@ -629,10 +629,10 @@
       "finance"
     ],
     "what": "Lets the AI run real Python in a safe sandbox to analyze data and make charts.",
-    "why": "For exact math and real charts on your data \u2014 the AI computes the answer instead of guessing it.",
+    "why": "For exact math and real charts on your data — the AI computes the answer instead of guessing it.",
     "install": {
       "claude-desktop": "Turn on the Analysis / code tool in Settings.",
-      "chatgpt": "Use the built-in Data Analysis (code interpreter) \u2014 just upload a file and ask."
+      "chatgpt": "Use the built-in Data Analysis (code interpreter) — just upload a file and ask."
     },
     "docs": "https://modelcontextprotocol.io",
     "official": true,
@@ -661,7 +661,7 @@
       "software-developer"
     ],
     "what": "Connects your AI to Stripe to look up payments, customers, and revenue.",
-    "why": "Ask about your sales, refunds, or a specific customer in plain English \u2014 or have a coding agent wire up Stripe for you.",
+    "why": "Ask about your sales, refunds, or a specific customer in plain English — or have a coding agent wire up Stripe for you.",
     "install": {
       "claude-code": "Add the Stripe MCP server (Stripe Agent Toolkit) with a restricted API key.",
       "claude-desktop": "Add the Stripe connector in config with a read-only key."
@@ -873,7 +873,7 @@
       "software-developer"
     ],
     "what": "Connects your AI to Figma to read designs and turn them into code or specs.",
-    "why": "Hand the AI a Figma frame and get accurate component code or a clean spec \u2014 no more eyeballing pixels.",
+    "why": "Hand the AI a Figma frame and get accurate component code or a clean spec — no more eyeballing pixels.",
     "install": {
       "cursor": "Enable Figma's Dev Mode MCP server, then add it to .cursor/mcp.json.",
       "claude-code": "Add the Figma MCP server and connect your account."
@@ -936,7 +936,7 @@
       "graphic-designer"
     ],
     "what": "Describe a screen and get a working UI mockup and code back.",
-    "why": "Go from idea to a real, editable interface in seconds \u2014 great for prototyping.",
+    "why": "Go from idea to a real, editable interface in seconds — great for prototyping.",
     "install": {
       "chatgpt": "Use v0.app in your browser (by Vercel); no coding setup needed."
     },
@@ -969,8 +969,8 @@
     "what": "Create and edit images from a text description.",
     "why": "Make logos, mockups, social graphics, or edits without opening a design tool.",
     "install": {
-      "chatgpt": "Built in \u2014 just ask ChatGPT to create or edit an image.",
-      "gemini": "Built in \u2014 ask Gemini to generate an image."
+      "chatgpt": "Built in — just ask ChatGPT to create or edit an image.",
+      "gemini": "Built in — ask Gemini to generate an image."
     },
     "docs": "https://openai.com",
     "official": true,
@@ -1000,7 +1000,7 @@
     "what": "Connects your AI to Canva to create and edit designs.",
     "why": "Generate on-brand graphics, social posts, and presentations through a chat instead of designing each by hand.",
     "install": {
-      "claude-desktop": "Add the Canva connector under Settings \u2192 Connectors and sign in.",
+      "claude-desktop": "Add the Canva connector under Settings → Connectors and sign in.",
       "chatgpt": "Enable the Canva connector/app."
     },
     "docs": "https://www.canva.com/developers/",
@@ -1094,7 +1094,7 @@
     "what": "Connects your AI to Jira issues and Confluence pages.",
     "why": "Create tickets, summarize a sprint, or draft a spec page straight from a conversation.",
     "install": {
-      "claude-desktop": "Add the Atlassian connector under Settings \u2192 Connectors and sign in.",
+      "claude-desktop": "Add the Atlassian connector under Settings → Connectors and sign in.",
       "claude-code": "Add the Atlassian MCP server and authorize it."
     },
     "docs": "https://www.atlassian.com/platform/remote-mcp-server",
@@ -1127,7 +1127,7 @@
     "what": "Connects your AI to your Notion workspace to read and write pages.",
     "why": "Turn a chat into a Notion doc, update a tracker, or pull notes into your work automatically.",
     "install": {
-      "claude-desktop": "Add the Notion connector under Settings \u2192 Connectors and sign in.",
+      "claude-desktop": "Add the Notion connector under Settings → Connectors and sign in.",
       "claude-code": "Run: claude mcp add notion and authorize your workspace."
     },
     "docs": "https://developers.notion.com",
@@ -1159,7 +1159,7 @@
     "what": "Connects your AI to Linear to manage issues and projects.",
     "why": "Create and update issues, or get a status summary, without leaving the conversation.",
     "install": {
-      "claude-desktop": "Add the Linear connector under Settings \u2192 Connectors.",
+      "claude-desktop": "Add the Linear connector under Settings → Connectors.",
       "claude-code": "Add the Linear MCP server and authorize it."
     },
     "docs": "https://linear.app/docs",
@@ -1191,7 +1191,7 @@
     "what": "Connects your AI to Slack to read and send messages.",
     "why": "Summarize a busy channel, draft an announcement, or find that decision buried in threads.",
     "install": {
-      "claude-desktop": "Add the Slack connector under Settings \u2192 Connectors and authorize your workspace."
+      "claude-desktop": "Add the Slack connector under Settings → Connectors and authorize your workspace."
     },
     "docs": "https://modelcontextprotocol.io/examples",
     "official": false,
@@ -1250,7 +1250,7 @@
       "business-analyst"
     ],
     "what": "Lets your AI run ready-made web scrapers to pull data from sites.",
-    "why": "Collect data from social media, maps, e-commerce, or search \u2014 without writing a scraper yourself.",
+    "why": "Collect data from social media, maps, e-commerce, or search — without writing a scraper yourself.",
     "install": {
       "claude-desktop": "Add the Apify MCP server with your Apify token.",
       "claude-code": "Run: claude mcp add apify and provide your token."
@@ -1339,7 +1339,7 @@
     "roles": [
       "legal"
     ],
-    "what": "Teaches the AI India's Digital Personal Data Protection Act \u2014 obligations, notices, and breach rules.",
+    "what": "Teaches the AI India's Digital Personal Data Protection Act — obligations, notices, and breach rules.",
     "why": "Practical, India-specific privacy help and document drafts, grounded in the actual Act and Rules.",
     "install": {
       "claude-code": "Install the dpdpa skill from a skills marketplace.",
@@ -1370,7 +1370,7 @@
       "legal"
     ],
     "what": "Teaches the AI to read a contract, flag risky clauses, and explain them plainly.",
-    "why": "A fast first pass on an agreement \u2014 what to watch for \u2014 before it reaches a lawyer.",
+    "why": "A fast first pass on an agreement — what to watch for — before it reaches a lawyer.",
     "install": {
       "claude-desktop": "Enable a contract-review Skill (pair it with the PDF skill for scanned files)."
     },
@@ -1489,9 +1489,9 @@
       "business-analyst"
     ],
     "what": "Custom versions of ChatGPT that bundle instructions, knowledge, and actions for a specific job.",
-    "why": "Set up a reusable assistant once (e.g. 'my brand-voice writer') and everyone can use it \u2014 no prompt engineering each time.",
+    "why": "Set up a reusable assistant once (e.g. 'my brand-voice writer') and everyone can use it — no prompt engineering each time.",
     "install": {
-      "chatgpt": "In ChatGPT, open the GPT store or 'Create a GPT' \u2014 no coding needed."
+      "chatgpt": "In ChatGPT, open the GPT store or 'Create a GPT' — no coding needed."
     },
     "docs": "https://help.openai.com/en/articles/8554397-creating-a-gpt",
     "official": true,
@@ -1549,7 +1549,7 @@
       "software-developer"
     ],
     "what": "A power-user setup for coding agents: bundled skills, memory, security checks, and research-first habits.",
-    "why": "A tuned configuration that makes agents faster and more reliable on real projects \u2014 for people past the basics.",
+    "why": "A tuned configuration that makes agents faster and more reliable on real projects — for people past the basics.",
     "install": {
       "claude-code": "Follow the repo's install script to apply the ECC configuration."
     },
@@ -1582,7 +1582,7 @@
       "project-management"
     ],
     "what": "Gives your coding agent a memory across sessions by capturing and compressing what it did.",
-    "why": "Stop re-explaining your project every session \u2014 the agent remembers past work and decisions.",
+    "why": "Stop re-explaining your project every session — the agent remembers past work and decisions.",
     "install": {
       "claude-code": "Run: npx claude-mem install (see the repo README)."
     },
@@ -1640,7 +1640,7 @@
       "project-management",
       "ui-ux-designer"
     ],
-    "what": "A bundle of 23 opinionated tools that act like a startup team \u2014 CEO, designer, eng manager, and QA roles.",
+    "what": "A bundle of 23 opinionated tools that act like a startup team — CEO, designer, eng manager, and QA roles.",
     "why": "A ready-made 'team in a box' for building products with Claude Code, based on a well-known founder's setup.",
     "install": {
       "claude-code": "Follow the gstack repo instructions to install the tool bundle."
@@ -1762,7 +1762,7 @@
       "software-developer"
     ],
     "what": "A CLI that sets up and monitors Claude Code with ready-made configs and dashboards.",
-    "why": "Skip manual setup \u2014 get a solid Claude Code configuration and health view in one command.",
+    "why": "Skip manual setup — get a solid Claude Code configuration and health view in one command.",
     "install": {
       "claude-code": "Run: npx claude-code-templates@latest"
     },
@@ -1883,7 +1883,7 @@
     "what": "Turn a photo or prompt into cinematic AI video with viral camera presets.",
     "why": "Make scroll-stopping social clips, ads, and product videos with no camera or editor.",
     "install": {
-      "standalone": "Use it at https://higgsfield.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://higgsfield.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://higgsfield.ai",
     "official": true,
@@ -1910,9 +1910,9 @@
       "marketing"
     ],
     "what": "Pro-grade AI video generation and editing (Gen-4.5).",
-    "why": "The highest-quality AI video with strong motion control \u2014 the pro's pick.",
+    "why": "The highest-quality AI video with strong motion control — the pro's pick.",
     "install": {
-      "standalone": "Use it at https://runwayml.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://runwayml.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://runwayml.com",
     "official": true,
@@ -1941,7 +1941,7 @@
     "what": "AI video with long, consistent, cinematic shots and native audio.",
     "why": "Keeps faces and products consistent across longer takes.",
     "install": {
-      "standalone": "Use it at https://klingai.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://klingai.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://klingai.com",
     "official": true,
@@ -1969,7 +1969,7 @@
     "what": "Fast AI video with lip-sync for talking characters.",
     "why": "Best when a character actually needs to speak.",
     "install": {
-      "standalone": "Use it at https://pika.art \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://pika.art — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://pika.art",
     "official": true,
@@ -1998,7 +1998,7 @@
     "what": "Animate a still image into video with believable camera motion.",
     "why": "Dreamy image-to-video for music videos, mood pieces, and brand content.",
     "install": {
-      "standalone": "Use it at https://lumalabs.ai/dream-machine \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://lumalabs.ai/dream-machine — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://lumalabs.ai/dream-machine",
     "official": true,
@@ -2026,7 +2026,7 @@
     "what": "Create talking-avatar and spokesperson videos in many languages.",
     "why": "Training and marketing videos without filming a real presenter.",
     "install": {
-      "standalone": "Use it at https://www.heygen.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.heygen.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.heygen.com",
     "official": true,
@@ -2054,7 +2054,7 @@
     "what": "Edit video and podcasts by editing the transcript, with AI cleanup.",
     "why": "Cut filler words and edit media as easily as a text document.",
     "install": {
-      "standalone": "Use it at https://www.descript.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.descript.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.descript.com",
     "official": true,
@@ -2083,7 +2083,7 @@
     "what": "Lifelike AI voices and voice cloning for narration and dubbing.",
     "why": "Add professional voiceover or dub content into other languages.",
     "install": {
-      "standalone": "Use it at https://elevenlabs.io \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://elevenlabs.io — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://elevenlabs.io",
     "official": true,
@@ -2112,7 +2112,7 @@
     "what": "Generate full songs with vocals from a text prompt.",
     "why": "Original background music or jingles in seconds.",
     "install": {
-      "standalone": "Use it at https://suno.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://suno.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://suno.com",
     "official": true,
@@ -2140,7 +2140,7 @@
     "what": "Popular video editor with AI captions, effects, and background cutouts.",
     "why": "Fast social-video editing with AI helpers, free to start.",
     "install": {
-      "standalone": "Use it at https://www.capcut.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.capcut.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.capcut.com",
     "official": true,
@@ -2169,7 +2169,7 @@
     "what": "Best-in-class AI image generation with a distinctive artistic look.",
     "why": "The go-to for high-quality concept art and striking visuals.",
     "install": {
-      "standalone": "Use it at https://www.midjourney.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.midjourney.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.midjourney.com",
     "official": true,
@@ -2194,10 +2194,10 @@
       "graphic-designer",
       "marketing"
     ],
-    "what": "AI images that render readable text well \u2014 posters, logos, typography.",
+    "what": "AI images that render readable text well — posters, logos, typography.",
     "why": "Best when your image needs actual words in it.",
     "install": {
-      "standalone": "Use it at https://ideogram.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://ideogram.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://ideogram.ai",
     "official": true,
@@ -2224,9 +2224,9 @@
       "marketing"
     ],
     "what": "Adobe's commercially-safe AI image and design generator.",
-    "why": "Trained on licensed content \u2014 safer for commercial work.",
+    "why": "Trained on licensed content — safer for commercial work.",
     "install": {
-      "standalone": "Use it at https://www.adobe.com/products/firefly.html \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.adobe.com/products/firefly.html — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.adobe.com/products/firefly.html",
     "official": true,
@@ -2254,7 +2254,7 @@
     "what": "AI image generation tuned for game art, assets, and concepts.",
     "why": "Fine control and specialized models for production art.",
     "install": {
-      "standalone": "Use it at https://leonardo.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://leonardo.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://leonardo.ai",
     "official": true,
@@ -2281,9 +2281,9 @@
       "ui-ux-designer"
     ],
     "what": "Real-time AI image generation and enhancement canvas.",
-    "why": "Sketch and steer images live \u2014 great for fast ideation.",
+    "why": "Sketch and steer images live — great for fast ideation.",
     "install": {
-      "standalone": "Use it at https://www.krea.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.krea.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.krea.ai",
     "official": true,
@@ -2310,7 +2310,7 @@
     "what": "AI for vector art, icons, and on-brand design systems.",
     "why": "Generate editable vectors and consistent brand assets.",
     "install": {
-      "standalone": "Use it at https://www.recraft.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.recraft.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.recraft.ai",
     "official": true,
@@ -2339,7 +2339,7 @@
     "what": "A suite of low-cost AI image/video tools plus a huge asset library.",
     "why": "Cheap generation bundled with stock assets.",
     "install": {
-      "standalone": "Use it at https://www.freepik.com/ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.freepik.com/ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.freepik.com/ai",
     "official": true,
@@ -2367,7 +2367,7 @@
     "what": "AI upscaler and enhancer that adds realistic detail.",
     "why": "Turn small or soft images into crisp, detailed ones.",
     "install": {
-      "standalone": "Use it at https://magnific.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://magnific.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://magnific.ai",
     "official": true,
@@ -2392,10 +2392,10 @@
       "graphic-designer",
       "marketing"
     ],
-    "what": "AI product photos \u2014 remove backgrounds and create studio shots.",
+    "what": "AI product photos — remove backgrounds and create studio shots.",
     "why": "Ecommerce-ready product images without a photo studio.",
     "install": {
-      "standalone": "Use it at https://www.photoroom.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.photoroom.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.photoroom.com",
     "official": true,
@@ -2425,7 +2425,7 @@
     "what": "Generate polished slide decks, docs, and simple websites from a prompt.",
     "why": "Beautiful presentations and one-pagers in minutes.",
     "install": {
-      "standalone": "Use it at https://gamma.app \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://gamma.app — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://gamma.app",
     "official": true,
@@ -2453,7 +2453,7 @@
     "what": "AI contract drafting and redlining right inside Microsoft Word.",
     "why": "Review and mark up contracts far faster, where lawyers already work.",
     "install": {
-      "standalone": "Use it at https://www.spellbook.legal \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.spellbook.legal — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.spellbook.legal",
     "official": true,
@@ -2481,7 +2481,7 @@
     "what": "Automated contract review with attorney-built playbooks.",
     "why": "Flags risky clauses and suggests fixes against best-practice standards.",
     "install": {
-      "standalone": "Use it at https://www.legalontech.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.legalontech.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.legalontech.com",
     "official": true,
@@ -2508,7 +2508,7 @@
     "what": "Legal research grounded in real case law with citations and validation.",
     "why": "Verifiable research that avoids the fake citations general chatbots invent.",
     "install": {
-      "standalone": "Use it at https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
     "official": true,
@@ -2535,7 +2535,7 @@
     "what": "Legal AI built on Westlaw and Practical Law.",
     "why": "Trusted research, drafting, and review on authoritative sources.",
     "install": {
-      "standalone": "Use it at https://legal.thomsonreuters.com/en/c/cocounsel \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://legal.thomsonreuters.com/en/c/cocounsel — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://legal.thomsonreuters.com/en/c/cocounsel",
     "official": true,
@@ -2562,7 +2562,7 @@
     "what": "Enterprise legal AI for large firms and in-house teams.",
     "why": "A domain-trained assistant for complex legal work at scale.",
     "install": {
-      "standalone": "Use it at https://www.harvey.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.harvey.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.harvey.ai",
     "official": true,
@@ -2586,10 +2586,10 @@
     "roles": [
       "legal"
     ],
-    "what": "AI platform for in-house/corporate legal \u2014 research, contracts, daily chat.",
+    "what": "AI platform for in-house/corporate legal — research, contracts, daily chat.",
     "why": "One tool for a corporate legal team's everyday work.",
     "install": {
-      "standalone": "Use it at https://gc.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://gc.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://gc.ai",
     "official": true,
@@ -2616,7 +2616,7 @@
     "what": "Accessible AI contract review for solo lawyers and small firms.",
     "why": "Understand a contract a client just emailed you, quickly and cheaply.",
     "install": {
-      "standalone": "Use it at https://www.thelawgpt.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.thelawgpt.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.thelawgpt.com",
     "official": true,
@@ -2641,10 +2641,10 @@
     "roles": [
       "legal"
     ],
-    "what": "Guides SOC 2 readiness \u2014 Trust Services Criteria, controls, and evidence.",
+    "what": "Guides SOC 2 readiness — Trust Services Criteria, controls, and evidence.",
     "why": "Turns a scary audit into a grounded checklist and first-draft policies.",
     "install": {
-      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-desktop": "Enable the skill in Settings → Skills.",
       "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
     },
     "docs": "https://www.anthropic.com/news/skills",
@@ -2673,7 +2673,7 @@
     "what": "Helps build an information-security management system to ISO 27001.",
     "why": "Structured guidance for the world's main infosec certification.",
     "install": {
-      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-desktop": "Enable the skill in Settings → Skills.",
       "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
     },
     "docs": "https://www.anthropic.com/news/skills",
@@ -2702,7 +2702,7 @@
     "what": "Extends ISO 27001 to privacy information management (PIMS).",
     "why": "For teams adding privacy controls on top of security.",
     "install": {
-      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-desktop": "Enable the skill in Settings → Skills.",
       "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
     },
     "docs": "https://www.anthropic.com/news/skills",
@@ -2731,7 +2731,7 @@
     "what": "Guidance for an AI management system under ISO 42001.",
     "why": "Govern your AI responsibly against the new AI-management standard.",
     "install": {
-      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-desktop": "Enable the skill in Settings → Skills.",
       "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
     },
     "docs": "https://www.anthropic.com/news/skills",
@@ -2760,7 +2760,7 @@
     "what": "Applies the NIST AI Risk Management Framework (Govern/Map/Measure/Manage).",
     "why": "Assess and manage AI risk with a widely-adopted US framework.",
     "install": {
-      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-desktop": "Enable the skill in Settings → Skills.",
       "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
     },
     "docs": "https://www.anthropic.com/news/skills",
@@ -2789,7 +2789,7 @@
     "what": "Guides payment-card security scoping and the 12 PCI DSS requirements.",
     "why": "Know what applies to you before a card-data audit.",
     "install": {
-      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-desktop": "Enable the skill in Settings → Skills.",
       "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
     },
     "docs": "https://www.anthropic.com/news/skills",
@@ -2818,7 +2818,7 @@
     "what": "Classifies AI systems and explains obligations under the EU AI Act.",
     "why": "Figure out your risk tier and duties for the EU's AI law.",
     "install": {
-      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-desktop": "Enable the skill in Settings → Skills.",
       "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
     },
     "docs": "https://www.anthropic.com/news/skills",
@@ -2846,9 +2846,9 @@
       "ui-ux-designer"
     ],
     "what": "Audits content against WCAG accessibility success criteria.",
-    "why": "Make sites and docs usable for everyone \u2014 and meet accessibility law.",
+    "why": "Make sites and docs usable for everyone — and meet accessibility law.",
     "install": {
-      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-desktop": "Enable the skill in Settings → Skills.",
       "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
     },
     "docs": "https://www.anthropic.com/news/skills",
@@ -2878,7 +2878,7 @@
     "what": "US federal ICT accessibility (Section 508) audits and remediation.",
     "why": "Meet federal accessibility requirements for public-sector work.",
     "install": {
-      "claude-desktop": "Enable the skill in Settings \u2192 Skills.",
+      "claude-desktop": "Enable the skill in Settings → Skills.",
       "claude-code": "Install it from a skills marketplace (e.g. /plugin install)."
     },
     "docs": "https://www.anthropic.com/news/skills",
@@ -2907,7 +2907,7 @@
     "what": "Clinical evidence engine trained on peer-reviewed medical literature.",
     "why": "Fast, sourced answers to clinical questions at the point of care.",
     "install": {
-      "standalone": "Use it at https://www.openevidence.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.openevidence.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.openevidence.com",
     "official": true,
@@ -2935,7 +2935,7 @@
     "what": "Ambient AI medical scribe that drafts notes from the patient visit.",
     "why": "Cuts documentation time with strong EHR integration.",
     "install": {
-      "standalone": "Use it at https://www.abridge.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.abridge.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.abridge.com",
     "official": true,
@@ -2962,7 +2962,7 @@
     "what": "AI voice assistant and scribe for clinical documentation.",
     "why": "Dictate and generate notes hands-free.",
     "install": {
-      "standalone": "Use it at https://www.suki.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.suki.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.suki.ai",
     "official": true,
@@ -2989,7 +2989,7 @@
     "what": "AI scribe for clinicians with an easy free-to-try tier.",
     "why": "A low-risk way to try ambient note-taking.",
     "install": {
-      "standalone": "Use it at https://www.getfreed.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.getfreed.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.getfreed.ai",
     "official": true,
@@ -3016,7 +3016,7 @@
     "what": "Popular AI medical scribe with a generous free tier.",
     "why": "A zero-risk entry point to AI documentation.",
     "install": {
-      "standalone": "Use it at https://www.heidihealth.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.heidihealth.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.heidihealth.com",
     "official": true,
@@ -3043,7 +3043,7 @@
     "what": "HIPAA-conscious AI writing tool for physicians (free).",
     "why": "Draft letters, summaries, and documents quickly.",
     "install": {
-      "standalone": "Use it at https://www.doximity.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.doximity.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.doximity.com",
     "official": true,
@@ -3070,7 +3070,7 @@
     "what": "Trusted clinical decision support and medical reference.",
     "why": "Authoritative, evidence-based clinical guidance.",
     "install": {
-      "standalone": "Use it at https://www.uptodate.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.uptodate.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.uptodate.com",
     "official": true,
@@ -3098,7 +3098,7 @@
     "what": "AI search over scientific papers with evidence-based answers.",
     "why": "Find what research actually says, with citations.",
     "install": {
-      "standalone": "Use it at https://consensus.app \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://consensus.app — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://consensus.app",
     "official": true,
@@ -3125,9 +3125,9 @@
       "business-analyst"
     ],
     "what": "Chat with your spreadsheets and databases to get analysis and charts.",
-    "why": "Analyze data in plain English \u2014 no code, great for non-technical users.",
+    "why": "Analyze data in plain English — no code, great for non-technical users.",
     "install": {
-      "standalone": "Use it at https://julius.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://julius.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://julius.ai",
     "official": true,
@@ -3156,7 +3156,7 @@
     "what": "AI-assisted notebooks that connect to your warehouse and share results.",
     "why": "Turns analysis into repeatable, shareable team workflows.",
     "install": {
-      "standalone": "Use it at https://hex.tech \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://hex.tech — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://hex.tech",
     "official": true,
@@ -3183,7 +3183,7 @@
     "what": "Collaborative AI data-science notebook.",
     "why": "Team notebooks with an AI copilot for analysis.",
     "install": {
-      "standalone": "Use it at https://deepnote.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://deepnote.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://deepnote.com",
     "official": true,
@@ -3207,10 +3207,10 @@
     "roles": [
       "business-intelligence"
     ],
-    "what": "Natural-language BI \u2014 ask questions, get governed dashboards.",
+    "what": "Natural-language BI — ask questions, get governed dashboards.",
     "why": "Self-serve analytics for the whole company.",
     "install": {
-      "standalone": "Use it at https://www.thoughtspot.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.thoughtspot.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.thoughtspot.com",
     "official": true,
@@ -3237,7 +3237,7 @@
     "what": "Copilot inside Power BI to build and explain reports.",
     "why": "Generate and interpret dashboards with AI in Power BI.",
     "install": {
-      "standalone": "Use it at https://www.microsoft.com/power-platform/products/power-bi \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.microsoft.com/power-platform/products/power-bi — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.microsoft.com/power-platform/products/power-bi",
     "official": true,
@@ -3265,7 +3265,7 @@
     "what": "An AI spreadsheet that pulls in live data and analyzes it.",
     "why": "A modern spreadsheet with AI and built-in data connectors.",
     "install": {
-      "standalone": "Use it at https://rows.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://rows.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://rows.com",
     "official": true,
@@ -3292,7 +3292,7 @@
     "what": "Build internal tools and AI apps fast with a visual builder.",
     "why": "Ship internal dashboards and workflows without a full dev team.",
     "install": {
-      "standalone": "Use it at https://retool.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://retool.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://retool.com",
     "official": true,
@@ -3321,7 +3321,7 @@
     "what": "Connect thousands of apps and add AI steps to automate workflows.",
     "why": "Automate repetitive busywork across your tools, no code.",
     "install": {
-      "standalone": "Use it at https://zapier.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://zapier.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://zapier.com",
     "official": true,
@@ -3349,7 +3349,7 @@
     "what": "Visual automation platform to connect apps and AI.",
     "why": "Build multi-step automations with a drag-and-drop canvas.",
     "install": {
-      "standalone": "Use it at https://www.make.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.make.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.make.com",
     "official": true,
@@ -3378,7 +3378,7 @@
     "what": "Product analytics with an AI data assistant.",
     "why": "Understand user behavior and ask questions of your product data.",
     "install": {
-      "standalone": "Use it at https://amplitude.com \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://amplitude.com — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://amplitude.com",
     "official": true,
@@ -3407,7 +3407,7 @@
     "what": "An AI answer engine that searches the web and cites its sources.",
     "why": "Fast, cited research to replace a dozen open browser tabs.",
     "install": {
-      "standalone": "Use it at https://www.perplexity.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.perplexity.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.perplexity.ai",
     "official": true,
@@ -3434,7 +3434,7 @@
     "what": "AI writing platform built for marketing teams and brand voice.",
     "why": "On-brand content at scale for campaigns and channels.",
     "install": {
-      "standalone": "Use it at https://www.jasper.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.jasper.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.jasper.ai",
     "official": true,
@@ -3461,7 +3461,7 @@
     "what": "AI copywriting and go-to-market workflows.",
     "why": "Draft marketing copy and automate GTM tasks.",
     "install": {
-      "standalone": "Use it at https://www.copy.ai \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://www.copy.ai — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://www.copy.ai",
     "official": true,
@@ -3489,7 +3489,7 @@
     "what": "Build full web apps from a prompt (AI app builder).",
     "why": "Go from idea to a working app without setting up a dev environment.",
     "install": {
-      "standalone": "Use it at https://lovable.dev \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://lovable.dev — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://lovable.dev",
     "official": true,
@@ -3517,7 +3517,7 @@
     "what": "Prompt-to-app builder that runs entirely in the browser.",
     "why": "Spin up and preview a working web app in seconds.",
     "install": {
-      "standalone": "Use it at https://bolt.new \u2014 sign up in your browser; nothing to install into another AI."
+      "standalone": "Use it at https://bolt.new — sign up in your browser; nothing to install into another AI."
     },
     "docs": "https://bolt.new",
     "official": true,
@@ -3620,5 +3620,35 @@
     "last_verified": "2026-07",
     "repo": "dbt-labs/dbt-core",
     "built_in": false
+  },
+  {
+    "id": "agent-qa",
+    "name": "agent-qa",
+    "type": "app",
+    "surface": "standalone",
+    "tools": [
+      "standalone"
+    ],
+    "roles": [
+      "software-developer"
+    ],
+    "what": "Runs natural-language tests for web and mobile apps through a dashboard or command line.",
+    "why": "Remembers working test procedures and improves from run feedback, reducing repeated setup and fragile browser actions.",
+    "install": {
+      "standalone": "Install the agent-qa npm package, run its setup command, and open the dashboard. Licensed FSL-1.1-ALv2; free for permitted use, with possible separate model, browser, or device provider charges."
+    },
+    "docs": "https://vostride.com/docs/agent-qa/quickstart",
+    "official": true,
+    "difficulty": "intermediate",
+    "tags": [
+      "testing",
+      "web",
+      "mobile",
+      "automation"
+    ],
+    "last_verified": "2026-10",
+    "repo": "vostride/agent-qa",
+    "built_in": false,
+    "cost": "free"
   }
 ]
