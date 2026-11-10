@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09",
+  "generated_at": "2026-11-10",
   "stars_asof": "2026-11-09",
   "items": [
     {
@@ -3656,6 +3656,40 @@
       "repo": "dbt-labs/dbt-core",
       "built_in": false,
       "stars": 14138
+    },
+    {
+      "id": "agent-qa",
+      "name": "agent-qa",
+      "type": "connector",
+      "surface": "code",
+      "tools": [
+        "claude-code",
+        "codex"
+      ],
+      "roles": [
+        "software-developer"
+      ],
+      "what": "Lets your coding agent test web, Android and iOS user journeys in plain language, with recorded steps and screenshots.",
+      "why": "Persistent memidex memory remembers your app between runs, and validated self-improvement keeps useful lessons while retiring stale knowledge.",
+      "install": {
+        "claude-code": "Follow the official Claude Code MCP setup in a configured agent-qa project. Node.js 24+ and compatible model/browser/device access are required. Free local software under FSL-1.1-ALv2; model/device costs are separate.",
+        "codex": "Follow the official Codex MCP setup in a configured agent-qa project. Node.js 24+ and compatible model/browser/device access are required. Free local software under FSL-1.1-ALv2; model/device costs are separate."
+      },
+      "docs": "https://vostride.com/docs/agent-qa/coding-agents",
+      "official": true,
+      "difficulty": "intermediate",
+      "tags": [
+        "testing",
+        "web",
+        "mobile",
+        "memory",
+        "mcp"
+      ],
+      "last_verified": "2026-11",
+      "repo": "vostride/agent-qa",
+      "built_in": false,
+      "cost": "free",
+      "stars": null
     }
   ],
   "roles": [
@@ -4030,10 +4064,10 @@
     }
   ],
   "stats": {
-    "total": 122,
+    "total": 123,
     "by_type": {
       "skill": 22,
-      "connector": 35,
+      "connector": 36,
       "plugin": 10,
       "rule": 3,
       "extension": 2,
@@ -4041,13 +4075,13 @@
     },
     "by_surface": {
       "chat": 6,
-      "code": 21,
+      "code": 22,
       "both": 45,
       "standalone": 50
     },
     "by_role": {
       "must-have": 10,
-      "software-developer": 31,
+      "software-developer": 32,
       "finance": 9,
       "data-analytics": 18,
       "ui-ux-designer": 11,
@@ -4061,7 +4095,7 @@
       "marketing": 35
     },
     "by_cost": {
-      "free": 63,
+      "free": 64,
       "freemium": 42,
       "paid": 11,
       "enterprise": 6
