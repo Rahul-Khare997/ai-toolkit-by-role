@@ -3656,6 +3656,35 @@
       "repo": "dbt-labs/dbt-core",
       "built_in": false,
       "stars": 14138
+    },
+    {
+      "id": "magic-hour-ai",
+      "name": "Magic Hour AI",
+      "type": "plugin",
+      "surface": "chat",
+      "tools": [
+        "chatgpt"
+      ],
+      "roles": [
+        "graphic-designer",
+        "video-creator"
+      ],
+      "what": "Create and edit images and videos or generate audio with Magic Hour inside ChatGPT.",
+      "why": "Make a draft image, video, or audio clip without leaving the conversation.",
+      "install": {
+        "chatgpt": "Open the Magic Hour AI plugin page, add it in ChatGPT, and connect your existing Magic Hour account. Media creation uses Magic Hour credits."
+      },
+      "docs": "https://chatgpt.com/plugins/plugin_asdk_app_6abd6b5b6494819188475d7f1ff8204c",
+      "official": true,
+      "difficulty": "beginner",
+      "tags": [
+        "image",
+        "video",
+        "audio"
+      ],
+      "last_verified": "2026-11",
+      "cost": "freemium",
+      "built_in": false
     }
   ],
   "roles": [
@@ -4030,17 +4059,17 @@
     }
   ],
   "stats": {
-    "total": 122,
+    "total": 123,
     "by_type": {
       "skill": 22,
       "connector": 35,
-      "plugin": 10,
+      "plugin": 11,
       "rule": 3,
       "extension": 2,
       "app": 50
     },
     "by_surface": {
-      "chat": 6,
+      "chat": 7,
       "code": 21,
       "both": 45,
       "standalone": 50
@@ -4055,14 +4084,14 @@
       "healthcare": 10,
       "business-intelligence": 11,
       "business-analyst": 18,
-      "graphic-designer": 14,
-      "video-creator": 12,
+      "graphic-designer": 15,
+      "video-creator": 13,
       "project-management": 13,
       "marketing": 35
     },
     "by_cost": {
       "free": 63,
-      "freemium": 42,
+      "freemium": 43,
       "paid": 11,
       "enterprise": 6
     },

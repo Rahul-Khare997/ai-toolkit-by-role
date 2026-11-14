@@ -3620,5 +3620,34 @@
     "last_verified": "2026-07",
     "repo": "dbt-labs/dbt-core",
     "built_in": false
+  },
+  {
+    "id": "magic-hour-ai",
+    "name": "Magic Hour AI",
+    "type": "plugin",
+    "surface": "chat",
+    "tools": [
+      "chatgpt"
+    ],
+    "roles": [
+      "graphic-designer",
+      "video-creator"
+    ],
+    "what": "Create and edit images and videos or generate audio with Magic Hour inside ChatGPT.",
+    "why": "Make a draft image, video, or audio clip without leaving the conversation.",
+    "install": {
+      "chatgpt": "Open the Magic Hour AI plugin page, add it in ChatGPT, and connect your existing Magic Hour account. Media creation uses Magic Hour credits."
+    },
+    "docs": "https://chatgpt.com/plugins/plugin_asdk_app_6abd6b5b6494819188475d7f1ff8204c",
+    "official": true,
+    "difficulty": "beginner",
+    "tags": [
+      "image",
+      "video",
+      "audio"
+    ],
+    "last_verified": "2026-11",
+    "cost": "freemium",
+    "built_in": false
   }
 ]
