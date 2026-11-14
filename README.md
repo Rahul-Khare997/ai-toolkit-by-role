@@ -10,7 +10,7 @@
 
 ### 👉 [**Open the filterable website**](https://rahul-khare997.github.io/ai-toolkit-by-role/) — search and filter by role, tool, type, and where it works.
 
-![items](https://img.shields.io/badge/tools%20listed-122-blue)
+![items](https://img.shields.io/badge/tools%20listed-123-blue)
 ![roles](https://img.shields.io/badge/roles-13-brightgreen)
 ![with stars](https://img.shields.io/badge/live%20star%20counts-33-yellow)
 ![beginner friendly](https://img.shields.io/badge/beginner-friendly-orange)
@@ -285,6 +285,7 @@ Generate and edit images, and speed up creative production.
 | **[Krea](https://www.krea.ai)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Real-time AI image generation and enhancement canvas.** Sketch and steer images live — great for fast ideation. |
 | **[Leonardo AI](https://leonardo.ai)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **AI image generation tuned for game art, assets, and concepts.** Fine control and specialized models for production art. |
 | **[Luma Dream Machine](https://lumalabs.ai/dream-machine)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Animate a still image into video with believable camera motion.** Dreamy image-to-video for music videos, mood pieces, and brand content. |
+| **[Magic Hour AI](https://chatgpt.com/plugins/plugin_asdk_app_6abd6b5b6494819188475d7f1ff8204c)** ✓ | 🧩 Plugin | 💬 Chat | 🔵 Freemium | — | ChatGPT | **Create and edit images and videos or generate audio with Magic Hour inside ChatGPT.** Make a draft image, video, or audio clip without leaving the conversation. |
 | **[Magnific](https://magnific.ai)** ✓ | 🚀 App | 🌐 Standalone | 🟠 Paid | — | Its own app | **AI upscaler and enhancer that adds realistic detail.** Turn small or soft images into crisp, detailed ones. |
 | **[Midjourney](https://www.midjourney.com)** ✓ | 🚀 App | 🌐 Standalone | 🟠 Paid | — | Its own app | **Best-in-class AI image generation with a distinctive artistic look.** The go-to for high-quality concept art and striking visuals. |
 | **[Photoroom](https://www.photoroom.com)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **AI product photos — remove backgrounds and create studio shots.** Ecommerce-ready product images without a photo studio. |
@@ -307,6 +308,7 @@ Scripts, transcripts, editing help, and AI video generation.
 | **[Higgsfield](https://higgsfield.ai)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Turn a photo or prompt into cinematic AI video with viral camera presets.** Make scroll-stopping social clips, ads, and product videos with no camera or editor. |
 | **[Kling AI](https://klingai.com)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **AI video with long, consistent, cinematic shots and native audio.** Keeps faces and products consistent across longer takes. |
 | **[Luma Dream Machine](https://lumalabs.ai/dream-machine)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Animate a still image into video with believable camera motion.** Dreamy image-to-video for music videos, mood pieces, and brand content. |
+| **[Magic Hour AI](https://chatgpt.com/plugins/plugin_asdk_app_6abd6b5b6494819188475d7f1ff8204c)** ✓ | 🧩 Plugin | 💬 Chat | 🔵 Freemium | — | ChatGPT | **Create and edit images and videos or generate audio with Magic Hour inside ChatGPT.** Make a draft image, video, or audio clip without leaving the conversation. |
 | **[Pika](https://pika.art)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Fast AI video with lip-sync for talking characters.** Best when a character actually needs to speak. |
 | **[Runway](https://runwayml.com)** ✓ | 🚀 App | 🌐 Standalone | 🟠 Paid | — | Its own app | **Pro-grade AI video generation and editing (Gen-4.5).** The highest-quality AI video with strong motion control — the pro's pick. |
 | **[Suno](https://suno.com)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Generate full songs with vocals from a text prompt.** Original background music or jingles in seconds. |
@@ -408,9 +410,9 @@ Once you outgrow this starter list, these are the best places to discover more.
 
 ## 🧩 The full stack at a glance
 
-- **122** tools listed · **50** apps · **22** skills · **35** connectors · **10** plugins · **3** rules · **2** extensions
-- Works in: 💬 chat **6** · ⌨️ code **21** · 🔀 both **45** · 🌐 standalone **50**
-- Cost: 🟢 free **63** · 🔵 freemium **42** · 🟠 paid **11** · 🟣 enterprise **6**
+- **123** tools listed · **50** apps · **22** skills · **35** connectors · **11** plugins · **3** rules · **2** extensions
+- Works in: 💬 chat **7** · ⌨️ code **21** · 🔀 both **45** · 🌐 standalone **50**
+- Cost: 🟢 free **63** · 🔵 freemium **43** · 🟠 paid **11** · 🟣 enterprise **6**
 - **33** carry live GitHub star counts · **5** are 🧰 built into Claude · ✓ = official from the vendor.
 
 ## ➕ Add or fix a tool
@@ -423,4 +425,4 @@ MIT © 2026 Rahul Khare. Not affiliated with any of the vendors listed. Star cou
 
 ---
 
-<sub>🤖 Generated 2026-11-09 from <code>data/*.json</code>. 122 tools, stars as of 2026-11-09. Beginner-friendly by design.</sub>
+<sub>🤖 Generated 2026-11-09 from <code>data/*.json</code>. 123 tools, stars as of 2026-11-09. Beginner-friendly by design.</sub>
