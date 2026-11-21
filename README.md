@@ -10,7 +10,7 @@
 
 ### 👉 [**Open the filterable website**](https://rahul-khare997.github.io/ai-toolkit-by-role/) — search and filter by role, tool, type, and where it works.
 
-![items](https://img.shields.io/badge/tools%20listed-122-blue)
+![items](https://img.shields.io/badge/tools%20listed-123-blue)
 ![roles](https://img.shields.io/badge/roles-13-brightgreen)
 ![with stars](https://img.shields.io/badge/live%20star%20counts-33-yellow)
 ![beginner friendly](https://img.shields.io/badge/beginner-friendly-orange)
@@ -52,7 +52,7 @@ Some of these work in **chat apps**, some only in **coding agents**, and some in
 4. Skip anything marked **🧰 built-in** — Claude already ships it.
 5. Follow the **name link** for exact, up-to-date install steps.
 
-> ⚠️ **Please read:** community-curated, not official docs. The AI space changes fast — always confirm install steps and permissions at the linked source before installing, and give connectors the *least* access they need (read-only when possible). Content last checked: 2026-11-16.
+> ⚠️ **Please read:** community-curated, not official docs. The AI space changes fast — always confirm install steps and permissions at the linked source before installing, and give connectors the *least* access they need (read-only when possible). Content last checked: 2026-07.
 
 ---
 
@@ -259,6 +259,7 @@ Requirements, tickets, docs, and stakeholder-ready summaries.
 | **[Airtable](https://github.com/domdomegg/airtable-mcp-server)** | 🔌 Connector (MCP) | 🔀 Both | 🔵 Freemium | ⭐ 456 | Claude Desktop, Claude Code | **Let your AI read and update Airtable bases (records, tables, views).** Turn a chat into database updates without leaving the conversation. |
 | **[Amplitude](https://amplitude.com)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Product analytics with an AI data assistant.** Understand user behavior and ask questions of your product data. |
 | **[Custom GPTs](https://help.openai.com/en/articles/8554397-creating-a-gpt)** ✓ | 🧩 Plugin | 💬 Chat | 🔵 Freemium | — | ChatGPT | **Custom versions of ChatGPT that bundle instructions, knowledge, and actions for a specific job.** Set up a reusable assistant once (e.g. 'my brand-voice writer') and everyone can use it — no prompt engineering each time. |
+| **[Datacircle](https://datacircle.dev)** | 🧠 Skill | ⌨️ Code | 🟢 Free | — | Claude Code, Cursor | **Lets your AI compare the price and score of every GTM data API, like email finders and people search.** Picking a data API means reading dozens of price pages. This gives your AI the sheet to compare them for you. |
 | **[Gamma](https://gamma.app)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Generate polished slide decks, docs, and simple websites from a prompt.** Beautiful presentations and one-pagers in minutes. |
 | **[Jira & Confluence (Atlassian)](https://www.atlassian.com/platform/remote-mcp-server)** ✓ | 🔌 Connector (MCP) | 🔀 Both | 🟢 Free | — | Claude Desktop, Claude Code, Cursor | **Connects your AI to Jira issues and Confluence pages.** Create tickets, summarize a sprint, or draft a spec page straight from a conversation. |
 | **[Julius AI](https://julius.ai)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Chat with your spreadsheets and databases to get analysis and charts.** Analyze data in plain English — no code, great for non-technical users. |
@@ -350,6 +351,7 @@ Content, SEO, analytics, and research — end to end.
 | **[CapCut](https://www.capcut.com)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Popular video editor with AI captions, effects, and background cutouts.** Fast social-video editing with AI helpers, free to start. |
 | **[Copy.ai](https://www.copy.ai)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **AI copywriting and go-to-market workflows.** Draft marketing copy and automate GTM tasks. |
 | **[Custom GPTs](https://help.openai.com/en/articles/8554397-creating-a-gpt)** ✓ | 🧩 Plugin | 💬 Chat | 🔵 Freemium | — | ChatGPT | **Custom versions of ChatGPT that bundle instructions, knowledge, and actions for a specific job.** Set up a reusable assistant once (e.g. 'my brand-voice writer') and everyone can use it — no prompt engineering each time. |
+| **[Datacircle](https://datacircle.dev)** | 🧠 Skill | ⌨️ Code | 🟢 Free | — | Claude Code, Cursor | **Lets your AI compare the price and score of every GTM data API, like email finders and people search.** Picking a data API means reading dozens of price pages. This gives your AI the sheet to compare them for you. |
 | **[Descript](https://www.descript.com)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Edit video and podcasts by editing the transcript, with AI cleanup.** Cut filler words and edit media as easily as a text document. |
 | **[ElevenLabs](https://elevenlabs.io)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **Lifelike AI voices and voice cloning for narration and dubbing.** Add professional voiceover or dub content into other languages. |
 | **[Freepik AI](https://www.freepik.com/ai)** ✓ | 🚀 App | 🌐 Standalone | 🔵 Freemium | — | Its own app | **A suite of low-cost AI image/video tools plus a huge asset library.** Cheap generation bundled with stock assets. |
@@ -408,9 +410,9 @@ Once you outgrow this starter list, these are the best places to discover more.
 
 ## 🧩 The full stack at a glance
 
-- **122** tools listed · **50** apps · **22** skills · **35** connectors · **10** plugins · **3** rules · **2** extensions
-- Works in: 💬 chat **6** · ⌨️ code **21** · 🔀 both **45** · 🌐 standalone **50**
-- Cost: 🟢 free **63** · 🔵 freemium **42** · 🟠 paid **11** · 🟣 enterprise **6**
+- **123** tools listed · **50** apps · **23** skills · **35** connectors · **10** plugins · **3** rules · **2** extensions
+- Works in: 💬 chat **6** · ⌨️ code **22** · 🔀 both **45** · 🌐 standalone **50**
+- Cost: 🟢 free **64** · 🔵 freemium **42** · 🟠 paid **11** · 🟣 enterprise **6**
 - **33** carry live GitHub star counts · **5** are 🧰 built into Claude · ✓ = official from the vendor.
 
 ## ➕ Add or fix a tool
@@ -423,4 +425,4 @@ MIT © 2026 Rahul Khare. Not affiliated with any of the vendors listed. Star cou
 
 ---
 
-<sub>🤖 Generated 2026-11-16 from <code>data/*.json</code>. 122 tools, stars as of 2026-11-16. Beginner-friendly by design.</sub>
+<sub>🤖 Generated 2026-07 from <code>data/*.json</code>. 123 tools, stars as of 2026-11-16. Beginner-friendly by design.</sub>

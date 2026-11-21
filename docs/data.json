@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16",
+  "generated_at": "2026-07",
   "stars_asof": "2026-11-16",
   "items": [
     {
@@ -3656,6 +3656,37 @@
       "repo": "dbt-labs/dbt-core",
       "built_in": false,
       "stars": 14175
+    },
+    {
+      "id": "datacircle",
+      "name": "Datacircle",
+      "type": "skill",
+      "surface": "code",
+      "tools": [
+        "claude-code",
+        "cursor"
+      ],
+      "roles": [
+        "marketing",
+        "business-analyst"
+      ],
+      "what": "Lets your AI compare the price and score of every GTM data API, like email finders and people search.",
+      "why": "Picking a data API means reading dozens of price pages. This gives your AI the sheet to compare them for you.",
+      "install": {
+        "claude-code": "Tell Claude to read https://datacircle.dev/SKILL.md.",
+        "cursor": "Tell Cursor to read https://datacircle.dev/SKILL.md."
+      },
+      "docs": "https://datacircle.dev",
+      "official": false,
+      "difficulty": "beginner",
+      "cost": "free",
+      "tags": [
+        "data",
+        "api",
+        "sales"
+      ],
+      "last_verified": "2026-11",
+      "built_in": false
     }
   ],
   "roles": [
@@ -4030,9 +4061,9 @@
     }
   ],
   "stats": {
-    "total": 122,
+    "total": 123,
     "by_type": {
-      "skill": 22,
+      "skill": 23,
       "connector": 35,
       "plugin": 10,
       "rule": 3,
@@ -4041,7 +4072,7 @@
     },
     "by_surface": {
       "chat": 6,
-      "code": 21,
+      "code": 22,
       "both": 45,
       "standalone": 50
     },
@@ -4054,14 +4085,14 @@
       "legal": 22,
       "healthcare": 10,
       "business-intelligence": 11,
-      "business-analyst": 18,
+      "business-analyst": 19,
       "graphic-designer": 14,
       "video-creator": 12,
       "project-management": 13,
-      "marketing": 35
+      "marketing": 36
     },
     "by_cost": {
-      "free": 63,
+      "free": 64,
       "freemium": 42,
       "paid": 11,
       "enterprise": 6
