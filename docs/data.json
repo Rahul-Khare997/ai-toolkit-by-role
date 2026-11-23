@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-16",
-  "stars_asof": "2026-11-16",
+  "generated_at": "2026-11-23",
+  "stars_asof": "2026-11-23",
   "items": [
     {
       "id": "web-search",
@@ -71,7 +71,7 @@
       "repo": "modelcontextprotocol/servers",
       "built_in": false,
       "cost": "free",
-      "stars": 92045
+      "stars": 92192
     },
     {
       "id": "filesystem",
@@ -105,7 +105,7 @@
       "repo": "modelcontextprotocol/servers",
       "built_in": false,
       "cost": "free",
-      "stars": 92045
+      "stars": 92192
     },
     {
       "id": "memory",
@@ -137,7 +137,7 @@
       "repo": "modelcontextprotocol/servers",
       "built_in": false,
       "cost": "free",
-      "stars": 92045
+      "stars": 92192
     },
     {
       "id": "sequential-thinking",
@@ -168,7 +168,7 @@
       "repo": "modelcontextprotocol/servers",
       "built_in": false,
       "cost": "free",
-      "stars": 92045
+      "stars": 92192
     },
     {
       "id": "github",
@@ -206,7 +206,7 @@
       "repo": "github/github-mcp-server",
       "built_in": false,
       "cost": "free",
-      "stars": 34524
+      "stars": 34695
     },
     {
       "id": "context7",
@@ -240,7 +240,7 @@
       "repo": "upstash/context7",
       "built_in": false,
       "cost": "free",
-      "stars": 64920
+      "stars": 65336
     },
     {
       "id": "playwright",
@@ -274,7 +274,7 @@
       "repo": "microsoft/playwright-mcp",
       "built_in": false,
       "cost": "free",
-      "stars": 39738
+      "stars": 40058
     },
     {
       "id": "postgres",
@@ -310,7 +310,7 @@
       "repo": "modelcontextprotocol/servers",
       "built_in": false,
       "cost": "free",
-      "stars": 92045
+      "stars": 92192
     },
     {
       "id": "sqlite",
@@ -343,7 +343,7 @@
       "repo": "modelcontextprotocol/servers",
       "built_in": false,
       "cost": "free",
-      "stars": 92045
+      "stars": 92192
     },
     {
       "id": "sentry",
@@ -375,7 +375,7 @@
       "repo": "getsentry/sentry-mcp",
       "built_in": false,
       "cost": "free",
-      "stars": 964
+      "stars": 974
     },
     {
       "id": "docker",
@@ -435,7 +435,7 @@
       "repo": "semgrep/mcp",
       "built_in": false,
       "cost": "free",
-      "stars": 690
+      "stars": 688
     },
     {
       "id": "cursor-rules",
@@ -530,7 +530,7 @@
       "repo": "anthropics/skills",
       "built_in": true,
       "cost": "free",
-      "stars": 195827
+      "stars": 199387
     },
     {
       "id": "docx-skill",
@@ -564,7 +564,7 @@
       "repo": "anthropics/skills",
       "built_in": true,
       "cost": "free",
-      "stars": 195827
+      "stars": 199387
     },
     {
       "id": "pptx-skill",
@@ -597,7 +597,7 @@
       "repo": "anthropics/skills",
       "built_in": true,
       "cost": "free",
-      "stars": 195827
+      "stars": 199387
     },
     {
       "id": "pdf-skill",
@@ -630,7 +630,7 @@
       "repo": "anthropics/skills",
       "built_in": true,
       "cost": "free",
-      "stars": 195827
+      "stars": 199387
     },
     {
       "id": "code-execution",
@@ -696,7 +696,7 @@
       "repo": "stripe/agent-toolkit",
       "built_in": false,
       "cost": "free",
-      "stars": 2067
+      "stars": 2084
     },
     {
       "id": "financial-data",
@@ -941,7 +941,7 @@
       "repo": "shadcn-ui/ui",
       "built_in": false,
       "cost": "free",
-      "stars": 128322
+      "stars": 128855
     },
     {
       "id": "v0",
@@ -1287,7 +1287,7 @@
       "repo": "apify/actors-mcp-server",
       "built_in": false,
       "cost": "freemium",
-      "stars": 16519
+      "stars": 17585
     },
     {
       "id": "seo-data",
@@ -1555,7 +1555,7 @@
       "repo": "obra/superpowers",
       "built_in": false,
       "cost": "free",
-      "stars": 318563
+      "stars": 324891
     },
     {
       "id": "everything-claude-code",
@@ -1587,7 +1587,7 @@
       "repo": "affaan-m/ECC",
       "built_in": false,
       "cost": "free",
-      "stars": 304372
+      "stars": 309457
     },
     {
       "id": "claude-mem",
@@ -1620,7 +1620,7 @@
       "repo": "thedotmack/claude-mem",
       "built_in": false,
       "cost": "free",
-      "stars": 117588
+      "stars": 119286
     },
     {
       "id": "caveman-skill",
@@ -1650,7 +1650,7 @@
       "repo": "JuliusBrussee/caveman",
       "built_in": false,
       "cost": "free",
-      "stars": 120692
+      "stars": 122381
     },
     {
       "id": "gstack",
@@ -1682,7 +1682,7 @@
       "repo": "garrytan/gstack",
       "built_in": false,
       "cost": "free",
-      "stars": 141779
+      "stars": 142461
     },
     {
       "id": "graphify",
@@ -1715,7 +1715,7 @@
       "repo": "safishamsi/graphify",
       "built_in": false,
       "cost": "free",
-      "stars": 148857
+      "stars": 152441
     },
     {
       "id": "claude-task-master",
@@ -1748,7 +1748,7 @@
       "repo": "eyaltoledano/claude-task-master",
       "built_in": false,
       "cost": "free",
-      "stars": 28361
+      "stars": 28532
     },
     {
       "id": "subagents-collection",
@@ -1777,7 +1777,7 @@
       "repo": "wshobson/agents",
       "built_in": false,
       "cost": "free",
-      "stars": 42578
+      "stars": 42840
     },
     {
       "id": "claude-code-templates",
@@ -1807,7 +1807,7 @@
       "repo": "davila7/claude-code-templates",
       "built_in": false,
       "cost": "free",
-      "stars": 33852
+      "stars": 34142
     },
     {
       "id": "design-review-workflows",
@@ -1869,7 +1869,7 @@
       "repo": "farion1231/cc-switch",
       "built_in": false,
       "cost": "free",
-      "stars": 154901
+      "stars": 156630
     },
     {
       "id": "hermes-agent",
@@ -1899,7 +1899,7 @@
       "repo": "NousResearch/hermes-agent",
       "built_in": false,
       "cost": "free",
-      "stars": 263837
+      "stars": 265627
     },
     {
       "id": "higgsfield",
@@ -3593,7 +3593,7 @@
       "last_verified": "2026-07",
       "repo": "metabase/metabase",
       "built_in": false,
-      "stars": 50365
+      "stars": 50491
     },
     {
       "id": "airtable",
@@ -3655,7 +3655,7 @@
       "last_verified": "2026-07",
       "repo": "dbt-labs/dbt-core",
       "built_in": false,
-      "stars": 14175
+      "stars": 14203
     }
   ],
   "roles": [
@@ -3912,7 +3912,7 @@
       "url": "https://github.com/anthropics/skills",
       "what": "Anthropic's own public collection of Agent Skills \u2014 the source of the built-in document skills (Word, PDF, Excel, PowerPoint) and more.",
       "official": true,
-      "stars": 195827
+      "stars": 199387
     },
     {
       "id": "composio-awesome-claude-skills",
@@ -3922,7 +3922,7 @@
       "url": "https://github.com/ComposioHQ/awesome-claude-skills",
       "what": "A well-organized, frequently-referenced curated list of Claude skills and integrations by category.",
       "official": false,
-      "stars": 79641
+      "stars": 80156
     },
     {
       "id": "hesreallyhim-awesome-claude-code",
@@ -3932,7 +3932,7 @@
       "url": "https://github.com/hesreallyhim/awesome-claude-code",
       "what": "A big curated list of skills, hooks, slash-commands, and configs for Claude Code.",
       "official": false,
-      "stars": 58143
+      "stars": 58667
     },
     {
       "id": "voltagent-awesome-agent-skills",
@@ -3942,7 +3942,7 @@
       "url": "https://github.com/VoltAgent/awesome-agent-skills",
       "what": "1000+ agent skills from official teams and the community, portable across Claude Code, Codex, Gemini CLI, Cursor, and more.",
       "official": false,
-      "stars": 37240
+      "stars": 37479
     },
     {
       "id": "alirezarezvani-claude-skills",
@@ -3952,7 +3952,7 @@
       "url": "https://github.com/alirezarezvani/claude-skills",
       "what": "A large open library \u2014 330+ skills, 30+ agents, 70+ commands \u2014 spanning engineering, marketing, finance, compliance, and more.",
       "official": false,
-      "stars": 29890
+      "stars": 30348
     },
     {
       "id": "travisvn-awesome-claude-skills",
@@ -3962,7 +3962,7 @@
       "url": "https://github.com/travisvn/awesome-claude-skills",
       "what": "Another curated list of Claude skills, resources, and tools for customizing Claude workflows.",
       "official": false,
-      "stars": 15845
+      "stars": 15920
     },
     {
       "id": "aiskill-market",
